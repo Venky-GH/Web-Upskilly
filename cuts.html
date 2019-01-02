@@ -1,0 +1,920 @@
+<!-- navbar drop -->
+<div class="collapse navbar-collapse" id="myNavbar">
+  <ul class="nav navbar-nav navbar-right">
+    <li class="navbarElements"><a href="#">Home</a></li>
+    <li class="navbarElements"><a href="#">Solutions</a></li>
+    <li class="navbarElements"><a href="#">Platforms</a></li>
+    <li class="navbarElements"><a href="#">Company</a></li>
+    <li class="navbarElements"><a href=""><button class="btn btn-default getintouch">Get in touch</button></a></li>
+  </ul>
+</div>
+
+
+<div id="mySidenav" class="sidenav" style="padding-top:4%;">
+  <span class="closebtn" onclick="closeNav()">&times;</span>
+  <a href="#">Home</a>
+  <p href="#" class="headings">SOLUTIONS</p>
+  <a href="#">Sales Capability Development</a>
+  <a href="#">Content Development</a>
+  <p class="headings">PLATFROMS</p>
+  <a href="#">ATOM</a>
+  <p class="headings">COMPANY</p>
+  <a href="#">About</a>
+  <a href="#">Contact Us</a>
+</div>
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 0%;
+}
+
+.sidenav a {
+    padding: 5% 10%;
+    text-decoration: none;
+    font-family: "Cabin", Helvetica, Arial, serif;
+    font-size: 115%;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav p {
+    padding-top: 5%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    font-family: "Cabin", Helvetica, Arial, serif;
+    font-size: 115%;
+    color: rgba(0, 0, 0, 0.38);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  font-size: 200%;
+  margin-top: 50%;
+  padding: 3%;
+  margin-left: 80%;
+  margin-right: 10%;
+}
+.sidenav .closebtn:hover {
+  cursor: pointer;
+}
+
+.sidenav .headings {
+  font-size: 90%;
+}
+
+.sidenav .headings:hover {
+  background-color: white;
+  color: black;
+  cursor: default;
+}
+
+.sidenav a:hover {
+  color: white;
+  background-color: rgba(108, 191, 124, 1.0);
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+<div class="trio">
+  <div class="row">
+    <div style="padding-top:7%;padding-left:7%;">
+      <p class="trio_message">3 reasons why your content need a re-look</p>
+      <p class="trio_number">01</p>
+      <br>
+      <p class="trio_heading">THE LEARNERS HAVE CHANGED</p>
+      <div class="row" style="margin-top:8%;">
+        <div class="col-md-4 text-center">
+          <img class="trio_icons" src="./images/clock.png" alt="">
+          <p style="padding-top:5%; font-size:130%;padding-left:2%;padding-right:2%;">Your employees now have an attention span lesser than that of a goldfish!</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img class="trio_icons" src="./images/trophy.png" alt="">
+          <p style="padding-top:5%;font-size:130%;padding-left:2%;padding-right:2%;">Learners now want instant results with minimum efforts.</p>
+        </div>
+        <div class="col-md-4">
+          <img style="float:left;" width="100%" src="./images/1_color.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2" style="background-color:rgba(108, 191, 124, 0.7);">
+      <img width="100%" style="margin-top:175%;" src="./images/2_bw.png" alt="">
+    </div>
+    <div class="col-md-2" style="background-color:rgba(108, 191, 124, 0.7);">
+      <img width="85%" style="float:right;margin-top:203%;" src="./images/3_bw.png" alt="">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+.navbar-brand {
+  height: 61px;
+}
+
+.navbar-inverse .navbar_toggle {
+    border-color: transparent;
+}
+
+.navbar-inverse .navbar_toggle_black {
+    border-color: white;
+}
+
+.navbar-inverse {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar_toggle {
+  position: relative;
+  /* float: right; */
+  padding: 9px 10px;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.navbar_toggle_black {
+  position: relative;
+  /* float: right; */
+  padding: 9px 10px;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.navbar_toggle:hover {
+  background-color: rgba(0, 0, 0, 0.34);
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.navbar_toggle_black:hover {
+  background-color: rgba(0, 0, 0, 0.34);
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+@media (min-width: 501px) {
+  .navbar_toggle {
+    /* margin-left: 64em; */
+  }
+}
+
+@media (min-width: 501px) {
+  .navbar_toggle_black {
+    /* margin-left: 64em; */
+  }
+}
+
+@media (max-width: 500) {
+  .navbar_toggle {
+    /* margin-right: 10%; */
+  }
+}
+
+@media (max-width: 500) {
+  .navbar_toggle_black {
+    /* margin-right: 10%; */
+  }
+}
+
+.navbar-inverse .navbar_toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar_toggle_black .icon-bar {
+    background-color: #000;
+}
+
+.navbar_toggle .icon-bar+.icon-bar {
+    margin-top: 4px;
+}
+
+.navbar_toggle_black .icon-bar+.icon-bar {
+    margin-top: 4px;
+}
+
+
+.navbar_toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.navbar_toggle_black .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+
+
+
+
+
+
+/*
+
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+-webkit-transform-origin: 10% 10%;
+-ms-transform-origin: 10% 10%;
+transform-origin: 10% 10%;
+transition: 0.2s;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+opacity: 0;
+filter: alpha(opacity=0);
+transition: 0.2s;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+-webkit-transform: rotate(-45deg);
+-ms-transform: rotate(-45deg);
+transform: rotate(-45deg);
+-webkit-transform-origin: 10% 90%;
+-ms-transform-origin: 10% 90%;
+transform-origin: 10% 90%;
+transition: 0.2s;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(1) {
+transition: 0.2s;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(2) {
+transition: 0.2s;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(3) {
+transition: 0.2s;
+}
+
+@media (max-width: 1600px) {
+  .navbar {
+    border-radius: 0px;
+  }
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,.navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+		padding: 9px 1px;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in{
+    display:block !important;
+  }
+}
+
+@media (min-width: 1200px) {
+.container {
+    width: 1300px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  min-height: 55px;
+}
+
+.navbar-inverse {
+  background: transparent;
+  border-color: transparent;
+}
+
+.navbar-toggle:hover {
+    background-color: transparent !important;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: transparent;
+		background-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle:focus {
+	background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar_white {
+  display: none;
+}
+
+.navbar-brand {
+  padding: 10px 15px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 0%;
+}
+
+@media (min-width: 501px) {
+	.sidenav.active {
+		width: 26%;
+	}
+}
+
+@media (max-width: 500px) {
+	.sidenav.active {
+		width: 100%;
+	}
+}
+
+.sidenav a {
+    padding: 4% 7%;
+    text-decoration: none;
+    font-family: "Cabin", Helvetica, Arial, serif;
+    font-size: 115%;
+    color: #000;
+    display: block;
+
+}
+
+.nav_git {
+  width: 100%;
+  border-radius: 0px;
+  background-color: rgba(108, 191, 124, 1.0);
+  color: white;
+  font-size: 115%;
+  margin-top: 5%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+#mySidenav {
+  animation-duration: 0.2s;
+}
+
+.sidenav p {
+    padding-top: 5%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    font-family: "Cabin", Helvetica, Arial, serif;
+    font-size: 115%;
+    color: rgba(0, 0, 0, 0.38);
+    display: block;
+}
+
+.sidenav .closebtn {
+  font-size: 200%;
+  margin-top: 50%;
+  padding: 3%;
+  margin-left: 80%;
+  margin-right: 10%;
+}
+.sidenav .closebtn:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.sidenav .headings {
+  font-size: 90%;
+}
+
+.sidenav .headings:hover {
+  background-color: white;
+  cursor: default;
+}
+
+.sidenav a:hover {
+  color: white;
+  background-color: rgba(108, 191, 124, 1.0);
+}
+
+.content {
+  background-image: url('man_land.png');
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}
+
+.banner_heading {
+  font-size: 200%;
+  color: white;
+  font-family: "Cabin", Helvetica, Arial, serif;
+  padding-left: 0%;
+  padding-top: 45%;
+}
+
+.banner_text {
+  font-family: "Cabin", Helvetica, Arial, serif;
+  color: white;
+  font-size: 125%;
+  padding-bottom: 45%;
+}
+
+@media (min-width: 501px) {
+  .logos {
+    display: block;
+  }
+  .logos_mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .logos_mobile {
+    display: block;
+  }
+  .logos {
+    display: none;
+  }
+}
+
+.logos {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.logos_mobile {
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+
+@media (min-width: 501px) {
+  .trio {
+    display: block;
+  }
+  .trio_mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .trio {
+    display: none;
+  }
+  .trio_mobile {
+    display: block;
+  }
+}
+
+.trio {
+  width:100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: "Cabin", Helvetica, Arial, serif;
+}
+
+.trio_mobile {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  font-family: "Cabin", Helvetica, Arial, serif;
+}
+
+.trio_image_text {
+  transform: rotate(-90deg);
+  font-size:260%;
+  padding-top:50%;
+  margin-left:-130%;
+  color: rgba(100%,100%,100%,0.5);
+}
+
+.trio_image_number {
+  font-size:700%;
+  color: rgba(100%,100%,100%,0.5);
+  margin-left: -22%;
+}
+
+.shorts:hover .trio_image_text {
+  color: white;
+}
+
+.shorts:hover .trio_image_number {
+  color: white;
+}
+
+.trio ul {
+  display: flex;
+  min-height: 100vh;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+.trio li {
+  flex: 1;
+  align-items: stretch;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color:rgba(108, 191, 124, 0.7);
+}
+
+.trio li.active {
+  flex: 5;
+  background: transparent;
+  cursor: default;
+}
+
+.trio li.active .li_content {
+  ocpacity: 1;
+}
+
+.trio li .li_content {
+  ocpacity: 0;
+}
+
+.trio_message {
+  font-size:170%;
+  font-weight:bold;
+}
+
+.trio_number {
+  font-size:470%;
+  font-weight:bold;
+  border-bottom: 4px solid rgba(108, 191, 124, 1.0);
+  width: 4%;
+}
+
+.trio_heading {
+  font-size: 170%;
+  font-weight: 600;
+}
+
+.trio_icons {
+  width: 22%;
+}
+
+.footer {
+  background-color: rgba(33, 33, 33, 1.0);
+  width: 100%;
+  color: white;
+}
+
+.foot {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+@media (max-width: 500px) {
+  .copyright {
+    padding-top:7%;
+    color:rgba(255, 255, 255, 0.25);
+    font-style:italic;
+    padding-bottom:0%;
+  }
+}
+
+@media (min-width: 501px) {
+  .copyright {
+    padding-top:4%;
+    color:rgba(255, 255, 255, 0.25);
+    font-style:italic;
+    padding-bottom:0%;
+  }
+}
+
+@media (max-width: 500px) {
+  #logo_white {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .foot .row .col-sm-12 {
+    padding-top: 5%;
+    padding-left: 20%;
+  }
+}
+
+a {
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  color: rgba(108, 191, 124, 1.0);
+}
+
+.icon {
+  font-size: 140%;
+}
+
+.subhead {
+  color: rgba(255, 255, 255, 0.54);
+  font-family: "Cabin", Helvetica, Arial, serif;
+}
+
+hr {
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  width: 70%;
+  margin-left: 0;
+}
+
+@media (max-width: 500px) {
+  .horizontal_tab .hide_image {
+    display: none;
+  }
+  .horizontal_tab ul {
+    overflow-x: auto;
+    overflow-y: scroll;
+    white-space: nowrap;
+  }
+}
+
+.horizontal_tab {
+  padding-top: 7%;
+  padding-bottom: 7%;
+  font-family: "Cabin", Helvetica, Arial, serif;
+}
+
+@media (min-width: 501px) {
+  .horizontal_tab ul {
+    margin-left: -3.5%;
+  }
+}
+
+.horizontal_tab ul {
+  list-style-type: none;
+  padding-top: 3%;
+}
+
+.horizontal_tab li {
+  display: inline;
+  padding: 1.5% 6%;
+  font-size: 127%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.34);
+}
+
+.horizontal_tab li:hover {
+  cursor: pointer;
+}
+
+
+.horizontal_tab .active {
+  border-bottom: 4px solid rgba(108, 191, 124, 1.0);
+  padding-bottom: 1.3%;
+}
+
+.horizontal_tab_info {
+  font-size: 127%;
+  padding-top: 4%;
+}
+
+.horizontal_tab_git {
+  border-radius: 2px;
+  font-size: 110%;
+  padding: 2% 7%;
+  background-color: rgba(108, 191, 124, 1.0);
+}
+
+@media (min-width: 501px) {
+  .vertical_tab {
+    display: block;
+  }
+  .vertical_tab_mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .vertical_tab {
+    display: none;
+  }
+  .vertical_tab_mobile {
+    display: block;
+  }
+}
+
+.vertical_tab_mobile {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: "Cabin", Helvetica, Arial, serif;
+}
+
+.vertical_tab_mobile_info {
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 2%;
+  text-align:justify;
+}
+
+.vertical_tab_mobile_heading {
+  background-color: rgba(108, 191, 124, 1.0);
+  padding-top:5%;
+  padding-bottom:5%;
+  padding-left:5%;
+  color: white;
+}
+
+.vertical_tab {
+  font-family: "Cabin", Helvetica, Arial, serif;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.vertical_tab li {
+  padding-top: 6%;
+  padding-bottom: 6%;
+  padding-left:12%;
+  font-size: 130%;
+}
+
+.vertical_tab li:hover {
+  cursor: pointer;
+}
+
+.vertical_tab ul {
+  list-style-type: none;
+  margin-top:6%;
+  margin-left: -11%;
+}
+
+.vertical_tab .active {
+  background-color: rgba(108, 191, 124, 1.0);
+  color: white;
+}
+
+.vertical_tab_content {
+  padding-top: 6%;
+  font-size: 125%;
+  padding-left: 5%;
+  text-align: justify;
+}
+
+.video_tab {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: "Cabin", Helvetica, Arial, serif;
+}
+
+@media (min-width: 501px) {
+  .video_tab ul {
+    list-style-type: none;
+    padding-top:5%;
+    margin-left: -3.5%;
+    margin-right: -42%;
+  }
+}
+
+@media (max-width: 500px) {
+  .video_tab ul {
+    list-style-type: none;
+    padding-top:5%;
+    overflow-x: auto;
+    overflow-y: auto;
+    white-space: nowrap;
+  }
+}
+
+.video_tab li {
+  display: inline;
+  padding: 0.9% 4%;
+  font-size: 135%;
+  text-align: center;
+}
+
+.video_tab li:hover {
+  cursor: pointer;
+}
+
+.video_tab .active {
+  background-color: rgba(108, 191, 124, 1.0);
+  color: white;
+}
+
+.video_tab_info {
+  font-size: 120%;
+  padding-top: 4%;
+  width: 90%;
+  text-align: justify;
+}
+
+.adv_images {
+  width: 12%;
+}
+
+@media (max-width: 500px) {
+  .upskilly_adv {
+    text-align: center;
+  }
+  .upskilly_adv_info {
+    width: 100%;
+  }
+}
+
+.upskilly_adv {
+  padding-top: 5%;
+  font-family:"Cabin", Helvetica, Arial, serif;
+}
+
+.upskilly_adv_header {
+  font-size: 130%;
+  font-weight: bold;
+  padding-top: 3%;
+}
+
+.upskilly_adv_info {
+  font-size: 120%;
+  width: 70%;
+}
+
+@media (max-width: 500px) {
+  .upskilly_adv {
+    text-align: center;
+  }
+  .upskilly_adv_info {
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+.letsdoit {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  background-color: rgba(108, 191, 124, 1.0);
+  color: white;
+  font-family: "Cabin", Helvetica, Arial, serif;
+  border-radius: 2px;
+}
+
+@media (min-width: 501px) {
+  .letsdoit {
+    margin-left: 2%;
+  }
+}
+
+@media (max-width: 500px) {
+  .letsdoit {
+    margin-left: 25%;
+  }
+}
+
+.letsdoit_text {
+  padding: 8%;
+  font-size: 120%;
+  margin:auto;
+}

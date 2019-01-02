@@ -1,0 +1,395 @@
+@media (min-width: 1200px) {
+  .container {
+    width: 1300px;
+  }
+}
+
+.content {
+  background-image: url("/images/handshake.png");
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  font-family: "Cabin", Helvetica, Arial, serif;
+}
+
+@media (max-width: 500px) {
+  .subnavbar {
+    display: none;
+  }
+
+  .subnavbar_mobile {
+    display: block;
+  }
+
+  .contentData {
+    color: white;
+    padding-top: 22%;
+    padding-bottom: 25%;
+  }
+
+  .contentData .data {
+    padding-top: 10%;
+  }
+
+  .contentData h2 {
+    line-height:1.5;
+    font-size: 140%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+  }
+
+  .contentData p {
+    padding-bottom: 2rem;
+    margin-bottom: -1.75rem;
+  }
+
+  .contentData .data p {
+    text-align: center !important;
+    padding: 0% 5%;
+  }
+}
+
+@media (min-width: 501px) {
+  .subnavbar {
+    display: block;
+  }
+
+  .subnavbar_mobile {
+    display: none;
+  }
+
+  .contentData {
+    color: white;
+    padding-top: 6%;
+    padding-bottom: 10%;
+  }
+
+  .contentData .data {
+    padding-top: 5%;
+  }
+
+  .contentData .data p {
+    font-size: 130%;
+  }
+}
+
+.contentData .subnavbar p {
+  font-size: 130%;
+  padding-bottom: 2rem;
+  margin-bottom: -1.75rem;
+}
+
+.contentData .subnavbar_mobile p {
+  font-size: 115%;
+  padding-bottom: 2rem !important;
+  margin-bottom: -2.2rem !important;
+}
+
+.content .subnavbar p.subnav {
+  display:inline-block;
+  float:right;
+  padding-left:3%;
+  padding-right:3%;
+}
+
+.content .subnavbar p.subnav:hover {
+  cursor: pointer;
+}
+
+.content .subnavbar_mobile p.subnav:hover {
+  cursor: pointer;
+}
+
+.content .subnavbar p.active {
+  border-bottom: 4px solid white;
+}
+
+.content .subnavbar_mobile p.active {
+  border-bottom: 2px solid white;
+}
+
+.content hr {
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.contentData .col-md-6 p {
+  text-align:justify;
+  padding-right: 5%;
+}
+
+@media (min-width: 501px) {
+  .flip_cards {
+    display: block;
+  }
+
+  .flip_cards_mobile {
+    display: none;
+  }
+
+  .flips h3 {
+    text-align: center;
+    font-weight: 600;
+    color: black;
+  }
+
+  .flips p {
+    color: rgba(0,0,0,0.5);
+    text-align: center;
+    font-size: 130%;
+  }
+}
+
+@media (max-width: 500px) {
+  .flip_cards {
+    display: none;
+  }
+
+  .flip_cards_mobile {
+    display: block;
+  }
+
+  .flips h3 {
+    text-align: center;
+    font-size: 130%;
+    padding: 0% 10%;
+    font-weight: 600;
+    color: black;
+  }
+
+  .flips p {
+    color: rgba(0,0,0,0.5);
+    text-align: center;
+    padding: 0% 10%;
+    font-size: 110%;
+  }
+}
+
+.flips {
+  padding: 6% 0%;
+  font-family: "Cabin", Helvetica, Arial, serif;
+}
+
+.flips .flip_cards {
+  padding-top: 5%;
+}
+
+.flips .flip_cards img {
+  width: 19%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+}
+
+.flips .flip_cards img:hover {
+  cursor: pointer;
+}
+
+.flips .flip_cards_mobile ul {
+  list-style-type: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.flips .flip_cards_mobile {
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.flips .flip_cards_mobile li {
+  display: inline;
+}
+
+.flips .flip_cards_mobile img {
+  width: 70%;
+}
+
+@media (min-width: 501px) {
+  .program.web {
+    display: block;
+  }
+
+  .program.mobile {
+    display: none;
+  }
+
+  .program h3 {
+    text-align: center;
+    color: black;
+    font-weight: 600;
+  }
+
+  .program .row {
+    color: black;
+    padding-top: 10%;
+  }
+
+  .program .row h3 {
+    text-align: left;
+    font-weight: normal;
+  }
+
+  .program p {
+    font-size: 120%;
+    line-height: 2;
+  }
+
+  .program li {
+    font-size: 120%;
+    line-height: 2;
+  }
+}
+
+@media (max-width: 500px) {
+  .program.web {
+    display: none;
+  }
+
+  .program.mobile {
+    display: block;
+  }
+
+  .program h3 {
+    text-align: center;
+    font-size: 120%;
+    color: black;
+    font-weight: 600;
+  }
+
+  .program .row {
+    color: black;
+    padding-top: 15%;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .program .row h3 {
+    text-align: left;
+    font-weight: normal;
+    font-size: 130%;
+  }
+
+  .program p {
+    font-size: 105%;
+    line-height: 1.5;
+  }
+
+  .program li {
+    font-size: 105%;
+    line-height: 2;
+  }
+}
+
+.program {
+  font-family: "Cabin", Helvetica, Arial, serif;
+  padding-top: 3%;
+}
+
+.letsdoit {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  background-color: rgba(108, 191, 124, 1.0);
+  color: white;
+  font-family: "Cabin", Helvetica, Arial, serif;
+  border-radius: 2px;
+}
+
+@media (min-width: 501px) {
+  .letsdoit {
+    margin-left: 2%;
+  }
+  .bottom-up {
+    padding-left: 20%;
+  }
+}
+
+@media (max-width: 500px) {
+  .letsdoit {
+    margin-left: 23.5%;
+  }
+  .bottom {
+    font-size: 140%;
+    text-align: center;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  .bottom-up {
+    padding-left: 0%;
+  }
+}
+
+.letsdoit_text {
+  padding: 8%;
+  font-size: 120%;
+  margin:auto;
+}
+
+.footer {
+  background-color: rgba(33, 33, 33, 1.0);
+  width: 100%;
+  color: white;
+}
+
+.foot {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+@media (max-width: 500px) {
+  .copyright {
+    padding-top:7%;
+    color:rgba(255, 255, 255, 0.25);
+    font-style:italic;
+    padding-bottom:0%;
+  }
+}
+
+@media (min-width: 501px) {
+  .copyright {
+    padding-top:4%;
+    color:rgba(255, 255, 255, 0.25);
+    font-style:italic;
+    padding-bottom:0%;
+  }
+}
+
+@media (max-width: 500px) {
+  #logo_white {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .foot .row .col-sm-12 {
+    padding-top: 5%;
+    padding-left: 20%;
+  }
+}
+
+a {
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  color: rgba(108, 191, 124, 1.0);
+}
+
+.icon {
+  font-size: 140%;
+}
+
+.subhead {
+  color: rgba(255, 255, 255, 0.54);
+  font-family: "Cabin", Helvetica, Arial, serif;
+}
+
+.footer hr {
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  width: 70%;
+  margin-left: 0;
+}

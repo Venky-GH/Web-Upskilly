@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="442px" height="402px" viewBox="0 0 442 402" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="1.44424438%" cy="0%" fx="1.44424438%" fy="0%" r="140.403835%" id="radialGradient-1">
+            <stop stop-color="#B2D34B" offset="0%"></stop>
+            <stop stop-color="#6CBF7C" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Website-made-with-Anima" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-page" transform="translate(-499.000000, -2306.000000)">
+            <g id="Group-7" transform="translate(499.000000, 2306.000000)">
+                <g id="Group-12">
+                    <g id="Group-6">
+                        <path d="M221,0 L341,0 L341,120 C341,186.27417 287.27417,240 221,240 C154.72583,240 101,186.27417 101,120 C101,53.72583 154.72583,0 221,0 Z" id="Combined-Shape" fill="url(#radialGradient-1)" fill-rule="nonzero" opacity="0.766322545"></path>
+                        <path d="M321,401.99592 C255.186233,401.458723 202,347.940517 202,282 C202,215.72583 255.72583,162 322,162 C388.27417,162 442,215.72583 442,282 C442,287.274136 441.659751,292.468803 441.000005,297.563247 L441,402 L321,402 Z" id="Combined-Shape" fill="url(#radialGradient-1)" fill-rule="nonzero" opacity="0.766322545"></path>
+                        <path d="M119,401.99592 C53.1862331,401.458723 0,347.940517 0,282 C0,215.72583 53.72583,162 120,162 C186.27417,162 240,215.72583 240,282 C240,287.274136 239.659751,292.468803 239.000005,297.563247 L239,402 L119,402 Z" id="Combined-Shape" fill="url(#radialGradient-1)" fill-rule="nonzero" opacity="0.766322545" transform="translate(120.000000, 282.000000) scale(-1, 1) translate(-120.000000, -282.000000) "></path>
+                        <text id="Technology" font-family="Cabin-Bold, Cabin" font-size="24" font-weight="bold" fill="#FFFFFF">
+                            <tspan x="161.12" y="128">Technology</tspan>
+                        </text>
+                        <text id="Content" font-family="Cabin-Bold, Cabin" font-size="24" font-weight="bold" fill="#FFFFFF">
+                            <tspan x="76.432" y="291">Content</tspan>
+                        </text>
+                        <text id="Training-expertise" font-family="Cabin-Bold, Cabin" font-size="24" font-weight="bold" fill="#FFFFFF">
+                            <tspan x="281.964" y="276">Training</tspan>
+                            <tspan x="275.208" y="305">expertise</tspan>
+                        </text>
+                    </g>
+                    <path d="M232.248881,239.479699 C228.54551,239.823993 224.793309,240 221,240 C217.206691,240 213.45449,239.823993 209.751119,239.479699 C212.731468,231.616083 216.514433,224.147249 221,217.173194 C225.485571,224.147256 229.268534,231.616086 232.248896,239.479697 Z" id="Combined-Shape" fill="#000000" fill-rule="nonzero" opacity="0.67485119"></path>
+                </g>
+                <path id="Line-6" d="M220.5,391.5 L220.5,227.4 L220.5,226.9 L221.5,226.9 L221.5,227.4 L221.5,391.5 L225.5,391.5 L221,400.5 L216.5,391.5 L220.5,391.5 Z" fill="#35400F" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

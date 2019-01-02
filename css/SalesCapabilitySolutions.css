@@ -1,0 +1,488 @@
+.content {
+  background-image: url('/images/sales_bg.png');
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}
+.contentData {
+  padding-top: 13%;
+  padding-bottom: 15%;
+  line-height: 2;
+  text-align: center;
+  color: white;
+  font-family: "Cabin", Helvetica, Arial, serif;
+}
+
+.contentData .banner_head {
+  font-size: 230%;
+  line-height: 1.5;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.contentData .banner_text {
+  font-size: 120%;
+  padding-left: 16%;
+  padding-right: 16%;
+}
+
+.contentData .letstalk {
+  background: transparent;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border: 2px solid white;
+  font-size: 120%;
+  border-radius: 1px;
+}
+
+.contentData .letstalk:hover {
+  background-color: white;
+  color: grey;
+  /* border-color: grey; */
+}
+
+@media (max-width:500px) {
+  .contentData .letstalk {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 100%;
+  }
+
+  .contentData .banner_head {
+    font-size: 140%;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+
+  .contentData .banner_text {
+    font-size: 110%;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+}
+
+.sales_graph {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: "Cabin", Helvetica, Arial, serif;
+}
+
+.sales_graph .graph_head {
+  font-size: 180%;
+  font-weight: bold;
+}
+
+.sales_graph .graph_text {
+  font-size: 130%;
+  color: rgba(105, 105, 105, 1.0);
+}
+
+@media (max-width: 500px) {
+  .sales_graph .graph_head {
+    font-size: 130%;
+    font-weight: bold;
+    padding: 6% 12% 0%;
+  }
+
+  .sales_graph .graph_text {
+    font-size: 110%;
+    color: rgba(105, 105, 105, 1.0);
+    padding: 0% 10%;
+  }
+}
+
+@media (max-width: 500px) {
+  .tab_view_head {
+    font-weight: bold;
+    font-size: 130%;
+  }
+
+  .tab_view {
+    display: none;
+  }
+
+  .tab_view_mobile {
+    display: block;
+  }
+}
+
+@media (min-width: 501px) {
+  .tab_view {
+    display: block;
+  }
+
+  .tab_view_mobile {
+    display: none;
+  }
+}
+
+.tab_view {
+  font-family: "Cabin", Helvetica, Arial, serif;
+  padding-bottom:4%;
+}
+
+.tab_view_head {
+  font-weight: bold;
+}
+
+.nav-tabs a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-tabs li {
+    width: 33.33%;
+    margin-bottom: -2px;
+    opacity: 0.5;
+}
+
+.nav-tabs li.active {
+  opacity: 1;
+}
+
+.nav-tabs a:hover {
+  color: black;
+}
+
+.tab_view_tab {
+  /* display:inline-block; */
+  text-align:left;
+  padding-left:16%;
+  padding-top:1.5%;
+  line-height: 1.2;
+}
+
+.tab_view_tab_head {
+  font-size:113%;
+  font-weight:bold;
+}
+
+.tab_view_tab_subhead {
+  font-size:108%;
+}
+
+.tab_view_tab_image {
+  float: left;
+  margin-top: 2%;
+  width: 12%;
+}
+
+.tab_view_tab_content {
+  padding-top: 4%;
+}
+
+.thumbnail {
+  width: 65%;
+  padding: 0;
+}
+
+.thumbnail:hover {
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.thumbnail .caption {
+  text-align: left;
+}
+
+.mckinsey {
+  font-family: "Cabin", Helvetica, Arial, serif;
+  padding-top:7%;
+  padding-bottom: 5%;
+}
+
+.mckinsey .text_1 {
+  padding:5% 4%;
+  font-size:120%;
+}
+
+.mckinsey .text_2 {
+  font-size:120%;
+  padding:28% 7%;
+}
+
+@media (max-width: 500px) {
+  .mckinsey {
+    padding: 8% 7% 5%;
+    text-align: center;
+  }
+
+  .mckinsey .text_1 {
+    font-size:110%;
+  }
+
+  .mckinsey .text_2 {
+    font-size:110%;
+  }
+}
+
+.footer {
+  background-color: rgba(33, 33, 33, 1.0);
+  width: 100%;
+  color: white;
+}
+
+.foot {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+@media (max-width: 500px) {
+  .copyright {
+    padding-top:7%;
+    color:rgba(255, 255, 255, 0.25);
+    font-style:italic;
+    padding-bottom:0%;
+  }
+}
+
+@media (min-width: 501px) {
+  .copyright {
+    padding-top:4%;
+    color:rgba(255, 255, 255, 0.25);
+    font-style:italic;
+    padding-bottom:0%;
+  }
+}
+
+@media (max-width: 500px) {
+  #logo_white {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .foot .row .col-sm-12 {
+    padding-top: 5%;
+    padding-left: 20%;
+  }
+}
+
+a {
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  color: rgba(108, 191, 124, 1.0);
+}
+
+.icon {
+  font-size: 140%;
+}
+
+.subhead {
+  color: rgba(255, 255, 255, 0.54);
+  font-family: "Cabin", Helvetica, Arial, serif;
+}
+
+hr {
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  width: 70%;
+  margin-left: 0;
+}
+
+.adv_images {
+  width: 12%;
+}
+
+@media (max-width: 500px) {
+  .upskilly_adv {
+    text-align: center;
+  }
+  .upskilly_adv_info {
+    width: 100%;
+  }
+}
+
+.upskilly_adv {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family:"Cabin", Helvetica, Arial, serif;
+}
+
+.upskilly_adv_header {
+  font-size: 130%;
+  font-weight: bold;
+  padding-top: 3%;
+}
+
+.upskilly_adv_info {
+  font-size: 120%;
+  width: 70%;
+}
+
+@media (max-width: 500px) {
+  .upskilly_adv {
+    text-align: center;
+  }
+  .upskilly_adv_info {
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 110%;
+  }
+
+  .upskilly_adv h3 {
+    font-size: 135%;
+    padding-bottom: 5%;
+  }
+
+  .upskilly_adv_header {
+    font-size: 118%;
+  }
+}
+
+
+@media (min-width: 501px) {
+  .logos {
+    display: block;
+  }
+  .logos_mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .logos_mobile {
+    display: block;
+  }
+  .logos {
+    display: none;
+  }
+}
+
+.logos {
+  padding-top: 2%;
+  padding-bottom: 4%;
+  font-family: "Cabin", Helvetica, Arial, serif;
+}
+
+.logos_mobile {
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+
+.letsdoit {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  background-color: rgba(108, 191, 124, 1.0);
+  color: white;
+  font-family: "Cabin", Helvetica, Arial, serif;
+  border-radius: 2px;
+}
+
+@media (min-width: 501px) {
+  .letsdoit {
+    margin-left: 2%;
+  }
+}
+
+@media (max-width: 500px) {
+  .letsdoit {
+    margin-left: 25%;
+  }
+}
+
+.letsdoit_text {
+  padding: 8%;
+  font-size: 120%;
+  margin:auto;
+}
+
+
+
+.accordion {
+  font-size: 1rem;
+  width: 30vw;
+  margin: 0 auto;
+  border-radius: 5px;
+  font-family: "Cabin", Helvetica, Arial, serif;
+}
+
+.accordion-header,
+.accordion-body {
+  background: white;
+}
+
+.accordion-header {
+  padding: 4% 5%;
+  color: black;
+  cursor: pointer;
+  font-size: 120%;
+  transition: all .3s;
+}
+
+.accordion-header:hover {
+  background: rgba(0,0,0,0.05);
+  position: relative;
+  z-index: 5;
+}
+
+.accordion-body {
+  background: #fcfcfc;
+  color: #3f3c3c;
+  display: none;
+}
+
+.accordion-body__contents {
+  padding: 1.5em 1.5em;
+  font-size: .85em;
+}
+
+.accordion__item {
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.accordion__item.active:last-child .accordion-header {
+  border-radius: none;
+}
+
+.accordion:first-child > .accordion__item > .accordion-header {
+  border-bottom: 1px solid transparent;
+}
+
+.accordion__item > .accordion-header:after {
+  content: "\f3d0";
+  font-family: IonIcons;
+  font-size: 1.2em;
+  float: right;
+  position: relative;
+  top: -2px;
+  transition: .3s all;
+  transform: rotate(0deg);
+}
+
+.accordion__item.active > .accordion-header:after {
+  transform: rotate(-180deg);
+}
+
+.accordion__item.active .accordion-header {
+  background: white;
+}
+
+.accordion__item .accordion__item .accordion-header {
+  background: #f1f1f1;
+  color: black;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    padding: 1em;
+  }
+
+  .accordion {
+    width: 100%;
+  }
+}
+
+.accordion .thumbnail {
+  width: 75%;
+  margin-left: 12%;
+}

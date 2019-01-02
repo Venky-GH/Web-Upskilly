@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="651px" viewBox="0 0 320 651" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Bg mob</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="51.4851511%" y1="11.3587226%" x2="51.4851511%" y2="56.1924834%" id="linearGradient-1">
+            <stop stop-color="#B2D34B" offset="0%"></stop>
+            <stop stop-color="#6CBF7C" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="320" height="651"></rect>
+    </defs>
+    <g id="Website-made-with-Anima" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-page-Mobile">
+            <g id="Path-17-+-final-Mask">
+                <g id="Bg-mob">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Mask" fill="url(#linearGradient-1)" fill-rule="nonzero" xlink:href="#path-2"></use>
+                    <polygon id="Path-17" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-3)" points="-6.35774468 812.342702 49.7845179 581.375149 123.519706 642.156727 177.923437 393.527853 276.514221 477.52336 375.942438 166.583413 398.49043 189.172874 430 21.987332 430 812.35"></polygon>
+                    <circle id="Oval" stroke="#FFFFFF" fill="#6CBF7C" fill-rule="nonzero" mask="url(#mask-3)" cx="276.5" cy="475.5" r="7.5"></circle>
+                    <circle id="Oval-Copy" stroke="#FFFFFF" fill="#6CBF7C" fill-rule="nonzero" mask="url(#mask-3)" cx="178.5" cy="395.5" r="7.5"></circle>
+                    <circle id="Oval" stroke="#FFFFFF" fill="#6CBF7C" fill-rule="nonzero" mask="url(#mask-3)" cx="320.5" cy="344.5" r="7.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

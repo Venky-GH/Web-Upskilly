@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pre-Joining Program</title>
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/prejoiningprogram.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="#">Home</a>
+      <p href="#" class="headings">SOLUTIONS</p>
+      <a href="#">Sales Capability Development</a>
+      <a href="#">Content Development</a>
+      <p class="headings">PLATFROMS</p>
+      <a href="#">ATOM</a>
+      <p class="headings">COMPANY</p>
+      <a href="#">About</a>
+      <a href="#">Contact Us</a>
+      <!-- <button type="button" name="button" class="btn btn-default nav_git" data-toggle="modal" data-target="#myModal">Get in touch</button> -->
+    </div>
+
+    <div class="navbar_trans">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" id="white_toggle" onclick="openNav(this)" data-target="#myNavbar" class="navbar-toggle" data-toggle="collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="navbar-brand" href="#">
+              <img src="/images/logo_white.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="navbar_white">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" onclick="openNav(this)" data-target="#myNavbar" class="navbar-toggle" data-toggle="collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="/images/logo_black.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="content">
+      <div class="contentData container">
+        <h2 class="banner_head">Engage new-hires and reduce drop-offs</h2>
+        <p class="banner_text">A gamified, personalized, pre-joining solution, to makes your new hires project-ready.</p>
+      </div>
+    </div>
+    <div class="triangle container">
+      <h3>The priorities of a pre-joining program</h3>
+      <ul>
+        <li class="py active" onclick="pyramid_sides(this, 'left');">For an Organization</li>
+        <li class="py" onclick="pyramid_sides(this, 'right');">For an Individual</li>
+      </ul>
+      <div class="text-center tri_top">
+        <img class="animated" id="pyramid_left" src="/images/pyramid_left.png" alt="">
+        <img id="pyramid" class="pyramid_left" src="/images/pyramid.png" alt="pyramid">
+        <img id="pyramid2" class="pyramid_right" style="display:none;" src="/images/pyramid2.png" alt="pyramid">
+        <img class="animated" id="pyramid_right" src="/images/pyramid_right.png" alt="">
+      </div>
+    </div>
+
+    <div class="flips container">
+      <h3 class="heading">A pre-joining program that meets all you & your employees priorities, finally!</h3>
+      <div class="row" style="padding-top:7%;">
+        <div class="col-md-5">
+          <img width="100%" class="animated" id="flip_11" src="/images/flip_1.1.png" alt="">
+          <img width="100%" class="animated" id="flip_12" style="display:none;" src="/images/flip_1.2.png" alt="">
+        </div>
+        <div class="col-md-7" style="padding-left:2%;">
+          <p>Aims to make people proud about the fact that they are joining your company.</p>
+          <ul class="flip_sub_ul">
+            <li class="flip_sub_li section1" onclick="flip_content(this,'comp')">Compliance</li>
+            <li class="flip_sub_li section1 active" onclick="flip_content(this,'org')">Organization</li>
+          </ul>
+          <div class="flip_1_right" id="section1c">
+            Show them why they should take pride in being part of your company. A few ideas could be:
+            <ul>
+              <li>Office tour</li>
+              <li>CEO Talk</li>
+              <li>What can they expect from their 1st days at the company?</li>
+              <li>Sharing stories</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="padding-top:7%;">
+        <div class="col-md-7" style="padding-left:0%;">
+          <ul class="flip_sub_ul">
+            <li class="flip_sub_li section2 active" onclick="flip_content(this,'func')">Functional training</li>
+            <li class="flip_sub_li section2" onclick="flip_content(this,'exp')">Expectation setting</li>
+          </ul>
+          <div class="flip_1_right" id="section2c">
+            Get them project-ready. Don’t waste time on teaching the basics again.
+            <ul>
+              <li>Sales capability</li>
+              <li>Tech capability</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <img width="100%" class="animated" id="flip_21" src="/images/flip_2.1.png" alt="">
+          <img width="100%" class="animated" id="flip_22" style="display:none;" src="/images/flip_2.2.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="adv container" id="adv_web">
+      <h3>The Upskilly Advantage</h3>
+      <div class="row">
+        <div class="col-md-5">
+          <img src="/images/upadv_1.png" alt="">
+        </div>
+        <div class="col-md-7">
+          <h3>Easily communicate important information</h3>
+          <br>
+          <p>Push notifications onto the learners’ dashboard about anything you want to communicate with the push of a button</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <h3>Reduce drop-offs</h3>
+          <br>
+          <p>
+            We have proven time and again that learning consumption & engagement metrics can be a critical indicator about the joining rate of a new joinee.
+            <br><br>
+            Use our robust analytics dashboard to know how each learner is consuming various modules.  Recognize the precarious ones and take action.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img src="/images/upadv_2.png" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <img src="/images/upadv_3.png" alt="">
+        </div>
+        <div class="col-md-7">
+          <h3>Make learning fun</h3>
+          <br>
+          <p>
+            Our personalized & gamified engine makes learning a pleasurable, immersive and addictive experience.
+            <br><br>
+            Based on the learner’s answers our platform provides them with the shortest path to mastery.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <h3>Up-to-date compliance programs</h3>
+          <br>
+          <p>Our standard & readily deployable compliance programs help your employees be updated with the company’s policies even before they join.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="/images/upadv_4.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="adv container" id="adv_mobile">
+      <h3>The Upskilly Advantage</h3>
+      <div class="row">
+        <div class="col-md-5">
+          <img src="/images/upadv_1.png" alt="">
+        </div>
+        <div class="col-md-7">
+          <h3>Easily communicate important information</h3>
+          <br>
+          <p>Push notifications onto the learners’ dashboard about anything you want to communicate with the push of a button</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <img src="/images/upadv_2.png" alt="">
+        </div>
+        <div class="col-md-7">
+          <h3>Reduce drop-offs</h3>
+          <br>
+          <p>
+            We have proven time and again that learning consumption & engagement metrics can be a critical indicator about the joining rate of a new joinee.
+            <br>
+            Use our robust analytics dashboard to know how each learner is consuming various modules.  Recognize the precarious ones and take action.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <img src="/images/upadv_3.png" alt="">
+        </div>
+        <div class="col-md-7">
+          <h3>Easily communicate important information</h3>
+          <br>
+          <p>Push notifications onto the learners’ dashboard about anything you want to communicate with the push of a button</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <img src="/images/upadv_4.png" alt="">
+        </div>
+        <div class="col-md-7">
+          <h3>Easily communicate important information</h3>
+          <br>
+          <p>Push notifications onto the learners’ dashboard about anything you want to communicate with the push of a button</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="padding:6%;">
+      <div class="row">
+        <div class="col-md-8 col-sm-12 bottom-up">
+          <h2 class="bottom" style="color:rgba(108, 191, 124, 1.0);">Wanna give your revenue a boost?</h2>
+          <h2 class="bottom">Just get in touch</h2>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <button class="btn btn-default letsdoit" data-toggle="modal" data-target="#myModal"><span class="letsdoit_text">Yes, let’s do this</span></button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container foot">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <img id="logo_white" src="/images/logo_white.svg" alt="white logo">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h4>Solutions</h4>
+            <hr>
+            <a href=""><p class="subhead">Sales Capability Development</p></a>
+            <a href=""><p class="subhead">Content Development</p></a>
+            <br>
+            <h4>Platforms</h4>
+            <hr>
+            <a href=""><p class="subhead">ATOM - Mobile First LMS</p></a>
+            <a href=""><p class="subhead">AIRA</p></a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h4>Company</h4>
+            <hr>
+            <a href=""><p class="subhead">About</p></a>
+            <a href=""><p class="subhead">Our Work</p></a>
+            <a href=""><p class="subhead">Contact Us</p></a>
+            <a href=""><p class="subhead">Privacy</p></a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h4>Connect</h4>
+            <hr>
+            <a href=""><i class="fab fa-twitter-square icon"></i>
+              &nbsp;&nbsp;
+              <a href=""><i class="fab fa-linkedin icon"></i></a>
+              &nbsp;&nbsp;
+              <a href=""><i class="fab fa-facebook-square icon"></i></a>
+            </div>
+          </div>
+          <div class="text-center copyright">
+            Copyright Upskilly LLC Pvt. Ltd. All rights reserved
+          </div>
+        </div>
+      </footer>
+
+    <script>
+
+      function flip_content(evt, name) {
+        var con1 = document.getElementById("section1c");
+        var con2 = document.getElementById("section2c");
+        if(name == "comp" || name == "org") {
+          var v = document.getElementsByClassName("section1");
+          for(var i = 0; i < v.length; i++) {
+            v[i].classList.remove("active");
+          }
+        }
+        else {
+          var t = document.getElementsByClassName("section2");
+          for(var i = 0; i < t.length; i++) {
+            t[i].classList.remove("active");
+          }
+        }
+        evt.classList.add("active");
+        if(name == "org") {
+          con1.innerHTML = `
+          Show them why they should take pride in being part of your company. A few ideas could be:
+          <ul>
+            <li>Office tour</li>
+            <li>CEO Talk</li>
+            <li>What can they expect from their 1st days at the company?</li>
+            <li>Sharing stories</li>
+          </ul>
+          `;
+          document.getElementById("flip_12").classList.remove("fadeIn");
+          document.getElementById("flip_12").classList.add("fadeOut");
+          setTimeout(function() {
+            document.getElementById("flip_12").style = "display:none";
+            document.getElementById("flip_11").style = "display:block";
+            document.getElementById("flip_11").classList.remove("fadeOut");
+            document.getElementById("flip_11").classList.add("fadeIn");
+          },200);
+
+          // $("#flip_12").hide();
+        }
+        else if(name == "comp") {
+          con1.innerHTML = `
+          Get your new joinees upto speed with the company policies:
+          <ul>
+            <li>Basic Compliant courses like: POSH, Data Security and many more (pick or create courses that your company needs)</li>
+          </ul>
+          `;
+          // $("#flip_11").show();
+          // $("#flip_12").show();
+          document.getElementById("flip_11").classList.remove("fadeIn");
+          document.getElementById("flip_11").classList.add("fadeOut");
+          setTimeout(function() {
+            document.getElementById("flip_11").style = "display:none";
+            document.getElementById("flip_12").style = "display:block";
+            document.getElementById("flip_12").classList.remove("fadeOut");
+            document.getElementById("flip_12").classList.add("fadeIn");
+          },200);
+        }
+        else if(name == "func") {
+          con2.innerHTML = `
+          Get them project-ready. Don’t waste time on teaching the basics again.
+          <ul>
+            <li>Sales capability</li>
+            <li>Tech capability</li>
+          </ul>
+          `;
+          document.getElementById("flip_22").classList.remove("fadeIn");
+          document.getElementById("flip_22").classList.add("fadeOut");
+          setTimeout(function() {
+            document.getElementById("flip_22").style = "display:none";
+            document.getElementById("flip_21").style = "display:block";
+            document.getElementById("flip_21").classList.remove("fadeOut");
+            document.getElementById("flip_21").classList.add("fadeIn");
+          },200);
+        }
+        else if(name == "exp") {
+          con2.innerHTML = `
+          Set their expectations right in the amount of effort that they need to put in, what will they learn & get out of this role
+          <ul>
+            <li>Growth path of their roles</li>
+            <li>Introducing their team</li>
+            <li>Sharing experiences of people who started in a similar role</li>
+          </ul>
+          `;
+          document.getElementById("flip_21").classList.remove("fadeIn");
+          document.getElementById("flip_21").classList.add("fadeOut");
+          setTimeout(function() {
+            document.getElementById("flip_21").style = "display:none";
+            document.getElementById("flip_22").style = "display:block";
+            document.getElementById("flip_22").classList.remove("fadeOut");
+            document.getElementById("flip_22").classList.add("fadeIn");
+          },200);
+        }
+      }
+
+      function pyramid_sides(evt, side) {
+        if(side == "left") {
+          $("#pyramid_left").show();
+          $("#pyramid_left").removeClass("slideOutRight");
+          $("#pyramid_left").addClass("slideInRight");
+          $("#pyramid_right").hide();
+          $("#pyramid_right").removeClass("slideInLeft");
+          $("#pyramid_right").addClass("slideOutLeft");
+          $("#pyramid").show();
+          $("#pyramid2").hide();
+        }
+        else if(side == "right") {
+          $("#pyramid_left").removeClass("slideInRight");
+          $("#pyramid_left").addClass("slideOutRight");
+          $("#pyramid_left").hide();
+          $("#pyramid_right").show();
+          $("#pyramid_right").removeClass("slideOutLeft");
+          $("#pyramid_right").addClass("slideInLeft");
+          $("#pyramid").hide();
+          $("#pyramid2").show();
+        }
+        var v = document.getElementsByClassName("py");
+        for(var i = 0; i < v.length; i++) {
+          v[i].classList.remove("active");
+        }
+        evt.classList.add("active");
+      }
+    </script>
+    <script>
+    var bool = 1;
+    function openNav(white_togg) {
+      console.log(bool);
+      if(bool == 1) {
+        white_togg.classList.add("active");
+        for(var i = 0; i < white_togg.childNodes.length; i++) {
+          if(white_togg.childNodes[i].className == "icon-bar") {
+            white_togg.childNodes[i].style = "background-color: #888;";
+          }
+        }
+        document.getElementById("mySidenav").classList.add("active");
+        $('#mySidenav').removeClass('animated fadeOutRight');
+        $('#mySidenav').addClass('animated fadeInRight');
+        $('#navbar-brand').addClass('hideit');
+        bool = 0;
+      }
+      else {
+        white_togg.classList.remove("active");
+        document.getElementById("mySidenav").classList.remove("active");
+        for(var i = 0; i < white_togg.childNodes.length; i++) {
+          if(white_togg.childNodes[i].className == "icon-bar") {
+            white_togg.childNodes[i].style = "background-color: white;";
+          }
+        }
+        $('#mySidenav').removeClass('animated fadeInRight');
+        $('#mySidenav').addClass('animated fadeOutRight');
+        $('#navbar-brand').removeClass('hideit');
+        bool = 1;
+      }
+    }
+
+    $(function() {
+      var header = $(".content");
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if(scroll >= 100) {
+          $(".navbar_trans").hide();
+          $(".navbar_white").show();
+        }
+        else {
+          $(".navbar_trans").show();
+          $(".navbar_white").hide();
+        }
+      });
+    });
+    </script>
+  </body>
+</html>

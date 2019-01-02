@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="470px" height="400px" viewBox="0 0 470 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="1.44424438%" cy="0%" fx="1.44424438%" fy="0%" r="153.004372%" gradientTransform="translate(0.014442,0.000000),scale(0.851064,1.000000),rotate(40.811770),translate(-0.014442,-0.000000)" id="radialGradient-1">
+            <stop stop-color="#B2D34B" offset="0%"></stop>
+            <stop stop-color="#6CBF7C" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Website-made-with-Anima" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-page" transform="translate(-806.000000, -1579.000000)">
+            <g id="Group-5" transform="translate(806.000000, 1579.000000)">
+                <polygon id="Path" fill="url(#radialGradient-1)" fill-rule="nonzero" points="235.5 0 353 200 118 200"></polygon>
+                <text id="External-environment" font-family="Cabin-Medium, Cabin" font-size="14" font-weight="400" fill="#FFFFFF">
+                    <tspan x="210.965" y="114">External </tspan>
+                    <tspan x="197.175" y="132">environment</tspan>
+                </text>
+                <polygon id="Path" fill="#FFFFFF" fill-rule="nonzero" transform="translate(235.531674, 300.000000) scale(-1, -1) translate(-235.531674, -300.000000) " points="235.531674 200 353.031674 400 118.031674 400"></polygon>
+                <text id="Continuous-and-inter" font-family="Cabin-Bold, Cabin" font-size="14" font-weight="bold" fill="#212121">
+                    <tspan x="187.97" y="251">Continuous and </tspan>
+                    <tspan x="175.342" y="269">intertwined learning</tspan>
+                </text>
+                <polygon id="Path" fill="url(#radialGradient-1)" fill-rule="nonzero" points="117.5 200 235 400 0 400"></polygon>
+                <polygon id="Path" fill="url(#radialGradient-1)" fill-rule="nonzero" points="352.5 200 470 400 235 400"></polygon>
+                <text id="Organizational-cultu" font-family="Cabin-Medium, Cabin" font-size="14" font-weight="400" fill="#FFFFFF">
+                    <tspan x="74.058" y="318">Organizational </tspan>
+                    <tspan x="96.976" y="336">culture</tspan>
+                </text>
+                <text id="Employee-attitude" font-family="Cabin-Medium, Cabin" font-size="14" font-weight="400" fill="#FFFFFF">
+                    <tspan x="322.302" y="318">Employee </tspan>
+                    <tspan x="329.162" y="336">attitude</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="650px" viewBox="0 0 1440 650" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>background</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="51.4851511%" y1="11.3587226%" x2="51.4851511%" y2="56.1924834%" id="linearGradient-1">
+            <stop stop-color="#B2D34B" offset="0%"></stop>
+            <stop stop-color="#6CBF7C" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="1440" height="650"></rect>
+    </defs>
+    <g id="Website-made-with-Anima" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-page">
+            <g id="background">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Mask" fill="url(#linearGradient-1)" fill-rule="nonzero" xlink:href="#path-2"></use>
+                <polygon id="Path-17" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-3)" points="193.642255 650.345149 354 496.818502 564.607979 537.220679 720 371.95436 1001.6024 427.787088 1285.59673 221.101921 1350 236.117381 1440 124.987332 1440 650.35"></polygon>
+                <circle id="Oval" stroke="#FFFFFF" fill="#6CBF7C" fill-rule="nonzero" mask="url(#mask-3)" cx="355.5" cy="497.5" r="7.5"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="#6CBF7C" fill-rule="nonzero" mask="url(#mask-3)" cx="563.5" cy="537.5" r="7.5"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="#6CBF7C" fill-rule="nonzero" mask="url(#mask-3)" cx="721.5" cy="374.5" r="7.5"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="#6CBF7C" fill-rule="nonzero" mask="url(#mask-3)" cx="1283.5" cy="222.5" r="7.5"></circle>
+                <circle id="Oval-Copy" stroke="#FFFFFF" fill="#6CBF7C" fill-rule="nonzero" mask="url(#mask-3)" cx="1347.5" cy="233.5" r="7.5"></circle>
+                <circle id="Oval-Copy-2" stroke="#FFFFFF" fill="#6CBF7C" fill-rule="nonzero" mask="url(#mask-3)" cx="1440.5" cy="124.5" r="7.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

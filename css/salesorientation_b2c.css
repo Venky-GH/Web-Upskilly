@@ -1,0 +1,404 @@
+@media (min-width: 1200px) {
+  .container {
+    width: 1300px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.content {
+  background-image: url("/images/puzzle.png");
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  font-family: "Cabin", Helvetica, Arial, serif;
+}
+
+@media (max-width: 500px) {
+  .subnavbar {
+    display: none;
+  }
+
+  .subnavbar_mobile {
+    display: block;
+  }
+
+  .contentData {
+    color: white;
+    padding-top: 22%;
+    padding-bottom: 25%;
+  }
+
+  .contentData .data {
+    padding-top: 10%;
+  }
+
+  .contentData h2 {
+    line-height:1.5;
+    font-size: 140%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  .contentData .highlight {
+    background-color: white;
+    color: rgba(108, 191, 124, 1.0);
+    width: 50%;
+    margin-left: 22%;
+    padding: 0.5% 1%;
+    text-align: center;
+    transform: skew(-20deg);
+  }
+
+  .contentData p {
+    padding-bottom: 2rem;
+    margin-bottom: -1.75rem;
+    padding-top: 5%;
+    text-align: center;
+  }
+
+  .contentData .data p {
+    text-align: center !important;
+    padding: 0% 5%;
+  }
+}
+
+@media (min-width: 501px) {
+  .subnavbar {
+    display: block;
+  }
+
+  .subnavbar_mobile {
+    display: none;
+  }
+
+  .contentData {
+    color: white;
+    padding-top: 6%;
+    padding-bottom: 10%;
+  }
+
+  .contentData h2 {
+    font-weight: 600;
+  }
+
+  .contentData .data {
+    padding-top: 5%;
+  }
+
+  .contentData .highlight {
+    background-color: white;
+    color: rgba(108, 191, 124, 1.0);
+    margin-right: 65%;
+    padding: 0.5% 1%;
+    text-align: center;
+    transform: skew(-20deg);
+  }
+
+  .contentData p {
+    font-size: 130%;
+    padding-bottom: 2rem;
+    margin-bottom: -1.75rem;
+  }
+
+  .contentData .data p {
+    font-size: 130%;
+  }
+}
+
+.contentData .subnavbar p {
+  font-size: 130%;
+  padding-bottom: 2rem;
+  margin-bottom: -1.75rem;
+}
+
+.contentData .subnavbar_mobile p {
+  font-size: 115%;
+  padding-bottom: 2rem !important;
+  margin-bottom: -2.2rem !important;
+}
+
+.content .subnavbar p.subnav {
+  display:inline-block;
+  float:right;
+  padding-left:3%;
+  padding-right:3%;
+}
+
+.content .subnavbar p.subnav:hover {
+  cursor: pointer;
+}
+
+.content .subnavbar_mobile p.subnav:hover {
+  cursor: pointer;
+}
+
+.content .subnavbar p.active {
+  border-bottom: 4px solid white;
+}
+
+.content .subnavbar_mobile p.active {
+  border-bottom: 2px solid white;
+}
+
+.content hr {
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.store {
+  font-family: "Cabin", Helvetica, Arial, serif;
+  padding: 5% 0%;
+}
+
+@media (max-width: 500px) {
+  .store h3 {
+    font-size: 120%;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .store .icons {
+    width: 37%;
+  }
+
+  .store .icons_text {
+    font-size:100%;
+    padding-top:4%;
+    padding-left:20%;
+    padding-right:20%;
+  }
+
+  .store .vegies {
+    margin-right: 0%;
+    padding-top: 20%;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 501px) {
+  .store h3 {
+    font-weight: 600;
+    text-align: center;
+    color: black;
+  }
+
+  .store .icons {
+    width: 25%;
+  }
+
+  .store .icons_list {
+    padding-left: 5%;
+  }
+
+  .store .icons_text {
+    font-size:120%;
+    padding-top:4%;
+    padding-left:30%;
+    padding-right:30%;
+  }
+
+  .store .vegies {
+    text-align:right;
+    margin-right:-18%;
+    width: 110%;
+  }
+}
+
+.program {
+  font-family: "Cabin", Helvetica, Arial, serif;
+  padding-top: 3%;
+}
+
+@media (max-width: 500px) {
+  .program.web {
+    display: none;
+  }
+
+  .program.mobile {
+    display: block;
+  }
+
+  .program h3 {
+    font-size: 120%;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    padding: 0% 10%;
+    line-height: 1.5;
+  }
+
+  .program .image_div {
+    padding: 0% 10%;
+  }
+
+  .program p {
+    line-height: 1.7;
+  }
+
+  .program li {
+    line-height: 2;
+  }
+}
+
+@media (min-width: 501px) {
+  .program.web {
+    display: block;
+  }
+
+  .program.mobile {
+    display: none;
+  }
+
+  .program h3 {
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    padding: 0% 25%;
+  }
+
+  .image_1 {
+    margin-left:-10%;
+    width: 125%;
+  }
+
+  .image_2 {
+    margin-right:-15%;
+    width: 90%;
+  }
+
+  .program p {
+    font-size: 120%;
+    line-height: 2;
+  }
+
+  .program li {
+    font-size: 120%;
+    line-height: 2;
+  }
+}
+
+.program .row {
+  color: black;
+  padding-top: 10%;
+}
+
+.program .row h3 {
+  text-align: left;
+  font-weight: normal;
+  padding: 0%;
+}
+
+.letsdoit {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  background-color: rgba(108, 191, 124, 1.0);
+  color: white;
+  font-family: "Cabin", Helvetica, Arial, serif;
+  border-radius: 2px;
+}
+
+@media (min-width: 501px) {
+  .letsdoit {
+    margin-left: 2%;
+  }
+  .bottom-up {
+    padding-left: 20%;
+  }
+}
+
+@media (max-width: 500px) {
+  .letsdoit {
+    margin-left: 23.5%;
+  }
+  .bottom {
+    font-size: 140%;
+    text-align: center;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  .bottom-up {
+    padding-left: 0%;
+  }
+}
+
+.letsdoit_text {
+  padding: 8%;
+  font-size: 120%;
+  margin:auto;
+}
+
+.footer {
+  background-color: rgba(33, 33, 33, 1.0);
+  width: 100%;
+  color: white;
+}
+
+.foot {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+@media (max-width: 500px) {
+  .copyright {
+    padding-top:7%;
+    color:rgba(255, 255, 255, 0.25);
+    font-style:italic;
+    padding-bottom:0%;
+  }
+}
+
+@media (min-width: 501px) {
+  .copyright {
+    padding-top:4%;
+    color:rgba(255, 255, 255, 0.25);
+    font-style:italic;
+    padding-bottom:0%;
+  }
+}
+
+@media (max-width: 500px) {
+  #logo_white {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .foot .row .col-sm-12 {
+    padding-top: 5%;
+    padding-left: 20%;
+  }
+}
+
+a {
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  color: rgba(108, 191, 124, 1.0);
+}
+
+.icon {
+  font-size: 140%;
+}
+
+.subhead {
+  color: rgba(255, 255, 255, 0.54);
+  font-family: "Cabin", Helvetica, Arial, serif;
+}
+
+.footer hr {
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  width: 70%;
+  margin-left: 0;
+}

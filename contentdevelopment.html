@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Content Development</title>
+  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/contentdev.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion({
+      collapsible: true
+    });
+  } );
+  </script>
+</head>
+<body>
+  <div id="mySidenav" class="sidenav" style="padding-top:4%;">
+    <a href="#">Home</a>
+    <p href="#" class="headings">SOLUTIONS</p>
+    <a href="#">Sales Capability Development</a>
+    <a href="#">Content Development</a>
+    <p class="headings">PLATFROMS</p>
+    <a href="#">ATOM</a>
+    <p class="headings">COMPANY</p>
+    <a href="#">About</a>
+    <a href="#">Contact Us</a>
+    <!-- <button type="button" name="button" class="btn btn-default nav_git" data-toggle="modal" data-target="#myModal">Get in touch</button> -->
+  </div>
+
+  <div class="content">
+    <div class="navbar_trans">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" id="white_toggle" onclick="openNav()" data-target="#myNavbar" class="navbar-toggle" data-toggle="collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="/images/logo_white.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="navbar_white">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="/images/logo_black.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <p class="banner_heading">Content that powers today’s organizations!</p>
+          <p class="banner_text">Tailored for the millennials, our content solutions, provide them with an immersive, fun and addictive experience.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="logos container">
+    <div class="row">
+      <div class="col-md-2">
+        <img width="31%" src="/images/g94.png" alt="">
+      </div>
+      <div class="col-md-2">
+        <img width="40%" src="/images/Nestle.png" alt="">
+      </div>
+      <div class="col-md-2">
+        <img width="77%" src="/images/vodafone.png" alt="">
+      </div>
+      <div class="col-md-2">
+        <img width="55%" src="/images/oyo.png" alt="">
+      </div>
+      <div class="col-md-2">
+        <img width="41%" src="/images/aditya_Birla.png" alt="">
+      </div>
+      <div class="col-md-2">
+        <img width="48%" src="/images/aig.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="logos_mobile container">
+    <img src="/images/logos_mobile.png" width="100%" alt="logos mobile">
+  </div>
+  <div class="trio">
+    <ul>
+      <li class="trio_li active">
+        <div id="1_short" class="shorts" style="display:none;" onclick="toggle(this, '1_short','1_long')">
+          <div class="trio_image_number">01</div>
+          <div class="trio_image_text">THE LEARNERS</div>
+          <img width="120%" style="padding-top:65%;margin-left:-10%;" src="/images/1_bw.png" alt="">
+        </div>
+        <div id="1_long" class="longs">
+          <p class="trio_message">3 reasons why your content need a re-look</p>
+          <p class="trio_number">01</p>
+          <br>
+          <p class="trio_heading">THE LEARNERS HAVE CHANGED</p>
+          <div class="row" style="margin-top:8%;">
+            <div class="col-md-4 text-center">
+              <img class="trio_icons" src="/images/clock.png" alt="">
+              <p style="padding-top:5%; font-size:130%;padding-left:2%;padding-right:2%;">Your employees now have an attention span lesser than that of a goldfish!</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <img class="trio_icons" src="/images/trophy.png" alt="">
+              <p style="padding-top:5%;font-size:130%;padding-left:2%;padding-right:2%;">Learners now want instant results with minimum efforts.</p>
+            </div>
+            <div class="col-md-4">
+              <img style="float:right;" width="120%" src="/images/1_color.png" alt="">
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="trio_li">
+        <div id="2_short" class="shorts" onclick="toggle(this, '2_short','2_long')">
+          <div class="trio_image_number">02</div>
+          <div class="trio_image_text">THE ENVIRONMENT</div>
+          <img width="105%" style="padding-top:20%;" src="/images/2_bw.png" alt="">
+        </div>
+        <div class="longs" id="2_long" style="display:none;">
+          <p class="trio_message">3 reasons why your content need a re-look</p>
+          <p class="trio_number">02</p>
+          <br>
+          <p class="trio_heading">THE ENVIRONMENT HAS CHANGED</p>
+          <div class="row" style="margin-top:8%;">
+            <div class="col-md-4 text-center">
+              <img class="trio_icons" src="/images/clock.png" alt="">
+              <p style="padding-top:5%; font-size:130%;padding-left:2%;padding-right:2%;">The learning for work doesn’t happen just at work anymore. The boundaries between work and personal life are blurring.</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <img class="trio_icons" src="/images/trophy.png" alt="">
+              <p style="padding-top:5%;font-size:130%;padding-left:2%;padding-right:2%;">Existing service lines are being transformed through increasing intelligent automation
+                ~50-60% jobs would require new skills</p>
+              </div>
+              <div class="col-md-4">
+                <img style="float:right;" width="115%" src="/images/2_color.png" alt="">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="trio_li">
+          <div id="3_short" class="shorts" onclick="toggle(this, '3_short','3_long')">
+            <div class="trio_image_number">03</div>
+            <div class="trio_image_text">THE SYSTEMS</div>
+            <img width="115%" style="padding-top:64%;" src="/images/3_bw.png" alt="">
+          </div>
+          <div class="longs" id="3_long" style="display:none;">
+            <p class="trio_message">3 reasons why your content need a re-look</p>
+            <p class="trio_number">03</p>
+            <br>
+            <p class="trio_heading">THE SYSTEMS HAVE CHANGED</p>
+            <div class="row" style="margin-top:8%;">
+              <div class="col-md-4 text-center">
+                <img class="trio_icons" src="/images/clock.png" alt="">
+                <p style="padding-top:5%; font-size:130%;padding-left:2%;padding-right:2%;">Abundance of information: The availability of video content alone has increased by 17 times</p>
+              </div>
+              <div class="col-md-4 text-center">
+                <img class="trio_icons" src="/images/trophy.png" alt="">
+                <p style="padding-top:5%;font-size:130%;padding-left:2%;padding-right:2%;">Information is in abundance. Knowledge isn’t. Information + context = Knowledge</p>
+              </div>
+              <div class="col-md-4">
+                <img style="float:right;" width="115%" src="/images/3_color.png" alt="">
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="trio_mobile container">
+      <div>
+        <p class="trio_message">3 reasons why your content need a re-look</p>
+        <p class="trio_number">01</p>
+        <br>
+        <p class="trio_heading">THE LEARNERS HAVE CHANGED</p>
+        <div class="row" style="margin-top:8%;">
+          <div class="col-md-4 text-center">
+            <img class="trio_icons" src="/images/clock.png" alt="">
+            <p style="padding-top:5%; font-size:115%;padding-left:2%;padding-right:2%;">Your employees now have an attention span lesser than that of a goldfish!</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img class="trio_icons" src="/images/trophy.png" alt="">
+            <p style="padding-top:5%;font-size:115%;padding-left:2%;padding-right:2%;">Learners now want instant results with minimum efforts.</p>
+          </div>
+          <div class="col-md-4">
+            <img style="float:right;margin-right: -3.8%;" width="70%" src="/images/1_color.png" alt="">
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div>
+        <p class="trio_message">3 reasons why your content need a re-look</p>
+        <p class="trio_number">02</p>
+        <br>
+        <p class="trio_heading">THE ENVIRONMENT HAS CHANGED</p>
+        <div class="row" style="margin-top:8%;">
+          <div class="col-md-4 text-center">
+            <img class="trio_icons" src="/images/clock.png" alt="">
+            <p style="padding-top:5%; font-size:115%;padding-left:2%;padding-right:2%;">The learning for work doesn’t happen just at work anymore. The boundaries between work and personal life are blurring.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img class="trio_icons" src="/images/trophy.png" alt="">
+            <p style="padding-top:5%;font-size:115%;padding-left:2%;padding-right:2%;">Existing service lines are being transformed through increasing intelligent automation
+              ~50-60% jobs would require new skills</p>
+            </div>
+            <div class="col-md-4">
+              <img style="float:right;margin-right: -3.8%;" width="70%" src="/images/2_color.png" alt="">
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <div>
+          <p class="trio_message">3 reasons why your content need a re-look</p>
+          <p class="trio_number">03</p>
+          <br>
+          <p class="trio_heading">THE SYSTEMS HAVE CHANGED</p>
+          <div class="row" style="margin-top:8%;">
+            <div class="col-sm-12 text-center">
+              <img class="trio_icons" src="/images/clock.png" alt="">
+              <p style="padding-top:5%; font-size:115%;padding-left:2%;padding-right:2%;">Abundance of information: The availability of video content alone has increased by 17 times</p>
+            </div>
+            <div class="col-sm-12 text-center">
+              <img class="trio_icons" src="/images/trophy.png" alt="">
+              <p style="padding-top:5%;font-size:115%;padding-left:2%;padding-right:2%;">Information is in abundance. Knowledge isn’t. Information + context = Knowledge</p>
+            </div>
+            <div class="col-sm-12">
+              <img style="float:right;margin-right: -3.8%;" width="70%" src="/images/3_color.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container horizontal_tab">
+        <h3 style="font-weight:bold;">Upskilly has the solutions that fit you</h3>
+        <ul>
+          <li class="ht_links active" onclick="show_content_ht(this, 'content')">Content Transformation</li>
+          <li class="ht_links" onclick="show_content_ht(this, 'off')">Off-the-shelf Libraries</li>
+          <li class="ht_links" onclick="show_content_ht(this, 'direct')">Direct Production</li>
+        </ul>
+        <div class="row" id="ht_content">
+          <div class="col-md-5" style="padding-top:5%;">
+            <div style="text-decoration:line-through;color: #ff1a1a;">
+              <h3 style="color:rgba(0,0,0,0.50);">Content outsourcing!</h3>
+            </div>
+            <h3>Learning partners!</h3>
+            <p class="horizontal_tab_info">
+              Our secret ingredient to preparing awesome content: You!
+              <br><br>
+              Working with you, with the help of our MAGICal process, we transform your legacy content into your preferred format.
+            </p>
+            <br>
+            <button class="btn btn-success horizontal_tab_git">Get in touch</button>
+          </div>
+          <div class="col-md-7 hide_image">
+            <img width="100%" style="margin-top:2%;margin-left:29%;" src="/images/content_1_copy.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="container vertical_tab">
+        <h3 style="font-weight:bold;">Developing content that is just <span style="color:rgba(108, 191, 124, 1.0);">MAGIC</span>al!</h3>
+        <p style="font-size:125%;">An insight into our process!</p>
+        <div class="row">
+          <div class="col-md-4">
+            <ul>
+              <li class="links active" onclick="show_content(this, 'meet')">Meet</li>
+              <li class="links" onclick="show_content(this, 'audit')">Audit</li>
+              <li class="links" onclick="show_content(this, 'gather')">Gather</li>
+              <li class="links" onclick="show_content(this, 'ideate')">Ideate</li>
+              <li class="links" onclick="show_content(this, 'create')">Create</li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <p class="vertical_tab_content"  id="side_content">
+              We will be the extended L&D branch of your company not just a company you have outsourced content development to. That means, we have your best interests in mind. We don’t go about transforming each and every piece of content.
+              <br><br>
+              Our process starts with a visit from our Learning doctors:
+              <br><br>
+              a. <span style="font-weight:bold;">Organizational perspective</span>: They collaborate with business heads to understand the mission & targets of the organization and diagnose the  skill gaps.
+              <br><br>
+              b. <span style="font-weight:bold;">Employee perspective</span>: Employees are the key to our process. The learning doctors conduct surveys, focussed Group Discussions & interviews to:
+              <br><br>
+              Understand challenges with the current learning systems <br>
+              Understand the mode of learning effective for them <br>
+              Diagnose the learning culture
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="vertical_tab_mobile container">
+        <h3 style="font-weight:bold;">Developing content that is just <span style="color:rgba(108, 191, 124, 1.0);">MAGIC</span>al!</h3>
+        <p style="font-size:125%;">An insight into our process!</p>
+        <div id="accordion" style="padding:5% 5%;">
+          <h4 class="vertical_tab_mobile_heading">Meet</h4>
+          <div class="vertical_tab_mobile_info">
+            <p>
+              We will be the extended L&D branch of your company not just a company you have outsourced content development to. That means, we have your best interests in mind. We don’t go about transforming each and every piece of content.
+              <br><br>
+              Our process starts with a visit from our Learning doctors:
+              <br><br>
+              a. <span style="font-weight:bold;">Organizational perspective</span>: They collaborate with business heads to understand the mission & targets of the organization and diagnose the  skill gaps.
+              <br><br>
+              b. <span style="font-weight:bold;">Employee perspective</span>: Employees are the key to our process. The learning doctors conduct surveys, focussed Group Discussions & interviews to:
+              <br><br>
+              Understand challenges with the current learning systems <br>
+              Understand the mode of learning effective for them <br>
+              Diagnose the learning culture
+            </p>
+          </div>
+          <h4 class="vertical_tab_mobile_heading">Audit</h4>
+          <div class="vertical_tab_mobile_info">
+            <p>
+              We will be the extended L&D branch of your company not just a company you have outsourced content development to. That means, we have your best interests in mind. We don’t go about transforming each and every piece of content.
+              <br><br>
+              Our process starts with a visit from our Learning doctors:
+              <br><br>
+              a. <span style="font-weight:bold;">Organizational perspective</span>: They collaborate with business heads to understand the mission & targets of the organization and diagnose the  skill gaps.
+              <br><br>
+              b. <span style="font-weight:bold;">Employee perspective</span>: Employees are the key to our process. The learning doctors conduct surveys, focussed Group Discussions & interviews to:
+              <br><br>
+              Understand challenges with the current learning systems <br>
+              Understand the mode of learning effective for them <br>
+              Diagnose the learning culture
+            </p>
+          </div>
+          <h4 class="vertical_tab_mobile_heading">Gather</h4>
+          <div class="vertical_tab_mobile_info">
+            <p>
+              We will be the extended L&D branch of your company not just a company you have outsourced content development to. That means, we have your best interests in mind. We don’t go about transforming each and every piece of content.
+              <br><br>
+              Our process starts with a visit from our Learning doctors:
+              <br><br>
+              a. <span style="font-weight:bold;">Organizational perspective</span>: They collaborate with business heads to understand the mission & targets of the organization and diagnose the  skill gaps.
+              <br><br>
+              b. <span style="font-weight:bold;">Employee perspective</span>: Employees are the key to our process. The learning doctors conduct surveys, focussed Group Discussions & interviews to:
+              <br><br>
+              Understand challenges with the current learning systems <br>
+              Understand the mode of learning effective for them <br>
+              Diagnose the learning culture
+            </p>
+          </div>
+          <h4 class="vertical_tab_mobile_heading">Ideate</h4>
+          <div class="vertical_tab_mobile_info">
+            <p>
+              We will be the extended L&D branch of your company not just a company you have outsourced content development to. That means, we have your best interests in mind. We don’t go about transforming each and every piece of content.
+              <br><br>
+              Our process starts with a visit from our Learning doctors:
+              <br><br>
+              a. <span style="font-weight:bold;">Organizational perspective</span>: They collaborate with business heads to understand the mission & targets of the organization and diagnose the  skill gaps.
+              <br><br>
+              b. <span style="font-weight:bold;">Employee perspective</span>: Employees are the key to our process. The learning doctors conduct surveys, focussed Group Discussions & interviews to:
+              <br><br>
+              Understand challenges with the current learning systems <br>
+              Understand the mode of learning effective for them <br>
+              Diagnose the learning culture
+            </p>
+          </div>
+          <h4 class="vertical_tab_mobile_heading">Create</h4>
+          <div class="vertical_tab_mobile_info">
+            <p>
+              We will be the extended L&D branch of your company not just a company you have outsourced content development to. That means, we have your best interests in mind. We don’t go about transforming each and every piece of content.
+              <br><br>
+              Our process starts with a visit from our Learning doctors:
+              <br><br>
+              a. <span style="font-weight:bold;">Organizational perspective</span>: They collaborate with business heads to understand the mission & targets of the organization and diagnose the  skill gaps.
+              <br><br>
+              b. <span style="font-weight:bold;">Employee perspective</span>: Employees are the key to our process. The learning doctors conduct surveys, focussed Group Discussions & interviews to:
+              <br><br>
+              Understand challenges with the current learning systems <br>
+              Understand the mode of learning effective for them <br>
+              Diagnose the learning culture
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container video_tab">
+        <h3 style="font-weight:bold;">Our content capabilities</h3>
+        <ul>
+          <li class="vlinks active" onclick="show_content_vid(this, 'live')">Live action video</li>
+          <li class="vlinks" onclick="show_content_vid(this, 'animation')">Animation</li>
+          <li class="vlinks" onclick="show_content_vid(this, 'screen')">Screen Simulations</li>
+          <li class="vlinks" onclick="show_content_vid(this, 'arvr')">AR/VR</li>
+          <li class="vlinks" onclick="show_content_vid(this, 'scorm')">SCORM</li>
+        </ul>
+        <div class="row" style="padding-top:10%;" id="vid_content">
+          <div class="col-md-5">
+            <h3>Engage with Video!</h3>
+            <p class="video_tab_info">Be it indoor or an outdoor video, talking head or conversation, whatever your requirement is we have the studio and equipment to do it.</p>
+          </div>
+          <div class="col-md-7">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_6-XjSvbJsE"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container upskilly_adv">
+        <h3 style="font-weight:bold;">The Upskilly Advantage</h3>
+        <div style="padding-top:5%;" class="row">
+          <div class="col-md-6 col-sm-12">
+            <img class="adv_images" src="/images/trophy.png" alt="">
+            <p class="upskilly_adv_header">Mobile learning</p>
+            <p class="upskilly_adv_info">We have expertise in creating mobile-based content. We know what length of videos work, and how to seamlessly blend tests within the videos.</p>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <img class="adv_images" src="/images/trophy.png" alt="">
+            <p class="upskilly_adv_header">Gamified learning</p>
+            <p class="upskilly_adv_info">With in-built assessments, rewards we can develop content for gamified learning platforms. With our learning paths, be assured that your employees gets the shortest path to mastery.</p>
+          </div>
+        </div>
+        <div style="padding-top:5%;" class="row">
+          <div class="col-md-6 col-sm-12">
+            <img class="adv_images" src="/images/trophy.png" alt="">
+            <p class="upskilly_adv_header">Bite-sized learning</p>
+            <p class="upskilly_adv_info">Large concepts are broken down and explained in small modules such that learners consume it anywhere, anytime.</p>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <img class="adv_images" src="/images/trophy.png" alt="">
+            <p class="upskilly_adv_header">Translation & localization</p>
+            <p class="upskilly_adv_info">We have resources in place to translate content into top Indian languages keeping the cultural differences in mind.</p>
+          </div>
+        </div>
+        <div style="padding-top:5%;" class="row">
+          <div class="col-md-6 col-sm-12">
+            <img class="adv_images" src="/images/trophy.png" alt="">
+            <p class="upskilly_adv_header">Learn with the best</p>
+            <p class="upskilly_adv_info">We are pioneers in training. Our content is consumed by 6 lakh+ people annually.</p>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <img class="adv_images" src="/images/trophy.png" alt="">
+            <p class="upskilly_adv_header">The most cost-effective solution</p>
+            <p class="upskilly_adv_info">Develop your content solutions  in the most economical way!</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="padding:6%;">
+        <div class="row">
+          <div class="col-md-8 col-sm-12" style="padding-left:17%;">
+            <h2 style="color:rgba(108, 191, 124, 1.0);">Want to build a continuous learning culture?</h2>
+            <h2>Just get in touch</h2>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <button class="btn btn-default letsdoit" data-toggle="modal" data-target="#myModal"><span class="letsdoit_text">Yes, let’s do this</span></button>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container foot">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <img id="logo_white" src="/images/logo_white.svg" alt="white logo">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <h4>Solutions</h4>
+              <hr>
+              <a href=""><p class="subhead">Sales Capability Development</p></a>
+              <a href=""><p class="subhead">Content Development</p></a>
+              <br>
+              <h4>Platforms</h4>
+              <hr>
+              <a href=""><p class="subhead">ATOM - Mobile First LMS</p></a>
+              <a href=""><p class="subhead">AIRA</p></a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <h4>Company</h4>
+              <hr>
+              <a href=""><p class="subhead">About</p></a>
+              <a href=""><p class="subhead">Our Work</p></a>
+              <a href=""><p class="subhead">Contact Us</p></a>
+              <a href=""><p class="subhead">Privacy</p></a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <h4>Connect</h4>
+              <hr>
+              <a href=""><i class="fab fa-twitter-square icon"></i>
+                &nbsp;&nbsp;
+                <a href=""><i class="fab fa-linkedin icon"></i></a>
+                &nbsp;&nbsp;
+                <a href=""><i class="fab fa-facebook-square icon"></i></a>
+              </div>
+            </div>
+            <div class="text-center copyright">
+              Copyright Upskilly LLC Pvt. Ltd. All rights reserved
+            </div>
+          </div>
+        </footer>
+        <script>
+
+        function toggle(evt, short, long) {
+          $('.trio_li').removeClass('active');
+          evt.parentNode.classList.add('active');
+          var sh = document.getElementsByClassName('shorts');
+          var lo = document.getElementsByClassName('longs');
+          for(var i = 0; i < lo.length; i++) {
+            lo[i].style.display = "none";
+          }
+          for(var i = 0; i < sh.length; i++) {
+            sh[i].style.display = "block";
+          }
+          document.getElementById(short).style.display = "none"
+          document.getElementById(long).style.display = "block";
+        }
+
+        function show_content_ht(evt, name) {
+          var v = document.getElementById("ht_content");
+          var t = document.getElementsByClassName("ht_links");
+          for(var i = 0; i < t.length; i++) {
+            t[i].className = t[i].className.replace("active", "");
+          }
+          evt.className += " active";
+          if(name == "content") {
+            v.innerHTML = `
+            <div class="col-md-5" style="padding-top:5%;">
+            <div style="text-decoration:line-through;color: #ff1a1a;">
+            <h3 style="color:rgba(0,0,0,0.50);">Content outsourcing!</h3>
+            </div>
+            <h3>Learning partners!</h3>
+            <p class="horizontal_tab_info">
+            Our secret ingredient to preparing awesome content: You!
+            <br><br>
+            Working with you, with the help of our MAGICal process, we transform your legacy content into your preferred format.
+            </p>
+            <br>
+            <button class="btn btn-success horizontal_tab_git">Get in touch</button>
+            </div>
+            <div class="col-md-7 hide_image">
+            <img width="100%" style="margin-top:2%;margin-left:29%;" src="/images/content_1_copy.png" alt="">
+            </div>
+            `;
+          }
+          else if(name == "off") {
+            v.innerHTML = `
+            <div class="col-md-5" style="padding-top:5%;">
+            <h3>Expert-developed, ready to deploy courses that are not a snooze-fest!</h3>
+            <p class="horizontal_tab_info">
+            Content that is trusted by 6+ lakh learners annually!
+            <br><br>
+            Our off-the shelf content is constantly updated, available in all top Indian languages and is engaging.
+            </p>
+            </div>
+            <div class="col-md-7 hide_image">
+            <img width="100%" style="margin-top:1%;margin-left:29%;" src="/images/off_the_libraries.png" alt="">
+            </div>
+            `;
+          }
+          else if(name == "direct") {
+            v.innerHTML = `
+            <div class="col-md-5" style="padding-top:5%;">
+            <h3>Whatever your content need is, we have the solution!</h3>
+            <p class="horizontal_tab_info">
+            Use our wide ranging content development expertise, from voice to video to AR/VR to produce a perfect piece of content for you.
+            </p>
+            <br>
+            <button class="btn btn-success horizontal_tab_git">Get in touch</button>
+            </div>
+            <div class="col-md-7 hide_image">
+            <img width="100%" style="margin-top:1%;margin-left:29%;" src="/images/fitting_solutions.png" alt="">
+            </div>
+            `;
+          }
+        }
+
+        function show_content_vid(evt, name) {
+          var v = document.getElementById("vid_content");
+          var t = document.getElementsByClassName("vlinks");
+          for(var i = 0; i < t.length; i++) {
+            t[i].className = t[i].className.replace("active","");
+          }
+          evt.className += " active";
+          if(name == "live") {
+            v.innerHTML = `
+            <div class="col-md-5">
+            <h3>Engage with Video!</h3>
+            <p class="video_tab_info">Be it indoor or an outdoor video, talking head or conversation, whatever your requirement is we have the studio and equipment to do it.</p>
+            </div>
+            <div class="col-md-7">
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_6-XjSvbJsE"></iframe>
+            </div>
+            </div>
+            `;
+          }
+          else if(name == "animation") {
+            v.innerHTML = `
+            <div class="col-md-5">
+            <h3>Bring content to life!</h3>
+            <p class="video_tab_info">Use our creative animation team, with capabilities of developing 2D & 3D motion graphics, to create engaging videos for your team. Perfect for Scenario-based modules.</p>
+            </div>
+            <div class="col-md-7">
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LPY4u9Gx-xM"></iframe>
+            </div>
+            </div>
+            `;
+          }
+          else if(name == "screen") {
+            v.innerHTML = `
+            <div class="col-md-5">
+            <h3>Process explanations made easy!</h3>
+            <p class="video_tab_info">Use our screen simulation capabilities teach your employees how to use a tool or how to operate a software.</p>
+            </div>
+            <div class="col-md-7">
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9O5PhuW927w"></iframe>
+            </div>
+            </div>
+            `;
+          }
+          else if(name == "arvr") {
+            v.innerHTML = `
+            <div class="col-md-5">
+            <h3>A complete experience!</h3>
+            <p class="video_tab_info">Create immersive learning experiences for your employees using our AR & VR capabilities. Best suited for modules within manufacturing industry.</p>
+            </div>
+            <div class="col-md-7">
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/e7sw5xA066Y"></iframe>
+            </div>
+            </div>
+            `;
+          }
+          else if(name == "scorm") {
+            v.innerHTML = `
+            <div class="col-md-5">
+            <h3>Interactivity at the fore-front!</h3>
+            <p class="video_tab_info">Create a highly interactive and adaptive learning modules using SCORM techniques.</p>
+            </div>
+            <div class="col-md-7">
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HxVLdhm2B6Y"></iframe>
+            </div>
+            </div>
+            `;
+          }
+        }
+
+        function show_content(evt, name) {
+          var v = document.getElementById("side_content");
+          var t = document.getElementsByClassName("links");
+
+          for(var i = 0; i < t.length; i++) {
+            t[i].className = t[i].className.replace("active","");
+          }
+          evt.className += " active";
+          if(name == "meet") {
+            v.innerHTML = `We will be the extended L&D branch of your company not just a company you have outsourced content development to. That means, we have your best interests in mind. We don’t go about transforming each and every piece of content.
+            <br><br>
+            Our process starts with a visit from our Learning doctors:
+            <br><br>
+            a. <span style="font-weight:bold;">Organizational perspective</span>: They collaborate with business heads to understand the mission & targets of the organization and diagnose the  skill gaps.
+            <br><br>
+            b. <span style="font-weight:bold;">Employee perspective</span>: Employees are the key to our process. The learning doctors conduct surveys, focussed Group Discussions & interviews to:
+            <br><br>
+            Understand challenges with the current learning systems <br>
+            Understand the mode of learning effective for them <br>
+            Diagnose the learning culture`;
+          }
+          else if(name == "audit") {
+            v.innerHTML = `Our learning doctors will audit the organizational learning systems, content and its effectiveness.
+            <br><br />
+            We align the business targets with your learning systems and then give you a ‘Capability Health Report.’
+            <br><br />
+            The Capability health report will identify the content gaps and also give you a picture of what needs to be done and its effect on the bottom line`;
+          }
+          else if(name == "gather") {
+            v.innerHTML = `
+            This is where we tailor our solution for your organization. There are two major ideas that our learning doctors are going to discuss with you:
+            <br /><br />
+            a. Content <br />
+            b. Format <br />
+            <br /><br />
+            Using the results from the capability health report, we discuss with you on the content that we think would further help your employees and also the format we think would be most effective.
+            <br /> <br />
+            At the end of this phase, we would define the project scope and timelines.
+            `;
+          }
+          else if(name == "ideate") {
+            v.innerHTML = `
+            Our learning doctors come back with the project scope and brief our content development team about the project.
+            <br /><br />
+            The team starts putting the ideas together then the storyboarding begins and at the end of the phase, we come up with possible prototypes and a few sample content pieces. The learning doctors review this, finalize the prototypes to be presented to you, the client and then take your feedback.
+            `;
+          }
+          else if(name == "create") {
+            v.innerHTML = `
+            The project management team takes over and ensures that the entire assignment is put up on a speed track mode. Based on your requirement, we build your solution, incorporating all the elements into it using the relevant software.
+            <br /><br />
+            All the assignments are done, delivered according to your LMS or web standards.
+            `;
+          }
+        }
+        </script>
+        <script>
+        var bool = 1;
+        function openNav() {
+          var white_togg = document.getElementById("white_toggle");
+          console.log(bool);
+          if(bool == 1) {
+            white_togg.classList.add("active");
+            for(var i = 0; i < white_togg.childNodes.length; i++) {
+              if(white_togg.childNodes[i].className == "icon-bar") {
+                white_togg.childNodes[i].style = "background-color: #888;";
+              }
+            }
+            document.getElementById("mySidenav").classList.add("active");
+            $('#mySidenav').removeClass('animated fadeOutRight');
+            $('#mySidenav').addClass('animated fadeInRight');
+            bool = 0;
+          }
+          else {
+            white_togg.classList.remove("active");
+            document.getElementById("mySidenav").classList.remove("active");
+            for(var i = 0; i < white_togg.childNodes.length; i++) {
+              if(white_togg.childNodes[i].className == "icon-bar") {
+                white_togg.childNodes[i].style = "background-color: white;";
+              }
+            }
+            $('#mySidenav').removeClass('animated fadeInRight');
+            $('#mySidenav').addClass('animated fadeOutRight');
+            bool = 1;
+          }
+        }
+
+        $(function() {
+          var header = $(".content");
+          $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+
+            if(scroll >= 100) {
+              $(".navbar_trans").hide();
+              $(".navbar_white").show();
+            }
+            else {
+              $(".navbar_trans").show();
+              $(".navbar_white").hide();
+            }
+          });
+        });
+        </script>
+      </body>
+      </html>
