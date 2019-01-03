@@ -318,8 +318,8 @@ transition: 0.2s;
   }
 
   .maps .gmap iframe {
-    width: 280px;
-    height: 220px;
+    width: 300px;
+    height: 250px;
   }
 }
 
