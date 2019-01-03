@@ -14,7 +14,52 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </head>
   <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="#">Home</a>
+      <p href="#" class="headings">SOLUTIONS</p>
+      <a href="#">Sales Capability Development</a>
+      <a href="#">Content Development</a>
+      <p class="headings">PLATFROMS</p>
+      <a href="#">ATOM</a>
+      <p class="headings">COMPANY</p>
+      <a href="#">About</a>
+      <a href="#">Contact Us</a>
+      <!-- <button type="button" name="button" class="btn btn-default nav_git" data-toggle="modal" data-target="#myModal">Get in touch</button> -->
+    </div>
+
     <div class="content">
+      <div class="navbar_trans">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" id="white_toggle" onclick="openNav('w')" data-target="#myNavbar" class="navbar-toggle" data-toggle="collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" id="navbar-brand" href="#">
+                <img src="/images/logo_white.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="navbar_white">
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" id="black_toggle" onclick="openNav('b')" data-target="#myNavbar" class="navbar-toggle" data-toggle="collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img src="/images/logo_black.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
       <div class="contentData container">
         <div class="subnavbar">
           <p style="display:inline-block;padding-left:1%;">Sales Capability Development Program</p>
@@ -273,9 +318,9 @@
 
     <div style="padding:6%;">
       <div class="row">
-        <div class="col-md-8 col-sm-12 bottom-up">
-          <h2 class="bottom" style="color:rgba(108, 191, 124, 1.0);">Wanna give your revenue a boost?</h2>
-          <h2 class="bottom">Just get in touch</h2>
+        <div class="col-md-8 col-sm-12 pad-left-17 getintext">
+          <h2 class="t1" style="color:rgba(108, 191, 124, 1.0);font-weight:600;">Wanna give your revenue a boost?</h2>
+          <h2 class="t2" style="font-weight:600;">Just get in touch</h2>
         </div>
         <div class="col-md-4 col-sm-12">
           <button class="btn btn-default letsdoit" data-toggle="modal" data-target="#myModal"><span class="letsdoit_text">Yes, let’s do this</span></button>
@@ -323,6 +368,63 @@
           </div>
         </div>
       </footer>
+      <script>
+      var bool = 1;
+      function openNav(c) {
+        var white_togg = document.getElementById("white_toggle");
+        var black_toggle = document.getElementById("black_toggle");
+        if(c == "b") {
+          white_togg = black_toggle;
+        }
+        console.log(bool);
+        if(bool == 1) {
+          white_togg.classList.add("active");
+          for(var i = 0; i < white_togg.childNodes.length; i++) {
+            if(white_togg.childNodes[i].className == "icon-bar") {
+              white_togg.childNodes[i].style = "background-color: #888;";
+            }
+          }
+          document.getElementById("mySidenav").classList.add("active");
+          $('#mySidenav').removeClass('animated fadeOutRight');
+          $('#mySidenav').addClass('animated fadeInRight');
+          $('#navbar-brand').addClass('hideit');
+          bool = 0;
+        }
+        else {
+          white_togg.classList.remove("active");
+          document.getElementById("mySidenav").classList.remove("active");
+          for(var i = 0; i < white_togg.childNodes.length; i++) {
+            if(white_togg.childNodes[i].className == "icon-bar") {
+              if(c == "w") {
+                white_togg.childNodes[i].style = "background-color: white;";
+              }
+              else {
+                white_togg.childNodes[i].style = "background-color: #888;";
+              }
+            }
+          }
+          $('#mySidenav').removeClass('animated fadeInRight');
+          $('#mySidenav').addClass('animated fadeOutRight');
+          $('#navbar-brand').removeClass('hideit');
+          bool = 1;
+        }
+      }
 
+      $(function() {
+        var header = $(".content");
+        $(window).scroll(function() {
+          var scroll = $(window).scrollTop();
+
+          if(scroll >= 100) {
+            $(".navbar_trans").hide();
+            $(".navbar_white").show();
+          }
+          else {
+            $(".navbar_trans").show();
+            $(".navbar_white").hide();
+          }
+        });
+      });
+      </script>
   </body>
 </html>

@@ -4,6 +4,224 @@
   }
 }
 
+html,body
+{
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+-webkit-transform-origin: 10% 10%;
+-ms-transform-origin: 10% 10%;
+transform-origin: 10% 10%;
+transition: 0.2s;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+opacity: 0;
+filter: alpha(opacity=0);
+transition: 0.2s;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+-webkit-transform: rotate(-45deg);
+-ms-transform: rotate(-45deg);
+transform: rotate(-45deg);
+-webkit-transform-origin: 10% 90%;
+-ms-transform-origin: 10% 90%;
+transform-origin: 10% 90%;
+transition: 0.2s;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(1) {
+transition: 0.2s;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(2) {
+transition: 0.2s;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(3) {
+transition: 0.2s;
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    border-radius: 0px;
+  }
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,.navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in {
+    display:block !important;
+  }
+}
+
+.navbar {
+  min-height: 55px;
+}
+
+.navbar-inverse {
+  background: transparent;
+  border-color: transparent;
+}
+
+.navbar-toggle:hover {
+    background-color: transparent !important;
+}
+
+.navbar-inverse .navbar-toggle {
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle:focus {
+	background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus {
+	background-color: transparent;
+}
+
+.navbar_white {
+  display: none;
+}
+
+.navbar-brand {
+  padding: 10px 15px;
+}
+
+@media (min-width: 501px) {
+  #mySidenav {
+    padding-top: 4%;
+  }
+  #navbar-brand.hideit {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  #mySidenav {
+    padding-top: 15%;
+  }
+  #navbar-brand.hideit {
+    display: none;
+  }
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 0%;
+}
+
+@media (min-width: 501px) {
+	.sidenav.active {
+		width: 26%;
+	}
+}
+
+@media (max-width: 500px) {
+	.sidenav.active {
+    /* padding-top: 5%; */
+		width: 100%;
+	}
+}
+
+.sidenav a {
+    padding: 4% 7%;
+    text-decoration: none;
+    font-family: "Cabin", Helvetica, Arial, serif;
+    font-size: 115%;
+    color: #000;
+    display: block;
+
+}
+
+.nav_git {
+  width: 100%;
+  border-radius: 0px;
+  background-color: rgba(108, 191, 124, 1.0);
+  color: white;
+  font-size: 115%;
+  margin-top: 5%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+#mySidenav {
+  animation-duration: 0.2s;
+}
+
+.sidenav p {
+    padding-top: 5%;
+    padding-bottom: 3%;
+    padding-left: 7%;
+    font-family: "Cabin", Helvetica, Arial, serif;
+    font-size: 115%;
+    color: rgba(0, 0, 0, 0.38);
+    display: block;
+}
+
+.sidenav .headings {
+  font-size: 90%;
+}
+
+.sidenav .headings:hover {
+  background-color: white;
+  cursor: default;
+}
+
+.sidenav a:hover {
+  color: white;
+  background-color: rgba(108, 191, 124, 1.0);
+}
+
 .content {
   background-image: url("/images/handshake.png");
   position: relative;
@@ -51,9 +269,26 @@
     text-align: center !important;
     padding: 0% 5%;
   }
+
+  .getintext {
+    text-align: center;
+    padding: 0% 15%;
+  }
+
+  .getintext .t1 {
+    font-size: 140%;
+  }
+
+  .getintext .t2 {
+    font-size: 140%;
+  }
 }
 
 @media (min-width: 501px) {
+  .pad-left-17 {
+    padding-left:17%;
+  }
+
   .subnavbar {
     display: block;
   }
@@ -293,10 +528,23 @@
 .letsdoit {
   margin-top: 10%;
   margin-bottom: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 45%;
   background-color: rgba(108, 191, 124, 1.0);
   color: white;
   font-family: "Cabin", Helvetica, Arial, serif;
   border-radius: 2px;
+}
+
+.letsdoit:hover {
+  background-color: rgba(108, 191, 124, 1.0);
+  color: white;
+}
+
+.letsdoit_text {
+  font-size: 135%;
+  margin:auto;
 }
 
 @media (min-width: 501px) {
@@ -310,7 +558,7 @@
 
 @media (max-width: 500px) {
   .letsdoit {
-    margin-left: 23.5%;
+    margin-left: 27%;
   }
   .bottom {
     font-size: 140%;
