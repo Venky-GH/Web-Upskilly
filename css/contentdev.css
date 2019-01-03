@@ -77,7 +77,7 @@ transition: 0.2s;
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  .collapse.in{
+  .collapse.in {
     display:block !important;
   }
 }
