@@ -136,7 +136,7 @@ body {
 
 @media (max-width: 500px) {
   #mySidenav {
-    padding-top: 12%;
+    padding-top: 15%;
   }
   #navbar-brand.hideit {
     display: none;
@@ -483,6 +483,8 @@ hr {
   }
   .horizontal_tab ul {
     overflow-x: auto;
+    overflow-y: hidden;
+    line-height: 2.5;
     white-space: nowrap;
     margin-left: -12%;
   }
@@ -663,10 +665,11 @@ hr {
 
   .video_tab ul {
     list-style-type: none;
+    line-height: 3;
     margin-top: 10%;
     margin-left: -12%;
     overflow-x: auto;
-    overflow-y: auto;
+    overflow-y: hidden;
     white-space: nowrap;
   }
 

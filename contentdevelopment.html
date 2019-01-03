@@ -40,7 +40,7 @@
       <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
-            <button type="button" id="white_toggle" onclick="openNav()" data-target="#myNavbar" class="navbar-toggle" data-toggle="collapse">
+            <button type="button" id="white_toggle" onclick="openNav('w')" data-target="#myNavbar" class="navbar-toggle" data-toggle="collapse">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -56,7 +56,7 @@
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse">
+            <button type="button" id="black_toggle" onclick="openNav('b')" data-target="#myNavbar" class="navbar-toggle" data-toggle="collapse">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -718,8 +718,12 @@
         </script>
         <script>
         var bool = 1;
-        function openNav() {
+        function openNav(c) {
           var white_togg = document.getElementById("white_toggle");
+          var black_toggle = document.getElementById("black_toggle");
+          if(c == "b") {
+            white_togg = black_toggle;
+          }
           console.log(bool);
           if(bool == 1) {
             white_togg.classList.add("active");
@@ -739,7 +743,12 @@
             document.getElementById("mySidenav").classList.remove("active");
             for(var i = 0; i < white_togg.childNodes.length; i++) {
               if(white_togg.childNodes[i].className == "icon-bar") {
-                white_togg.childNodes[i].style = "background-color: white;";
+                if(c == "w") {
+                  white_togg.childNodes[i].style = "background-color: white;";
+                }
+                else {
+                  white_togg.childNodes[i].style = "background-color: #888;";
+                }
               }
             }
             $('#mySidenav').removeClass('animated fadeInRight');
