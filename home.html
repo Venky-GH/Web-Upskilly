@@ -26,7 +26,7 @@
     <a href="#">Contact Us</a>
     <button type="button" name="button" class="btn btn-default nav_git" data-toggle="modal" data-target="#myModal">Get in touch</button>
   </div>
-  <nav class="navbar navbar-default navheight">
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header navhead">
         <a class="navbar-brand" href="#"><img src="/images/logo_black.svg" alt=""></a>
@@ -38,158 +38,207 @@
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li class="navbarElements"><a href="#">Home</a></li>
-          <li class="navbarElements"><a href="#">Solutions</a></li>
-          <li class="navbarElements"><a href="#">Platforms</a></li>
-          <li class="navbarElements"><a href="#">Company</a></li>
-          <li class="navbarElements"><a href="#"><button class="btn btn-default getintouch" data-toggle="modal" data-target="#myModal">Get in touch</button></a></li>
+          <li class="navbarElements" onmouseover="vanish()"><a href="#">Home</a></li>
+          <li class="navbarElements" onmouseover="show_layovers('solutions')"><a href="#">Solutions</a></li>
+          <li class="navbarElements" onmouseover="show_layovers('platforms')"><a href="#">Platforms</a></li>
+          <li class="navbarElements" onmouseover="show_layovers('company')"><a href="#">Company</a></li>
+          <li class="navbarElements" onmouseover="vanish()"><a href="#"><button class="btn btn-default getintouch" data-toggle="modal" data-target="#myModal">Get in touch</button></a></li>
         </ul>
       </div>
     </div>
+
+    <div id="solutions" class="layovers" style="display:none;">
+      <div class="container">
+        <ul>
+          <li class="heading">Solutions</li>
+          <a href="#"><li>Sales Capability Development  <i class="fas fa-arrow-right"></i></li></a>
+          <a href="#"><li>Content Development  <i class="fas fa-arrow-right"></i></li></a>
+        </ul>
+      </div>
+    </div>
+
+    <div id="platforms" class="layovers" style="display:none;">
+      <div class="container">
+        <ul>
+          <li class="heading">Platforms</li>
+          <a href="#"><li>Upskilly ATOM  <i class="fas fa-arrow-right"></i></li></a>
+          <a href="#"><li>Upskilly AIRA  <i class="fas fa-arrow-right"></i></li></a>
+        </ul>
+      </div>
+    </div>
+
+    <div id="company" class="layovers" style="display:none;">
+      <div class="container">
+        <ul>
+          <li class="heading">Company</li>
+          <a href="#"><li>About  <i class="fas fa-arrow-right"></i></li></a>
+          <a href="#"><li>Our Work  <i class="fas fa-arrow-right"></i></li></a>
+          <a href="#"><li>Contact Us  <i class="fas fa-arrow-right"></i></li></a>
+        </ul>
+      </div>
+    </div>
+
   </nav>
 
-    <div class="graph">
-      <div class="row">
-        <div class="col-md-6 col-sm-12 graphpe">
-          <p class="graph_header" style="font-weight:600;line-height:150%;">Boost your organizational growth by developing your employee’s capabilities</p>
-          <br>
-          <p class="graph_para" style="text-align:justify;">Through a right combination of technology, content and training expertise we enable continuous learning programs at organizations that enable capabilities of employees.</p>
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <img style="margin-top:0%;" width="90%" class="image-fluid" src="/images/home_pic.png" alt="">
-        </div>
-      </div>
-    </div>
-    <div class="people">
-      <h3 style="padding-left:6%;">Capability development aids organizational growth</h3>
-      <div class="row" style="padding-top:5%;">
-        <div class="col-md-4 col-sm-12 text-center">
-          <span class="percent" style="padding-left: 30%;position:absolute;">50%</span>
-          <img src="/images/cc2.png" width="58%" alt="A">
-        </div>
-        <div class="col-md-4 col-sm-12 text-center">
-          <span class="percent" style="padding-left:28%;position:absolute;">43%</span>
-          <img src="/images/cc3.png" width="45%" alt="A">
-        </div>
-        <div class="col-md-4 col-sm-12 text-center">
-          <span style="padding-left: 3%;position:absolute;" class="percent">57%</span>
-          <img src="/images/cc1.png" style="padding-left:29%;" width="61.5%" alt="A">
-        </div>
-      </div>
-      <div class="quote">
-        <div class="bs-callout bs-callout-success">
-          “After serious problems in late 2009 led Toyota to recall more than 9 million vehicles worldwide, its leaders confessed that their quest to become the world’s largest automobile producer had compromised their devotion to learning.”
-        </div>
-      </div>
-      <div style="padding-top:7%;">
-        <h3 style="padding-left:7%;">What sort of learning suits today’s organizations?</h3>
-        <div class="row" style="padding-top:1%;">
-          <div class="col-md-6 col-sm-12">
-            <div style="padding-left: 15%;padding-right: 15%;padding-top:12%;">
-              <div class="bs-callout bs-callout-success">
-                “In the era of Intensifying competition, continuously shifting customer preferences and advancing technologies, the only way to survive is to be an “learning organization ”
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12" id="leaves">
-            <div class="text-center">
-              <img src="/images/triangle.svg" style="padding-top:-5%;" width="70%" alt="triangle">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div style="padding-left:7%;">
-        <h3>Continuous learning is the key to capability development</h3>
+
+
+
+
+  <div class="graph" onmouseover="vanish()">
+    <div class="row">
+      <div class="col-md-6 col-sm-12 graphpe">
+        <p class="graph_header" style="font-weight:600;line-height:150%;">Boost your organizational growth by developing your employee’s capabilities</p>
         <br>
-        <p style="font-size: 125%;color:rgba(33, 33, 33, 0.60)">See how we enable continuous learning at our organizations</p>
+        <p class="graph_para">Through a right combination of technology, content and training expertise we enable continuous learning programs at organizations that enable capabilities of employees.</p>
       </div>
-      <div style="padding-top:7%;">
-        <img class="leaves_1" style="padding-left:10%;" src="/images/leaves_text.png" width="90%" alt="Leaves">
-        <img class="leaves_2" style="padding-left:10%;" src="/images/leaves.svg" width="90%" alt="Leaves">
+      <div class="col-md-6 col-sm-12">
+        <img width="90%" class="image-fluid" src="/images/home_pic.png" alt="">
       </div>
-      <div style="padding-top:9%;">
-        <h3 style="padding-left:7%;">Our solutions to your challenges</h3>
-        <div class="row" style="padding-top:5%;">
-          <div class="col-md-6 col-sm-12 text-center">
-            <img src="/images/sol1.png" width="70%" alt="sol1">
+    </div>
+  </div>
+  <div class="people">
+    <h3>Capability development aids organizational growth</h3>
+    <div class="row" style="padding-top:5%;">
+      <div class="col-md-4 col-sm-12 text-center peeps">
+        <span class="percent" style="padding-left: 30%;position:absolute;">50%</span>
+        <span class="text_1">higher net sales per person</span>
+        <img class="image_1" src="/images/cc2.png" width="58%" alt="A">
+      </div>
+      <div class="col-md-4 col-sm-12 text-center peeps">
+        <span class="percent" style="padding-left:28%;position:absolute;">43%</span>
+        <span class="text_2">higher project-fulfillment ratios</span>
+        <img class="image_2" src="/images/cc3.png" width="45%" alt="A">
+      </div>
+      <div class="col-md-4 col-sm-12 text-center peeps">
+        <span style="padding-left: 3%;position:absolute;" class="percent">57%</span>
+        <span class="text_3">Lesser attrition rates</span>
+        <img src="/images/cc1.png" style="padding-left:29%;" width="61.5%" alt="A">
+      </div>
+    </div>
+    <div class="quote">
+      <div class="quote_1_web bs-callout bs-callout-success">
+        “After serious problems in late 2009 led Toyota to recall more than 9 million vehicles worldwide, its leaders confessed that their quest to become the world’s largest automobile producer had compromised their devotion to learning.”
+      </div>
+      <div class="quote_1_mobile">
+        “After serious problems in late 2009 led Toyota to recall more than 9 million vehicles worldwide, its leaders confessed that their quest to become the world’s largest automobile producer had compromised their devotion to learning.”
+      </div>
+    </div>
+    <div style="padding-top:7%;">
+      <h3 class="triangle_ques pad-left">What sort of learning suits today’s organizations?</h3>
+      <div class="row" style="padding-top:1%;">
+        <div class="col-md-6 col-sm-12">
+          <div class="triangle_text_1_web">
+            <div class="bs-callout bs-callout-success">
+              “In the era of Intensifying competition, continuously shifting customer preferences and advancing technologies, the only way to survive is to be an “learning organization ”
+            </div>
+            <p style="font-family: 'Cabin', Helvetica, Arial, serif;font-size: 125%;font-style:italic;padding-left:5%;">-HBR</p>
           </div>
-          <div class="col-md-6 col-sm-12 text-center">
-            <img src="/images/sol2.png" width="70%" alt="sol1">
+          <div class="triangle_text_1_mobile">
+            <p>
+              “In the era of Intensifying competition, continuously shifting customer preferences and advancing technologies, the only way to survive is to be an “learning organization ”
+            </p>
+            <p style="font-style:italic;">-HBR</p>
           </div>
         </div>
-      </div>
-      <div class="icons" style="padding-top:8%;">
-        <h3 style="text-align:center;">Organizations where we enabled continuous learning</h3>
-        <br><br><br>
-        <div class="row text-center" style="padding-left:6%">
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-1">
-            <img id="gsk" width="60%" src="/images/g94.png" alt="GSK">
-          </div>
-          <div class="col-md-1 ">
-          </div>
-          <div class="col-md-1">
-            <img id="nestle" width="90%" src="/images/Nestle.png" alt="Nestle">
-          </div>
-          <div class="col-md-1 ">
-          </div>
-          <div class="col-md-1 ">
-            <img width="120%" src="/images/oyo.png" alt="oyo">
-          </div>
-          <div class="col-md-1 ">
-          </div>
-          <div class="col-md-1">
-            <img width="150%" src="/images/vodafone.png" alt="vodafone">
-          </div>
-          <div class="col-md-1 ">
-          </div>
-          <div class="col-md-1">
-            <img width="80%" src="/images/aditya_Birla.png" alt="birla">
-          </div>
-        </div>
-        <br><br>
-        <div class="row text-center" style="padding-left:4%;">
-          <div class="col-md-1 ">
-          </div>
-          <div class="col-md-1 ">
-          </div>
-          <div class="col-md-1">
-            <img width="170%" src="/images/conduent.png" alt="conduent">
-          </div>
-          <div class="col-md-1 ">
-          </div>
-          <div class="col-md-1">
-            <img width="140%;" src="/images/wiley.png" alt="wiley">
-          </div>
-          <div class="col-md-1 ">
-          </div>
-          <div class="col-md-1">
-            <img width="80%;" src="/images/aig.png" alt="aig">
-          </div>
-          <div class="col-md-1 ">
-          </div>
-          <div class="col-md-1">
-            <img width="150%;" src="/images/mondelez.png" alt="mondelez">
-          </div>
-        </div>
-      </div>
-      <div class="icons_small text-center" style="padding-top:8%;">
-        <h3>Organizations where we enabled continuous learning</h3>
-        <img class="image-fluid" style="padding: 4% 8%;" src="/images/icons.png" alt="">
-      </div>
-      <div style="padding:6%;">
-        <div class="row">
-          <div class="col-md-8 col-sm-12" style="padding-left:17%;">
-            <h2 style="color:rgba(108, 191, 124, 1.0);">Want to build a continuous learning culture?</h2>
-            <h2>Just get in touch</h2>
-          </div>
-          <div class="col-md-4 col-sm-12">
-            <button class="btn btn-default letsdoit" data-toggle="modal" data-target="#myModal"><span class="letsdoit_text">Yes, let’s do this</span></button>
+        <div class="col-md-6 col-sm-12" id="leaves">
+          <div class="text-center">
+            <img src="/images/triangle.png" style="padding-top:-5%;" width="70%" alt="triangle">
           </div>
         </div>
       </div>
     </div>
+    <div class="leaves_info">
+      <h3>Continuous learning is the key to capability development</h3>
+      <br>
+      <p class="pad-left" style="font-size: 125%;color:rgba(33, 33, 33, 0.60)">See how we enable continuous learning at our organizations</p>
+    </div>
+    <div style="padding-top:5%;">
+      <img class="leaves_1" style="padding-left:0%;" src="/images/leaves_text.png" width="95%" alt="Leaves">
+      <img class="leaves_2" style="padding-left:10%;" src="/images/leaves.png" width="90%" alt="Leaves">
+    </div>
+    <div style="padding-top:9%;">
+      <h3 class="pad-left">Our solutions to your challenges</h3>
+      <div class="row cards" style="padding-top:5%;">
+        <div class="col-md-6 col-sm-12 text-center card">
+          <a href=""><img src="/images/sol1.png" width="70%" alt="sol1"></a>
+        </div>
+        <div class="col-md-6 col-sm-12 text-center card" style="padding-left: 0%;">
+          <a href=""><img src="/images/sol2.png" width="70%" alt="sol2"></a>
+        </div>
+      </div>
+    </div>
+    <div class="icons" style="padding-top:8%;">
+      <h3 style="text-align:center;">Organizations where we enabled continuous learning</h3>
+      <br><br><br>
+      <div class="row text-center" style="padding-left:6%">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-1">
+          <img id="gsk" width="60%" src="/images/g94.png" alt="GSK">
+        </div>
+        <div class="col-md-1 ">
+        </div>
+        <div class="col-md-1">
+          <img id="nestle" width="90%" src="/images/Nestle.png" alt="Nestle">
+        </div>
+        <div class="col-md-1 ">
+        </div>
+        <div class="col-md-1 ">
+          <img width="120%" src="/images/oyo.png" alt="oyo">
+        </div>
+        <div class="col-md-1 ">
+        </div>
+        <div class="col-md-1">
+          <img width="150%" src="/images/vodafone.png" alt="vodafone">
+        </div>
+        <div class="col-md-1 ">
+        </div>
+        <div class="col-md-1">
+          <img width="80%" src="/images/aditya_Birla.png" alt="birla">
+        </div>
+      </div>
+      <br><br>
+      <div class="row text-center" style="padding-left:4%;">
+        <div class="col-md-1 ">
+        </div>
+        <div class="col-md-1 ">
+        </div>
+        <div class="col-md-1">
+          <img width="170%" src="/images/conduent.png" alt="conduent">
+        </div>
+        <div class="col-md-1 ">
+        </div>
+        <div class="col-md-1">
+          <img width="140%;" src="/images/wiley.png" alt="wiley">
+        </div>
+        <div class="col-md-1 ">
+        </div>
+        <div class="col-md-1">
+          <img width="80%;" src="/images/aig.png" alt="aig">
+        </div>
+        <div class="col-md-1 ">
+        </div>
+        <div class="col-md-1">
+          <img width="150%;" src="/images/mondelez.png" alt="mondelez">
+        </div>
+      </div>
+    </div>
+    <div class="icons_small text-center" style="padding-top:10%;">
+      <h3>Organizations where we enabled continuous learning</h3>
+      <img class="image-fluid-small" style="padding: 8% 8%;" src="/images/icons.png" alt="">
+    </div>
+    <div style="padding:6%;">
+      <div class="row">
+        <div class="col-md-8 col-sm-12 pad-left-17 getintext">
+          <h2 class="t1" style="color:rgba(108, 191, 124, 1.0);font-weight:600;">Want to build a continuous learning culture?</h2>
+          <h2 class="t2" style="font-weight:600;">Just get in touch</h2>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <button class="btn btn-default letsdoit" data-toggle="modal" data-target="#myModal"><span class="letsdoit_text">Yes, let’s do this</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
   <footer class="footer">
     <div class="container foot">
       <div class="row">
@@ -208,30 +257,30 @@
           <a href=""><p class="subhead">AIRA</p></a>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
-    <h4>Company</h4>
-    <hr>
-    <a href=""><p class="subhead">About</p></a>
-    <a href=""><p class="subhead">Our Work</p></a>
-    <a href=""><p class="subhead">Contact Us</p></a>
-    <a href=""><p class="subhead">Privacy</p></a>
-  </div>
-  <div class="col-lg-3 col-md-6 col-sm-12">
-    <h4>Connect</h4>
-    <hr>
-    <a href=""><i class="fab fa-twitter-square icon"></i>
-      &nbsp;&nbsp;
-      <a href=""><i class="fab fa-linkedin icon"></i></a>
-      &nbsp;&nbsp;
-      <a href=""><i class="fab fa-facebook-square icon"></i></a>
-    </div>
-  </div>
-  <div class="text-center copyright">
-    Copyright Upskilly LLC Pvt. Ltd. All rights reserved
-  </div>
-</div>
-</footer>
-<div id="myModal" class="modal fade" role="dialog">
-<div class="modal-dialog">
+          <h4>Company</h4>
+          <hr>
+          <a href=""><p class="subhead">About</p></a>
+          <a href=""><p class="subhead">Our Work</p></a>
+          <a href=""><p class="subhead">Contact Us</p></a>
+          <a href=""><p class="subhead">Privacy</p></a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <h4>Connect</h4>
+          <hr>
+          <a href=""><i class="fab fa-twitter-square icon"></i>
+            &nbsp;&nbsp;
+            <a href=""><i class="fab fa-linkedin icon"></i></a>
+            &nbsp;&nbsp;
+            <a href=""><i class="fab fa-facebook-square icon"></i></a>
+          </div>
+        </div>
+        <div class="text-center copyright">
+          Copyright Upskilly LLC Pvt. Ltd. All rights reserved
+        </div>
+      </div>
+    </footer>
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
 
         <!-- Modal content-->
         <div class="modal-content">
@@ -247,22 +296,22 @@
               </div>
               <div class="form-group">
                 <label for="company">COMPANY</label>
-      <input type="password" placeholder="e.g. ACME Corp." class="form-control" id="company">
-    </div>
-    <div class="form-group">
-      <label for="email">EMAIL ADDRESS</label>
-      <input type="email" class="form-control" placeholder="e.g. john@example.com" id="email">
-    </div>
-    <div class="form-group">
-      <label for="phone">PHONE (OPTIONAL)</label>
-      <input class="form-control" type="number" placeholder="e.g. 999 999 9999" id="phone">
-    </div>
-    <div class="form-group">
-      <label for="message">MESSAGE (OPTIONAL)</label>
-      <textarea class="form-control" rows="5" placeholder="Your message goes here ..." id="message"></textarea>
-    </div>
-    <div class="form_button">
-      <button type="submit" class="btn btn-success">Submit</button>
+                <input type="password" placeholder="e.g. ACME Corp." class="form-control" id="company">
+              </div>
+              <div class="form-group">
+                <label for="email">EMAIL ADDRESS</label>
+                <input type="email" class="form-control" placeholder="e.g. john@example.com" id="email">
+              </div>
+              <div class="form-group">
+                <label for="phone">PHONE (OPTIONAL)</label>
+                <input class="form-control" type="number" placeholder="e.g. 999 999 9999" id="phone">
+              </div>
+              <div class="form-group">
+                <label for="message">MESSAGE (OPTIONAL)</label>
+                <textarea class="form-control" rows="5" placeholder="Your message goes here ..." id="message"></textarea>
+              </div>
+              <div class="form_button">
+                <button type="submit" class="btn btn-success">Submit</button>
               </div>
             </form>
           </div>
@@ -271,6 +320,20 @@
       </div>
     </div>
     <script>
+
+    function show_layovers(getthis) {
+      vanish();
+      var v = "#" + getthis;
+      $(v).show();
+    }
+
+    function vanish() {
+      var v = document.getElementsByClassName("layovers");
+      for(var i = 0; i < v.length; i++) {
+        v[i].style.display = "none";
+      }
+    }
+
     function openNav() {
       document.getElementById("mySidenav").style.width = "100%";
       $('#mySidenav').removeClass('animated fadeOutUp');

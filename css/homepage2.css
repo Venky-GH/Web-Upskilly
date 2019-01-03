@@ -39,46 +39,6 @@ body {
     }
 }
 
-
-
-.layovers {
-  font-family: "Cabin", Helvetica, Arial, serif;
-  padding: 5% 0%;
-  width: 100%;
-  background-color: white;
-  z-index: 5;
-  margin-top: 0.05%;
-  position:absolute;
-}
-
-.layovers ul {
-  list-style-type: none;
-  margin-left: -3%;
-}
-
-.layovers li {
-  display: inline;
-  font-size: 110%;
-}
-
-.layovers a {
-  color: black;
-  padding: 0% 5%;
-}
-
-.layovers i {
-  font-size: 80%;
-}
-
-.layovers .heading {
-  margin-right: 15%;
-  padding-bottom: 0.5%;
-  font-size: 150%;
-  color: rgba(0,0,0,0.6);
-  border-bottom: 2px solid rgba(108, 191, 124, 1.0);
-  border-bottom-width: medium;
-}
-
 @media (min-width: 501px) {
   .graph_header {
     font-size: 200%;
@@ -93,215 +53,27 @@ body {
     font-size: 150%;
   }
   .graph_para {
-    font-size: 108%;
+    font-size: 100%;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .graph {
-    background-image: url("/images/bg_mob.png");
+    background-image: url("bg_mob.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
     height: auto;
   }
-  .graphpe {
-    padding-top: 19%;
-    text-align: center;
-    padding-right: 13%;
-  }
-
-  .graph img {
-    margin-top: 0%;
-  }
-
-  .people h3 {
-    padding-left: 7%;
-    font-weight: 600;
-    text-align: center;
-    padding-right: 7%;
-    font-size: 140%;
-    color: black;
-  }
-  .people .text_1 {
-    position: absolute;
-    padding-left: 42%;
-    padding-top: 25%;
-    padding-right: 10%;
-    font-size: 100%;
-    text-align: left;
-  }
-
-  .people .image_1 {
-    padding-right: 5%;
-  }
-
-  .people .text_2 {
-    position: absolute;
-    padding-left: 38%;
-    padding-right: 14%;
-    padding-top: 25%;
-    font-size: 110%;
-    text-align: left;
-  }
-
-  .people .image_2 {
-    padding-right: 5%;
-  }
-
-  .people .text_3 {
-    position: absolute;
-    padding-right: 53%;
-    padding-top: 25%;
-    font-size: 110%;
-    text-align: right;
-  }
-
-  .people .peeps {
-    padding-top: 10%;
-  }
-
-  .quote .quote_1_web {
-    display: none;
-  }
-
-  .quote .quote_1_mobile {
-    display: block;
-    text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 5%;
-    font-size: 120%;
-  }
-
-  .triangle_text_1_web {
-    display: none;
-  }
-
-  .triangle_text_1_mobile {
-    display: block;
-    font-size: 120%;
-    text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-
-  .triangle_ques {
-    padding-top: 10%;
-  }
-
-  #leaves {
-    padding-top: 5%;
-  }
-
-  .leaves_info {
-    padding-top: 15%;
-    text-align: center;
-  }
-
-  .leaves_info h3 {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-
-  .leaves_info p {
-    padding: 0% 10%;
-  }
-
-  .card {
-    padding-top: 5%;
-  }
-
-  .getintext {
-    text-align: center;
-    padding: 0% 15%;
-  }
-
-  .getintext .t1 {
-    font-size: 140%;
-  }
-
-  .getintext .t2 {
-    font-size: 140%;
-  }
 }
 
-@media (min-width: 501px) {
+@media (min-width: 601px) {
   .graph {
     background-image: url("background.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
     height: auto;
-  }
-
-  .graphpe {
-    padding-top: 10%;
-  }
-
-  .graph img {
-    margin-top: 8%;
-  }
-
-  .people h3 {
-    padding-left:12.7%;
-    font-weight: 600;
-    color: black;
-  }
-
-  .people .text_1 {
-    position:absolute;
-    padding-left: 45%;
-    padding-top:25%;
-    font-size: 130%;
-    text-align:left;
-  }
-
-  .people .text_2 {
-    position: absolute;
-    padding-left: 43%;
-    padding-top: 25%;
-    font-size: 130%;
-    text-align: left;
-  }
-
-  .people .text_3 {
-    position: absolute;
-    padding-right: 53%;
-    padding-top: 25%;
-    font-size: 130%;
-    text-align: right;
-  }
-
-  .quote .quote_1_web {
-    display: block;
-  }
-
-  .quote .quote_1_mobile {
-    display: none;
-  }
-
-  .pad-left {
-    padding-left: 12.8%;
-  }
-
-  .triangle_text_1_web {
-    display: block;
-    padding-left: 26.5%;
-    padding-right: 10%;
-    padding-top:12%;
-  }
-
-  .triangle_text_1_mobile {
-    display: none;
-  }
-
-  .cards {
-    padding-left:5.5%;
-  }
-
-  .pad-left-17 {
-    padding-left:17%;
   }
 }
 
@@ -325,17 +97,13 @@ hr {
 .graphpe {
   color: white;
   font-family: "Cabin", Helvetica, Arial, serif;
-  padding-left: 13.5%;
-  /* padding-right: 10%; */
+  padding-top: 6%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .image-fluid {
   max-width: 100%;
-  height: auto;
-}
-
-.image-fluid-small {
-  max-width: 90%;
   height: auto;
 }
 
@@ -354,8 +122,8 @@ hr {
 }
 
 .quote {
-  padding-left: 12.8%;
-  padding-right: 14%;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-top: 3%;
 }
 
@@ -378,7 +146,6 @@ hr {
   color: rgba(108, 191, 124, 1.0);
   z-index: -1;
   font-family: "Cabin", Helvetica, Arial, serif;
-  font-weight: 600;
 }
 
 @media (max-width: 500px) {
@@ -418,18 +185,10 @@ hr {
 .letsdoit {
   margin-top: 10%;
   margin-bottom: 5%;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  width: 45%;
   background-color: rgba(108, 191, 124, 1.0);
   color: white;
   font-family: "Cabin", Helvetica, Arial, serif;
   border-radius: 2px;
-}
-
-.letsdoit:hover {
-  background-color: rgba(108, 191, 124, 1.0);
-  color: white;
 }
 
 @media (min-width: 501px) {
@@ -440,12 +199,13 @@ hr {
 
 @media (max-width: 500px) {
   .letsdoit {
-    margin-left: 27%;
+    margin-left: 17%;
   }
 }
 
 .letsdoit_text {
-  font-size: 135%;
+  padding: 8%;
+  font-size: 120%;
   margin:auto;
 }
 
@@ -516,19 +276,18 @@ a:hover {
   margin-top: 0.5%;
 }
 
+.navheight {
+  height: 4%;
+}
+
 .getintouch {
   background-color: white;
-  margin-top: -4%;
+  margin-top: -2%;
   border-radius: 2px;
   width: 10em;
   font-family: "Cabin", Helvetica, Arial, serif;
 }
 
-.getintouch:hover {
-  background-color: rgba(108, 191, 124, 1.0);
-  color: white;
-  border-color: transparent;
-}
 
 .sidenav {
     height: 100%;
