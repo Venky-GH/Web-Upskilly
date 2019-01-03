@@ -271,6 +271,11 @@ transition: 0.2s;
 }
 
 @media (max-width:500px) {
+  .contentData {
+    padding-top: 28%;
+    padding-bottom: 28%;
+  }
+
   .contentData .letstalk {
     padding-left: 10%;
     padding-right: 10%;
