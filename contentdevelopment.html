@@ -22,7 +22,7 @@
   </script>
 </head>
 <body>
-  <div id="mySidenav" class="sidenav" style="padding-top:4%;">
+  <div id="mySidenav" class="sidenav">
     <a href="#">Home</a>
     <p href="#" class="headings">SOLUTIONS</p>
     <a href="#">Sales Capability Development</a>
@@ -45,7 +45,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" id="navbar-brand" href="#">
               <img src="/images/logo_white.svg" alt="">
             </a>
           </div>
@@ -108,7 +108,7 @@
         <div id="1_short" class="shorts" style="display:none;" onclick="toggle(this, '1_short','1_long')">
           <div class="trio_image_number">01</div>
           <div class="trio_image_text">THE LEARNERS</div>
-          <img width="120%" style="padding-top:65%;margin-left:-10%;" src="/images/1_bw.png" alt="">
+          <img width="120%" style="padding-top:65%;margin-left:-20%;" src="/images/1_bw.png" alt="">
         </div>
         <div id="1_long" class="longs">
           <p class="trio_message">3 reasons why your content need a re-look</p>
@@ -118,11 +118,11 @@
           <div class="row" style="margin-top:8%;">
             <div class="col-md-4 text-center">
               <img class="trio_icons" src="/images/clock.png" alt="">
-              <p style="padding-top:5%; font-size:130%;padding-left:2%;padding-right:2%;">Your employees now have an attention span lesser than that of a goldfish!</p>
+              <p class="trio_icons_text">Your employees now have an attention span lesser than that of a goldfish!</p>
             </div>
             <div class="col-md-4 text-center">
               <img class="trio_icons" src="/images/trophy.png" alt="">
-              <p style="padding-top:5%;font-size:130%;padding-left:2%;padding-right:2%;">Learners now want instant results with minimum efforts.</p>
+              <p class="trio_icons_text">Learners now want instant results with minimum efforts.</p>
             </div>
             <div class="col-md-4">
               <img style="float:right;" width="120%" src="/images/1_color.png" alt="">
@@ -134,7 +134,7 @@
         <div id="2_short" class="shorts" onclick="toggle(this, '2_short','2_long')">
           <div class="trio_image_number">02</div>
           <div class="trio_image_text">THE ENVIRONMENT</div>
-          <img width="105%" style="padding-top:20%;" src="/images/2_bw.png" alt="">
+          <img width="105%" style="padding-top:20%;margin-left:-5%;" src="/images/2_bw.png" alt="">
         </div>
         <div class="longs" id="2_long" style="display:none;">
           <p class="trio_message">3 reasons why your content need a re-look</p>
@@ -144,11 +144,11 @@
           <div class="row" style="margin-top:8%;">
             <div class="col-md-4 text-center">
               <img class="trio_icons" src="/images/clock.png" alt="">
-              <p style="padding-top:5%; font-size:130%;padding-left:2%;padding-right:2%;">The learning for work doesn’t happen just at work anymore. The boundaries between work and personal life are blurring.</p>
+              <p class="trio_icons_text">The learning for work doesn’t happen just at work anymore. The boundaries between work and personal life are blurring.</p>
             </div>
             <div class="col-md-4 text-center">
               <img class="trio_icons" src="/images/trophy.png" alt="">
-              <p style="padding-top:5%;font-size:130%;padding-left:2%;padding-right:2%;">Existing service lines are being transformed through increasing intelligent automation
+              <p class="trio_icons_text">Existing service lines are being transformed through increasing intelligent automation
                 ~50-60% jobs would require new skills</p>
               </div>
               <div class="col-md-4">
@@ -170,12 +170,12 @@
             <p class="trio_heading">THE SYSTEMS HAVE CHANGED</p>
             <div class="row" style="margin-top:8%;">
               <div class="col-md-4 text-center">
-                <img class="trio_icons" src="/images/clock.png" alt="">
-                <p style="padding-top:5%; font-size:130%;padding-left:2%;padding-right:2%;">Abundance of information: The availability of video content alone has increased by 17 times</p>
+                <img class="trio_icons" src="/images/17x.png" alt="">
+                <p class="trio_icons_text">Abundance of information: The availability of video content alone has increased by 17 times</p>
               </div>
               <div class="col-md-4 text-center">
                 <img class="trio_icons" src="/images/trophy.png" alt="">
-                <p style="padding-top:5%;font-size:130%;padding-left:2%;padding-right:2%;">Information is in abundance. Knowledge isn’t. Information + context = Knowledge</p>
+                <p class="trio_icons_text">Information is in abundance. Knowledge isn’t. Information + context = Knowledge</p>
               </div>
               <div class="col-md-4">
                 <img style="float:right;" width="115%" src="/images/3_color.png" alt="">
@@ -187,7 +187,7 @@
     </div>
 
     <div class="trio_mobile container">
-      <div>
+      <div style="padding-left:5%;padding-right:5%;">
         <p class="trio_message">3 reasons why your content need a re-look</p>
         <p class="trio_number">01</p>
         <br>
@@ -195,62 +195,60 @@
         <div class="row" style="margin-top:8%;">
           <div class="col-md-4 text-center">
             <img class="trio_icons" src="/images/clock.png" alt="">
-            <p style="padding-top:5%; font-size:115%;padding-left:2%;padding-right:2%;">Your employees now have an attention span lesser than that of a goldfish!</p>
+            <p class="trio_icons_text">Your employees now have an attention span lesser than that of a goldfish!</p>
           </div>
           <div class="col-md-4 text-center">
             <img class="trio_icons" src="/images/trophy.png" alt="">
-            <p style="padding-top:5%;font-size:115%;padding-left:2%;padding-right:2%;">Learners now want instant results with minimum efforts.</p>
+            <p class="trio_icons_text">Learners now want instant results with minimum efforts.</p>
           </div>
           <div class="col-md-4">
-            <img style="float:right;margin-right: -3.8%;" width="70%" src="/images/1_color.png" alt="">
+            <img style="float:right;margin-right: -9.8%;" width="70%" src="/images/1_color.png" alt="">
           </div>
         </div>
       </div>
       <br><br>
-      <div>
-        <p class="trio_message">3 reasons why your content need a re-look</p>
+      <div style="padding-left:5%;padding-right:5%;">
         <p class="trio_number">02</p>
         <br>
         <p class="trio_heading">THE ENVIRONMENT HAS CHANGED</p>
         <div class="row" style="margin-top:8%;">
           <div class="col-md-4 text-center">
             <img class="trio_icons" src="/images/clock.png" alt="">
-            <p style="padding-top:5%; font-size:115%;padding-left:2%;padding-right:2%;">The learning for work doesn’t happen just at work anymore. The boundaries between work and personal life are blurring.</p>
+            <p class="trio_icons_text">The learning for work doesn’t happen just at work anymore. The boundaries between work and personal life are blurring.</p>
           </div>
           <div class="col-md-4 text-center">
             <img class="trio_icons" src="/images/trophy.png" alt="">
-            <p style="padding-top:5%;font-size:115%;padding-left:2%;padding-right:2%;">Existing service lines are being transformed through increasing intelligent automation
+            <p class="trio_icons_text">Existing service lines are being transformed through increasing intelligent automation
               ~50-60% jobs would require new skills</p>
             </div>
             <div class="col-md-4">
-              <img style="float:right;margin-right: -3.8%;" width="70%" src="/images/2_color.png" alt="">
+              <img style="float:right;margin-right: -9.8%;" width="70%" src="/images/2_color.png" alt="">
             </div>
           </div>
         </div>
         <br><br>
-        <div>
-          <p class="trio_message">3 reasons why your content need a re-look</p>
+        <div style="padding-left:5%;padding-right:5%;">
           <p class="trio_number">03</p>
           <br>
           <p class="trio_heading">THE SYSTEMS HAVE CHANGED</p>
           <div class="row" style="margin-top:8%;">
             <div class="col-sm-12 text-center">
               <img class="trio_icons" src="/images/clock.png" alt="">
-              <p style="padding-top:5%; font-size:115%;padding-left:2%;padding-right:2%;">Abundance of information: The availability of video content alone has increased by 17 times</p>
+              <p class="trio_icons_text">Abundance of information: The availability of video content alone has increased by 17 times</p>
             </div>
             <div class="col-sm-12 text-center">
               <img class="trio_icons" src="/images/trophy.png" alt="">
-              <p style="padding-top:5%;font-size:115%;padding-left:2%;padding-right:2%;">Information is in abundance. Knowledge isn’t. Information + context = Knowledge</p>
+              <p class="trio_icons_text">Information is in abundance. Knowledge isn’t. Information + context = Knowledge</p>
             </div>
             <div class="col-sm-12">
-              <img style="float:right;margin-right: -3.8%;" width="70%" src="/images/3_color.png" alt="">
+              <img style="float:right;margin-right: -9.8%;" width="70%" src="/images/3_color.png" alt="">
             </div>
           </div>
         </div>
       </div>
 
       <div class="container horizontal_tab">
-        <h3 style="font-weight:bold;">Upskilly has the solutions that fit you</h3>
+        <h3 style="font-weight:600;color:black;">Upskilly has the solutions that fit you</h3>
         <ul>
           <li class="ht_links active" onclick="show_content_ht(this, 'content')">Content Transformation</li>
           <li class="ht_links" onclick="show_content_ht(this, 'off')">Off-the-shelf Libraries</li>
@@ -271,7 +269,7 @@
             <button class="btn btn-success horizontal_tab_git">Get in touch</button>
           </div>
           <div class="col-md-7 hide_image">
-            <img width="100%" style="margin-top:2%;margin-left:29%;" src="/images/content_1_copy.png" alt="">
+            <img width="100%" style="margin-left:17%;margin-top:2%;" src="/images/content_1_copy.png" alt="">
           </div>
         </div>
       </div>
@@ -310,7 +308,8 @@
       <div class="vertical_tab_mobile container">
         <h3 style="font-weight:bold;">Developing content that is just <span style="color:rgba(108, 191, 124, 1.0);">MAGIC</span>al!</h3>
         <p style="font-size:125%;">An insight into our process!</p>
-        <div id="accordion" style="padding:5% 5%;">
+        <br>
+        <div id="accordion">
           <h4 class="vertical_tab_mobile_heading">Meet</h4>
           <div class="vertical_tab_mobile_info">
             <p>
@@ -420,7 +419,7 @@
         <h3 style="font-weight:bold;">The Upskilly Advantage</h3>
         <div style="padding-top:5%;" class="row">
           <div class="col-md-6 col-sm-12">
-            <img class="adv_images" src="/images/trophy.png" alt="">
+            <img class="adv_images" src="/images/mobile.png" alt="">
             <p class="upskilly_adv_header">Mobile learning</p>
             <p class="upskilly_adv_info">We have expertise in creating mobile-based content. We know what length of videos work, and how to seamlessly blend tests within the videos.</p>
           </div>
@@ -432,24 +431,24 @@
         </div>
         <div style="padding-top:5%;" class="row">
           <div class="col-md-6 col-sm-12">
-            <img class="adv_images" src="/images/trophy.png" alt="">
+            <img class="adv_images" src="/images/pizza.png" alt="">
             <p class="upskilly_adv_header">Bite-sized learning</p>
             <p class="upskilly_adv_info">Large concepts are broken down and explained in small modules such that learners consume it anywhere, anytime.</p>
           </div>
           <div class="col-md-6 col-sm-12">
-            <img class="adv_images" src="/images/trophy.png" alt="">
+            <img class="adv_images" src="/images/translate.png" alt="">
             <p class="upskilly_adv_header">Translation & localization</p>
             <p class="upskilly_adv_info">We have resources in place to translate content into top Indian languages keeping the cultural differences in mind.</p>
           </div>
         </div>
         <div style="padding-top:5%;" class="row">
           <div class="col-md-6 col-sm-12">
-            <img class="adv_images" src="/images/trophy.png" alt="">
+            <img class="adv_images" src="/images/cap.png" alt="">
             <p class="upskilly_adv_header">Learn with the best</p>
             <p class="upskilly_adv_info">We are pioneers in training. Our content is consumed by 6 lakh+ people annually.</p>
           </div>
           <div class="col-md-6 col-sm-12">
-            <img class="adv_images" src="/images/trophy.png" alt="">
+            <img class="adv_images" src="/images/cost.png" alt="">
             <p class="upskilly_adv_header">The most cost-effective solution</p>
             <p class="upskilly_adv_info">Develop your content solutions  in the most economical way!</p>
           </div>
@@ -458,9 +457,9 @@
 
       <div style="padding:6%;">
         <div class="row">
-          <div class="col-md-8 col-sm-12" style="padding-left:17%;">
-            <h2 style="color:rgba(108, 191, 124, 1.0);">Want to build a continuous learning culture?</h2>
-            <h2>Just get in touch</h2>
+          <div class="col-md-8 col-sm-12 pad-left-17 getintext">
+            <h2 class="t1" style="color:rgba(108, 191, 124, 1.0);font-weight:600;">Want to build a continuous learning culture?</h2>
+            <h2 class="t2" style="font-weight:600;">Just get in touch</h2>
           </div>
           <div class="col-md-4 col-sm-12">
             <button class="btn btn-default letsdoit" data-toggle="modal" data-target="#myModal"><span class="letsdoit_text">Yes, let’s do this</span></button>
@@ -548,7 +547,7 @@
             <button class="btn btn-success horizontal_tab_git">Get in touch</button>
             </div>
             <div class="col-md-7 hide_image">
-            <img width="100%" style="margin-top:2%;margin-left:29%;" src="/images/content_1_copy.png" alt="">
+            <img width="100%" style="margin-left:17%;margin-top:2%;" src="/images/content_1_copy.png" alt="">
             </div>
             `;
           }
@@ -561,9 +560,11 @@
             <br><br>
             Our off-the shelf content is constantly updated, available in all top Indian languages and is engaging.
             </p>
+            <br>
+            <button class="btn btn-success horizontal_tab_git">Get in touch</button>
             </div>
             <div class="col-md-7 hide_image">
-            <img width="100%" style="margin-top:1%;margin-left:29%;" src="/images/off_the_libraries.png" alt="">
+            <img width="100%" style="margin-top:1%;margin-left:17%;" src="/images/off_the_libraries.png" alt="">
             </div>
             `;
           }
@@ -574,11 +575,12 @@
             <p class="horizontal_tab_info">
             Use our wide ranging content development expertise, from voice to video to AR/VR to produce a perfect piece of content for you.
             </p>
+
             <br>
             <button class="btn btn-success horizontal_tab_git">Get in touch</button>
             </div>
             <div class="col-md-7 hide_image">
-            <img width="100%" style="margin-top:1%;margin-left:29%;" src="/images/fitting_solutions.png" alt="">
+            <img width="100%" style="margin-top:1%;margin-left:17%;" src="/images/fitting_solutions.png" alt="">
             </div>
             `;
           }
@@ -729,6 +731,7 @@
             document.getElementById("mySidenav").classList.add("active");
             $('#mySidenav').removeClass('animated fadeOutRight');
             $('#mySidenav').addClass('animated fadeInRight');
+            $('#navbar-brand').addClass('hideit');
             bool = 0;
           }
           else {
@@ -741,6 +744,7 @@
             }
             $('#mySidenav').removeClass('animated fadeInRight');
             $('#mySidenav').addClass('animated fadeOutRight');
+            $('#navbar-brand').removeClass('hideit');
             bool = 1;
           }
         }
