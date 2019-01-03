@@ -14,8 +14,52 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div id="mySidenav" class="sidenav">
+    <a href="#">Home</a>
+    <p href="#" class="headings">SOLUTIONS</p>
+    <a href="#">Sales Capability Development</a>
+    <a href="#">Content Development</a>
+    <p class="headings">PLATFROMS</p>
+    <a href="#">ATOM</a>
+    <p class="headings">COMPANY</p>
+    <a href="#">About</a>
+    <a href="#">Contact Us</a>
+    <!-- <button type="button" name="button" class="btn btn-default nav_git" data-toggle="modal" data-target="#myModal">Get in touch</button> -->
+  </div>
+
   <div class="content">
-    <nav></nav>
+    <div class="navbar_trans">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" id="white_toggle" onclick="openNav('w')" data-target="#myNavbar" class="navbar-toggle" data-toggle="collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="navbar-brand" href="#">
+              <img src="/images/logo_white.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="navbar_white">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" id="black_toggle" onclick="openNav('b')" data-target="#myNavbar" class="navbar-toggle" data-toggle="collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="/images/logo_black.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
     <div class="contentData container">
       <h2 class="banner_head">A sales capability development program for your mobile-workforce that links learning to revenue growth</h2>
       <p class="banner_text">Upskilly enables Just-in-time learning for a distributed & mobile workforce. It links learning to revenue growth to ensure that L&D programs are not just a mere formality.</p>
@@ -201,38 +245,48 @@
     <h3 style="font-weight:bold;">The Upskilly Advantage</h3>
     <div style="padding-top:5%;" class="row">
       <div class="col-md-6 col-sm-12">
-        <img class="adv_images" src="/images/trophy.png" alt="">
-        <p class="upskilly_adv_header">Mobile learning</p>
-        <p class="upskilly_adv_info">We have expertise in creating mobile-based content. We know what length of videos work, and how to seamlessly blend tests within the videos.</p>
+        <img class="adv_images" src="/images/clock.png" alt="">
+        <p class="upskilly_adv_header">Just-in-time learning</p>
+        <p class="upskilly_adv_info">
+          With our Mobile-first & Microlearning approach, your sales-team can learn anytime, anywhere.
+          <br>
+          If they want to have a quick check at the product right before they step into the meeting or they want to practice negotiation skills while travelling, we enable that.
+        </p>
       </div>
       <div class="col-md-6 col-sm-12">
-        <img class="adv_images" src="/images/trophy.png" alt="">
-        <p class="upskilly_adv_header">Gamified learning</p>
-        <p class="upskilly_adv_info">With in-built assessments, rewards we can develop content for gamified learning platforms. With our learning paths, be assured that your employees gets the shortest path to mastery.</p>
-      </div>
-    </div>
-    <div style="padding-top:5%;" class="row">
-      <div class="col-md-6 col-sm-12">
-        <img class="adv_images" src="/images/trophy.png" alt="">
-        <p class="upskilly_adv_header">Bite-sized learning</p>
-        <p class="upskilly_adv_info">Large concepts are broken down and explained in small modules such that learners consume it anywhere, anytime.</p>
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <img class="adv_images" src="/images/trophy.png" alt="">
-        <p class="upskilly_adv_header">Translation & localization</p>
-        <p class="upskilly_adv_info">We have resources in place to translate content into top Indian languages keeping the cultural differences in mind.</p>
-      </div>
-    </div>
-    <div style="padding-top:5%;" class="row">
-      <div class="col-md-6 col-sm-12">
-        <img class="adv_images" src="/images/trophy.png" alt="">
+        <img class="adv_images" src="/images/cap.png" alt="">
         <p class="upskilly_adv_header">Learn with the best</p>
-        <p class="upskilly_adv_info">We are pioneers in training. Our content is consumed by 6 lakh+ people annually.</p>
+        <p class="upskilly_adv_info">Our team has been there and done it. Our team has a cumulative sales experience of 100+ years. From selling for Retail giants like P&G to selling for IT giants like SAP we have done it all.</p>
+      </div>
+    </div>
+    <div style="padding-top:5%;" class="row">
+      <div class="col-md-6 col-sm-12">
+        <img class="adv_images" src="/images/trophy.png" alt="">
+        <p class="upskilly_adv_header">No internet, No problem</p>
+        <p class="upskilly_adv_info">Worried that your sales-team is present in remote locations and doesn’t have internet to access courses. Don’t worry, we got you covered. Your team can access our capability programs offline as well.</p>
       </div>
       <div class="col-md-6 col-sm-12">
         <img class="adv_images" src="/images/trophy.png" alt="">
-        <p class="upskilly_adv_header">The most cost-effective solution</p>
-        <p class="upskilly_adv_info">Develop your content solutions  in the most economical way!</p>
+        <p class="upskilly_adv_header">Modular program</p>
+        <p class="upskilly_adv_info">Found a good video on Youtube, that you want your sales-team to take up? Drag-drop-create a course. That is all it takes to create a course.</p>
+      </div>
+    </div>
+    <div style="padding-top:5%;" class="row">
+      <div class="col-md-6 col-sm-12">
+        <img class="adv_images" src="/images/translate.png" alt="">
+        <p class="upskilly_adv_header">Multi-lingual capabilities</p>
+        <p class="upskilly_adv_info">
+          Our experienced team has capabilities to develop a capability program in English and top Indian languages, keeping the cultural senstivities in mind.
+        </p>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <img class="adv_images" src="/images/trophy.png" alt="">
+        <p class="upskilly_adv_header">Robust analytics</p>
+        <p class="upskilly_adv_info">
+          Our analytics enable you to know how each of the learning programs are impacting your top-line.
+          <br>
+          Know how each employee is doing and have a complete idea of who is well-equipped for new challenges or teams.
+        </p>
       </div>
     </div>
   </div>
@@ -262,14 +316,16 @@
     </div>
   </div>
   <div class="logos_mobile container">
+    <h3 style="font-weight:bold;font-size:135%;color:black;text-align: center;">Our featured clientele</h3>
+    <br>
     <img src="/images/logos_mobile.png" width="100%" alt="logos mobile">
   </div>
 
   <div style="padding:6%;">
     <div class="row">
-      <div class="col-md-8 col-sm-12" style="padding-left:17%;">
-        <h2 style="color:rgba(108, 191, 124, 1.0);">Want to build a continuous learning culture?</h2>
-        <h2>Just get in touch</h2>
+      <div class="col-md-8 col-sm-12 pad-left-17 getintext">
+        <h2 class="t1" style="color:rgba(108, 191, 124, 1.0);font-weight:600;">Wanna give your revenue a boost?</h2>
+        <h2 class="t2" style="font-weight:600;">Just get in touch</h2>
       </div>
       <div class="col-md-4 col-sm-12">
         <button class="btn btn-default letsdoit" data-toggle="modal" data-target="#myModal"><span class="letsdoit_text">Yes, let’s do this</span></button>
@@ -432,6 +488,64 @@
 
     $(document).ready(function(){
       accordion.init({ speed: 300, oneOpen: true });
+    });
+    </script>
+    <script>
+    var bool = 1;
+    function openNav(c) {
+      var white_togg = document.getElementById("white_toggle");
+      var black_toggle = document.getElementById("black_toggle");
+      if(c == "b") {
+        white_togg = black_toggle;
+      }
+      console.log(bool);
+      if(bool == 1) {
+        white_togg.classList.add("active");
+        for(var i = 0; i < white_togg.childNodes.length; i++) {
+          if(white_togg.childNodes[i].className == "icon-bar") {
+            white_togg.childNodes[i].style = "background-color: #888;";
+          }
+        }
+        document.getElementById("mySidenav").classList.add("active");
+        $('#mySidenav').removeClass('animated fadeOutRight');
+        $('#mySidenav').addClass('animated fadeInRight');
+        $('#navbar-brand').addClass('hideit');
+        bool = 0;
+      }
+      else {
+        white_togg.classList.remove("active");
+        document.getElementById("mySidenav").classList.remove("active");
+        for(var i = 0; i < white_togg.childNodes.length; i++) {
+          if(white_togg.childNodes[i].className == "icon-bar") {
+            if(c == "w") {
+              white_togg.childNodes[i].style = "background-color: white;";
+            }
+            else {
+              white_togg.childNodes[i].style = "background-color: #888;";
+            }
+          }
+        }
+        $('#mySidenav').removeClass('animated fadeInRight');
+        $('#mySidenav').addClass('animated fadeOutRight');
+        $('#navbar-brand').removeClass('hideit');
+        bool = 1;
+      }
+    }
+
+    $(function() {
+      var header = $(".content");
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if(scroll >= 100) {
+          $(".navbar_trans").hide();
+          $(".navbar_white").show();
+        }
+        else {
+          $(".navbar_trans").show();
+          $(".navbar_white").hide();
+        }
+      });
     });
     </script>
   </body>
