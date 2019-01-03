@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Contact Us</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -60,14 +61,14 @@
           </div>
         </nav>
       </div>
-      <div class="contentData container">
+      <div data-aos="fade-right" class="contentData container">
         <h2>We hustle from</h2>
         <h1>Bengaluru!</h1>
       </div>
     </div>
     <div class="maps container">
       <div class="row">
-        <div class="col-md-6 col-sm-12">
+        <div data-aos="fade-right" class="col-md-6 col-sm-12">
           <h3>Contact Us</h3>
           <br>
           <button type="button" class="btn cbuttons" name="button"><i class="fas fa-phone"></i><span>+91 889 767 6565</span></button>
@@ -75,8 +76,14 @@
           <button type="button" class="btn cbuttons" name="button"><i class="far fa-envelope"></i><span>support@upskilly.com</span></button>
           <br><br>
           <button type="button" class="btn cbuttons" name="button"><i class="far fa-file-alt"></i><span>Use our online form</span></button>
+          <br><br>
+          <p class="address">
+            <span>Or come see us at</span>
+            <br>
+            653, 2nd Floor, 22nd Cross Road, 23rd Main, Parangi Palaya, Sector 2, HSR Layout, Bengaluru, Karnataka 560102
+          </p>
         </div>
-        <div class="col-md-6 col-sm-12 col-xs-12 gmap">
+        <div data-aos="fade-left" class="col-md-6 col-sm-12 col-xs-12 gmap">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.981823479039!2d77.6464513148213!3d12.90888969089702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14679822a53d%3A0x156855af83f615cb!2sChalkStreet!5e0!3m2!1sen!2sin!4v1546238162161" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
@@ -180,5 +187,9 @@
         });
       });
       </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>

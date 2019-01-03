@@ -18,6 +18,9 @@
       padding: 0px;
       overflow-x: hidden;
   }
+  .separate {
+    padding-left: 0% !important;
+  }
 }
 
 #toggle {

@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Content Development</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -418,36 +419,36 @@
       <div class="container upskilly_adv">
         <h3 style="font-weight:bold;">The Upskilly Advantage</h3>
         <div style="padding-top:5%;" class="row">
-          <div class="col-md-6 col-sm-12">
+          <div data-aos="zoom-in" class="col-md-6 col-sm-12">
             <img class="adv_images" src="/images/mobile.png" alt="">
             <p class="upskilly_adv_header">Mobile learning</p>
             <p class="upskilly_adv_info">We have expertise in creating mobile-based content. We know what length of videos work, and how to seamlessly blend tests within the videos.</p>
           </div>
-          <div class="col-md-6 col-sm-12">
+          <div data-aos="zoom-in" class="col-md-6 col-sm-12">
             <img class="adv_images" src="/images/trophy.png" alt="">
             <p class="upskilly_adv_header">Gamified learning</p>
             <p class="upskilly_adv_info">With in-built assessments, rewards we can develop content for gamified learning platforms. With our learning paths, be assured that your employees gets the shortest path to mastery.</p>
           </div>
         </div>
-        <div style="padding-top:5%;" class="row">
+        <div data-aos="zoom-in" style="padding-top:5%;" class="row">
           <div class="col-md-6 col-sm-12">
             <img class="adv_images" src="/images/pizza.png" alt="">
             <p class="upskilly_adv_header">Bite-sized learning</p>
             <p class="upskilly_adv_info">Large concepts are broken down and explained in small modules such that learners consume it anywhere, anytime.</p>
           </div>
-          <div class="col-md-6 col-sm-12">
+          <div data-aos="zoom-in" class="col-md-6 col-sm-12">
             <img class="adv_images" src="/images/translate.png" alt="">
             <p class="upskilly_adv_header">Translation & localization</p>
             <p class="upskilly_adv_info">We have resources in place to translate content into top Indian languages keeping the cultural differences in mind.</p>
           </div>
         </div>
         <div style="padding-top:5%;" class="row">
-          <div class="col-md-6 col-sm-12">
+          <div data-aos="zoom-in" class="col-md-6 col-sm-12">
             <img class="adv_images" src="/images/cap.png" alt="">
             <p class="upskilly_adv_header">Learn with the best</p>
             <p class="upskilly_adv_info">We are pioneers in training. Our content is consumed by 6 lakh+ people annually.</p>
           </div>
-          <div class="col-md-6 col-sm-12">
+          <div data-aos="zoom-in" class="col-md-6 col-sm-12">
             <img class="adv_images" src="/images/cost.png" alt="">
             <p class="upskilly_adv_header">The most cost-effective solution</p>
             <p class="upskilly_adv_info">Develop your content solutions  in the most economical way!</p>
@@ -507,6 +508,46 @@
             </div>
           </div>
         </footer>
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Let's Talk</h4>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="name">YOUR NAME</label>
+                    <input type="text" placeholder="e.g. John Doe" class="form-control" id="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="company">COMPANY</label>
+                    <input type="password" placeholder="e.g. ACME Corp." class="form-control" id="company">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">EMAIL ADDRESS</label>
+                    <input type="email" class="form-control" placeholder="e.g. john@example.com" id="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">PHONE (OPTIONAL)</label>
+                    <input class="form-control" type="number" placeholder="e.g. 999 999 9999" id="phone">
+                  </div>
+                  <div class="form-group">
+                    <label for="message">MESSAGE (OPTIONAL)</label>
+                    <textarea class="form-control" rows="5" placeholder="Your message goes here ..." id="message"></textarea>
+                  </div>
+                  <div class="form_button">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
         <script>
 
         function toggle(evt, short, long) {
@@ -774,5 +815,9 @@
           });
         });
         </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
       </body>
       </html>

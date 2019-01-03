@@ -137,6 +137,16 @@ transition: 0.2s;
   #navbar-brand.hideit {
     display: block;
   }
+  .address {
+    font-size: 120%;
+    width: 50%;
+    line-height: 2;
+  }
+}
+
+.address span {
+  font-weight: 600;
+  padding-left: 0%;
 }
 
 @media (max-width: 500px) {
@@ -145,6 +155,12 @@ transition: 0.2s;
   }
   #navbar-brand.hideit {
     display: none;
+  }
+  .address {
+    font-size: 120%;
+    padding-left: 18%;
+    padding-right: 18%;
+    line-height: 2;
   }
 }
 
