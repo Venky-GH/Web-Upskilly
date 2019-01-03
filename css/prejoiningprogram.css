@@ -1,11 +1,16 @@
-body {
-  overflow-x: hidden;
-}
-
 @media (min-width: 1200px) {
   .container {
-    width: 1350px;
+    width: 1300px;
   }
+}
+
+html,body
+{
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 .navbar-toggle.active .icon-bar:nth-of-type(1) {
@@ -81,7 +86,7 @@ transition: 0.2s;
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  .collapse.in{
+  .collapse.in {
     display:block !important;
   }
 }
@@ -125,6 +130,24 @@ transition: 0.2s;
   padding: 10px 15px;
 }
 
+@media (min-width: 501px) {
+  #mySidenav {
+    padding-top: 4%;
+  }
+  #navbar-brand.hideit {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  #mySidenav {
+    padding-top: 15%;
+  }
+  #navbar-brand.hideit {
+    display: none;
+  }
+}
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -139,22 +162,15 @@ transition: 0.2s;
 
 @media (min-width: 501px) {
 	.sidenav.active {
-    padding-top: 4%;
-		width: 24%;
+		width: 26%;
 	}
-  #navbar-brand.hideit {
-    display: block;
-  }
 }
 
 @media (max-width: 500px) {
 	.sidenav.active {
-    padding-top: 15%;
+    /* padding-top: 5%; */
 		width: 100%;
 	}
-  #navbar-brand.hideit {
-    display: none;
-  }
 }
 
 .sidenav a {
@@ -288,10 +304,11 @@ transition: 0.2s;
   .triangle ul {
     padding-top: 3%;
     padding-bottom: 3%;
-    margin-left: -1rem;
+    /* margin-left: -1rem; */
     overflow-x: scroll;
     white-space: nowrap;
     overflow-y: hidden;
+    line-height: 1.5;
   }
   .triangle li {
     display: inline;
@@ -317,6 +334,7 @@ transition: 0.2s;
 
   .tri_top {
     margin-top: 15%;
+    margin-left: 2%;
   }
 
   #pyramid {
@@ -337,6 +355,19 @@ transition: 0.2s;
     margin-top: -60.7%;
     margin-left: -41.5%;
     display:none;
+  }
+
+  .getintext {
+    text-align: center;
+    padding: 0% 15%;
+  }
+
+  .getintext .t1 {
+    font-size: 140%;
+  }
+
+  .getintext .t2 {
+    font-size: 140%;
   }
 }
 
@@ -441,7 +472,8 @@ transition: 0.2s;
   .flips .flip_sub_ul {
     overflow-x: scroll;
     white-space: nowrap;
-    overflow-y: scroll;
+    overflow-y: hidden;
+    line-height: 4;
   }
 
   .flips .flip_sub_li {
@@ -530,7 +562,7 @@ transition: 0.2s;
 
 .flips .flip_sub_li.active {
   border-bottom: 4px solid rgba(108, 191, 124, 1.0);
-  padding-bottom: 3.8%;
+  padding-bottom: 3.6%;
   color: black;
 }
 
@@ -624,10 +656,23 @@ transition: 0.2s;
 .letsdoit {
   margin-top: 10%;
   margin-bottom: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 45%;
   background-color: rgba(108, 191, 124, 1.0);
   color: white;
   font-family: "Cabin", Helvetica, Arial, serif;
   border-radius: 2px;
+}
+
+.letsdoit:hover {
+  background-color: rgba(108, 191, 124, 1.0);
+  color: white;
+}
+
+.letsdoit_text {
+  font-size: 135%;
+  margin:auto;
 }
 
 @media (min-width: 501px) {
@@ -637,11 +682,14 @@ transition: 0.2s;
   .bottom-up {
     padding-left: 20%;
   }
+  .pad-left-17 {
+    padding-left:17%;
+  }
 }
 
 @media (max-width: 500px) {
   .letsdoit {
-    margin-left: 23.5%;
+    margin-left: 27%;
   }
   .bottom {
     font-size: 140%;
@@ -652,12 +700,6 @@ transition: 0.2s;
   .bottom-up {
     padding-left: 0%;
   }
-}
-
-.letsdoit_text {
-  padding: 8%;
-  font-size: 120%;
-  margin:auto;
 }
 
 .footer {
