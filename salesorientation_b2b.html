@@ -1,470 +1,476 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Sales Orientation</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/salesorientation_b2b.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div id="mySidenav" class="sidenav">
-      <a href="#">Home</a>
-      <p href="#" class="headings">SOLUTIONS</p>
-      <a href="#">Sales Capability Development</a>
-      <a href="#">Content Development</a>
-      <p class="headings">PLATFROMS</p>
-      <a href="#">ATOM</a>
-      <p class="headings">COMPANY</p>
-      <a href="#">About</a>
-      <a href="#">Contact Us</a>
-      <!-- <button type="button" name="button" class="btn btn-default nav_git" data-toggle="modal" data-target="#myModal">Get in touch</button> -->
+<head>
+  <meta charset="utf-8">
+  <title>Sales Orientation</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/salesorientation_b2b.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="#">Home</a>
+    <p href="#" class="headings">SOLUTIONS</p>
+    <a href="/SalesCapabilitySolutions.html">Sales Capability Development</a>
+    <a href="/contentdevelopment.html">Content Development</a>
+    <p class="headings">PLATFROMS</p>
+    <a href="#">ATOM</a>
+    <p class="headings">COMPANY</p>
+    <a href="#">About</a>
+    <a href="/contactus.html">Contact Us</a>
+    <!-- <button type="button" name="button" class="btn btn-default nav_git" data-toggle="modal" data-target="#myModal">Get in touch</button> -->
+  </div>
+
+  <div class="content">
+    <div class="navbar_trans">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" id="white_toggle" onclick="openNav('w')" data-target="#myNavbar" class="navbar-toggle" data-toggle="collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="navbar-brand" href="#">
+              <img src="/images/logo_white.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </nav>
     </div>
-
-    <div class="content">
-      <div class="navbar_trans">
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" id="white_toggle" onclick="openNav('w')" data-target="#myNavbar" class="navbar-toggle" data-toggle="collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" id="navbar-brand" href="#">
-                <img src="/images/logo_white.svg" alt="">
-              </a>
-            </div>
+    <div class="navbar_white">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" id="black_toggle" onclick="openNav('b')" data-target="#myNavbar" class="navbar-toggle" data-toggle="collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="/images/logo_black.svg" alt="">
+            </a>
           </div>
-        </nav>
+        </div>
+      </nav>
+    </div>
+    <div class="contentData container">
+      <div class="subnavbar">
+        <p style="display:inline-block;padding-left:1%;">Sales Capability Development Program</p>
+        <a href="/salesorientation_b2c.html"><p class="subnav">B2C Sales</p></a>
+        <a href="#"><p class="subnav active">B2B Sales</p></a>
+        <hr>
       </div>
-      <div class="navbar_white">
-        <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" id="black_toggle" onclick="openNav('b')" data-target="#myNavbar" class="navbar-toggle" data-toggle="collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">
-                <img src="/images/logo_black.svg" alt="">
-              </a>
-            </div>
+      <div class="subnavbar_mobile" style="text-align:center;">
+        <p>Sales Capability Development Program</p>
+        <div class="row" style="padding-top: 5%;">
+          <div class="col-xs-6 col-sm-6" style="padding-right: 0px;">
+            <a href="#"><p class="subnav active">B2B Sales</p></a>
           </div>
-        </nav>
+          <div class="col-xs-6 col-sm-6" style="padding-left: 0px;">
+            <a href="/salesorientation_b2c.html"><p class="subnav">B2C Sales</p></a>
+          </div>
+        </div>
+        <hr>
       </div>
-      <div class="contentData container">
-        <div class="subnavbar">
-          <p style="display:inline-block;padding-left:1%;">Sales Capability Development Program</p>
-          <a href="/salesorientation_b2c.html"><p class="subnav">B2C Sales</p></a>
-          <a href="#"><p class="subnav active">B2B Sales</p></a>
-          <hr>
-        </div>
-        <div class="subnavbar_mobile" style="text-align:center;">
-          <p>Sales Capability Development Program</p>
-          <div class="row" style="padding-top: 5%;">
-            <div class="col-xs-6 col-sm-6" style="padding-right: 0px;">
-              <a href="#"><p class="subnav active">B2B Sales</p></a>
-            </div>
-            <div class="col-xs-6 col-sm-6" style="padding-left: 0px;">
-              <a href="/salesorientation_b2c.html"><p class="subnav">B2C Sales</p></a>
-            </div>
-          </div>
-          <hr>
-        </div>
 
-        <div class="col-md-6 data">
-          <h2>Develop a customer-centric & value- based approaches to selling in your team.</h2>
-          <p>Our capability development programs enable your team to put customer at the center of the sales process and educate them to make the right choices.</p>
-        </div>
+      <div class="col-md-6 data">
+        <h2>Develop a customer-centric & value- based approaches to selling in your team.</h2>
+        <p>Our capability development programs enable your team to put customer at the center of the sales process and educate them to make the right choices.</p>
       </div>
     </div>
+  </div>
 
-    <div class="flips container">
-      <h3>What modern-day sales teams should do</h3>
-      <p>Traditionally sales teams have been doing the following. But what should they be doing instead?</p>
-      <div class="flip_cards text-center">
-        <div style="display:inline;">
+  <div class="flips container">
+    <h3>What modern-day sales teams should do</h3>
+    <p>Traditionally sales teams have been doing the following. But what should they be doing instead?</p>
+    <div class="flip_cards text-center">
+      <div style="display:inline;">
+        <img src="/images/flip_1.png" alt="">
+      </div>
+      <div style="display:inline;">
+        <img src="/images/flip_2.png" alt="">
+      </div>
+      <div style="display:inline;">
+        <img src="/images/flip_3.png" alt="">
+      </div>
+      <div style="display:inline;">
+        <img src="/images/flip_4.png" alt="">
+      </div>
+      <div style="display:inline;">
+        <img src="/images/flip_5.png" alt="">
+      </div>
+    </div>
+    <div class="flip_cards_mobile">
+      <ul>
+        <li>
           <img src="/images/flip_1.png" alt="">
-        </div>
-        <div style="display:inline;">
+        </li>
+        <li>
           <img src="/images/flip_2.png" alt="">
-        </div>
-        <div style="display:inline;">
+        </li>
+        <li>
           <img src="/images/flip_3.png" alt="">
-        </div>
-        <div style="display:inline;">
+        </li>
+        <li>
           <img src="/images/flip_4.png" alt="">
-        </div>
-        <div style="display:inline;">
+        </li>
+        <li>
           <img src="/images/flip_5.png" alt="">
-        </div>
-      </div>
-      <div class="flip_cards_mobile">
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="program web container">
+    <h3>What’s in the program?</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Prospecting</h3>
+        <br>
+        <p>Using combination of tools & techniques to ensure that prospecting is done in an efficient way.</p>
+        <p>Cold calling is not dead!</p>
+        <p>It is still a good way to generate leads, but with the modern tools at our disposal it can all be made more efficient. And, that is what we do in this segment.</p>
         <ul>
-          <li>
-            <img src="/images/flip_1.png" alt="">
-          </li>
-          <li>
-            <img src="/images/flip_2.png" alt="">
-          </li>
-          <li>
-            <img src="/images/flip_3.png" alt="">
-          </li>
-          <li>
-            <img src="/images/flip_4.png" alt="">
-          </li>
-          <li>
-            <img src="/images/flip_5.png" alt="">
-          </li>
+          <li>Targeting techniques</li>
+          <li>Social selling</li>
+          <li>Running email Campaigns</li>
+          <li>Cold-calling</li>
+          <li>Using CRM Tools</li>
+          <li>Using Referrals</li>
+        </ul>
+      </div>
+      <div data-aos="fade-up" class="col-md-6" style="text-align:right;">
+        <img width="70%" src="/images/program_1.png" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div data-aos="fade-up" class="col-md-6">
+        <img width="95%" style="margin-left:-10%;" src="/images/program_2.png" alt="">
+      </div>
+      <div class="col-md-6">
+        <h3>Educating</h3>
+        <br>
+        <p>Your prospective customers would look forward to spending time with your sales reps.</p>
+        <p>Based on the SPIN techniques suggested by Neil Rackham, we enable your reps to ask the right questions, offer new perspective and educate the customers about new ideas. This segment covers:</p>
+        <ul>
+          <li>SPIN techniques</li>
+          <li>How to product demos?</li>
+          <li>Offering perspectives</li>
+          <li>Gaining trust</li>
         </ul>
       </div>
     </div>
-
-    <div class="program web container">
-      <h3>What’s in the program?</h3>
-      <div class="row">
-        <div class="col-md-6">
-          <h3>Prospecting</h3>
-          <br>
-          <p>Using combination of tools & techniques to ensure that prospecting is done in an efficient way.</p>
-          <p>Cold calling is not dead!</p>
-          <p>It is still a good way to generate leads, but with the modern tools at our disposal it can all be made more efficient. And, that is what we do in this segment.</p>
-          <ul>
-            <li>Targeting techniques</li>
-            <li>Social selling</li>
-            <li>Running email Campaigns</li>
-            <li>Cold-calling</li>
-            <li>Using CRM Tools</li>
-            <li>Using Referrals</li>
-          </ul>
-        </div>
-        <div class="col-md-6" style="text-align:right;">
-          <img width="70%" src="/images/program_1.png" alt="">
-        </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Demand your worth</h3>
+        <br>
+        <p>By turning from a presentation approach to value-based approach, we ensure that your sales person don’t compromise on the price anymore. This segment covers:</p>
+        <ul>
+          <li>50+ Negotiation techniques for every situation</li>
+          <li>How to make counter-offers?</li>
+          <li>Making the offering the hero</li>
+          <li>Negotiating with multiple stakeholders</li>
+          <li>Negotiating with a group of people at the same time</li>
+          <li>Dealing with limitations</li>
+          <li>Dealing with competitors</li>
+        </ul>
       </div>
-      <div class="row">
-        <div class="col-md-6">
-          <img width="95%" style="margin-left:-10%;" src="/images/program_2.png" alt="">
-        </div>
-        <div class="col-md-6">
-          <h3>Educating</h3>
-          <br>
-          <p>Your prospective customers would look forward to spending time with your sales reps.</p>
-          <p>Based on the SPIN techniques suggested by Neil Rackham, we enable your reps to ask the right questions, offer new perspective and educate the customers about new ideas. This segment covers:</p>
-          <ul>
-            <li>SPIN techniques</li>
-            <li>How to product demos?</li>
-            <li>Offering perspectives</li>
-            <li>Gaining trust</li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <h3>Demand your worth</h3>
-          <br>
-          <p>By turning from a presentation approach to value-based approach, we ensure that your sales person don’t compromise on the price anymore. This segment covers:</p>
-          <ul>
-            <li>50+ Negotiation techniques for every situation</li>
-            <li>How to make counter-offers?</li>
-            <li>Making the offering the hero</li>
-            <li>Negotiating with multiple stakeholders</li>
-            <li>Negotiating with a group of people at the same time</li>
-            <li>Dealing with limitations</li>
-            <li>Dealing with competitors</li>
-          </ul>
-        </div>
-        <div class="col-md-6" style="text-align:right;">
-          <img width="90%" style="margin-right:-20%;" src="/images/program_3.png" alt="">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <img width="100%" style="margin-left:-20%;" src="/images/program_4.png" alt="">
-        </div>
-        <div class="col-md-6">
-          <h3>Value-Based Closure</h3>
-          <br>
-          <p>Don’t let the deal stuck in the administrative rut, Speed up the closure.</p>
-          <ul>
-            <li>Dealing with administrators or multiple stakeholders</li>
-            <li>Speeding techniques</li>
-            <li>100+ Closing techniques</li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <h3>Customer success</h3>
-          <br>
-          <p>Customer success is key to the business growth.</p>
-          <p>We help your Sales-team obsess about the success with your customers and help them to maintain & nurture good relationships.</p>
-          <ul>
-            <li>Establishing key metrics for customer Success like: Net Promoter Score (NPS), Customer Effort Score (CES), Customer Satisfaction Score (CSAT)</li>
-            <li>Establishing & handling ticketing process</li>
-            <li>Handling customer complaints</li>
-            <li>Handling angry customers</li>
-            <li>Nurturing relationships</li>
-            <li>Increasing referral business</li>
-          </ul>
-        </div>
-        <div class="col-md-6" style="text-align:right;">
-          <img width="100%" style="margin-right:-20%;" src="/images/program_5.png" alt="">
-        </div>
+      <div data-aos="fade-up" class="col-md-6" style="text-align:right;">
+        <img width="90%" style="margin-right:-20%;" src="/images/program_3.png" alt="">
       </div>
     </div>
-
-    <div class="program mobile container">
-      <h3>What’s in the program?</h3>
-      <div class="row">
-        <div class="col-md-6">
-          <h3>Prospecting</h3>
-          <br>
-          <p>Using combination of tools & techniques to ensure that prospecting is done in an efficient way.</p>
-          <p>Cold calling is not dead!</p>
-          <p>It is still a good way to generate leads, but with the modern tools at our disposal it can all be made more efficient. And, that is what we do in this segment.</p>
-          <ul>
-            <li>Targeting techniques</li>
-            <li>Social selling</li>
-            <li>Running email Campaigns</li>
-            <li>Cold-calling</li>
-            <li>Using CRM Tools</li>
-            <li>Using Referrals</li>
-          </ul>
-        </div>
-        <div class="col-md-6" style="text-align:center;">
-          <img width="85%" src="/images/program_1.png" alt="">
-        </div>
+    <div class="row">
+      <div data-aos="fade-up" class="col-md-6">
+        <img width="100%" style="margin-left:-20%;" src="/images/program_4.png" alt="">
       </div>
-      <div class="row">
-        <div class="col-md-6">
-          <h3>Educating</h3>
-          <br>
-          <p>Your prospective customers would look forward to spending time with your sales reps.</p>
-          <p>Based on the SPIN techniques suggested by Neil Rackham, we enable your reps to ask the right questions, offer new perspective and educate the customers about new ideas. This segment covers:</p>
-          <ul>
-            <li>SPIN techniques</li>
-            <li>How to product demos?</li>
-            <li>Offering perspectives</li>
-            <li>Gaining trust</li>
-          </ul>
-        </div>
-        <div class="col-md-6" style="text-align:center;">
-          <img width="105%" src="/images/program_2.png" alt="">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <h3>Demand your worth</h3>
-          <br>
-          <p>By turning from a presentation approach to value-based approach, we ensure that your sales person don’t compromise on the price anymore. This segment covers:</p>
-          <ul>
-            <li>50+ Negotiation techniques for every situation</li>
-            <li>How to make counter-offers?</li>
-            <li>Making the offering the hero</li>
-            <li>Negotiating with multiple stakeholders</li>
-            <li>Negotiating with a group of people at the same time</li>
-            <li>Dealing with limitations</li>
-            <li>Dealing with competitors</li>
-          </ul>
-        </div>
-        <div class="col-md-6" style="text-align:center;">
-          <img width="110%" src="/images/program_3.png" alt="">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <h3>Value-Based Closure</h3>
-          <br>
-          <p>Don’t let the deal stuck in the administrative rut, Speed up the closure.</p>
-          <ul>
-            <li>Dealing with administrators or multiple stakeholders</li>
-            <li>Speeding techniques</li>
-            <li>100+ Closing techniques</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <img width="110%" src="/images/program_4.png" alt="">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <h3>Customer success</h3>
-          <br>
-          <p>Customer success is key to the business growth.</p>
-          <p>We help your Sales-team obsess about the success with your customers and help them to maintain & nurture good relationships.</p>
-          <ul>
-            <li>Establishing key metrics for customer Success like: Net Promoter Score (NPS), Customer Effort Score (CES), Customer Satisfaction Score (CSAT)</li>
-            <li>Establishing & handling ticketing process</li>
-            <li>Handling customer complaints</li>
-            <li>Handling angry customers</li>
-            <li>Nurturing relationships</li>
-            <li>Increasing referral business</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <img width="110%" src="/images/program_5.png" alt="">
-        </div>
+      <div class="col-md-6">
+        <h3>Value-Based Closure</h3>
+        <br>
+        <p>Don’t let the deal stuck in the administrative rut, Speed up the closure.</p>
+        <ul>
+          <li>Dealing with administrators or multiple stakeholders</li>
+          <li>Speeding techniques</li>
+          <li>100+ Closing techniques</li>
+        </ul>
       </div>
     </div>
-
-    <div style="padding:6%;">
-      <div class="row">
-        <div class="col-md-8 col-sm-12 pad-left-17 getintext">
-          <h2 class="t1" style="color:rgba(108, 191, 124, 1.0);font-weight:600;">Wanna give your revenue a boost?</h2>
-          <h2 class="t2" style="font-weight:600;">Just get in touch</h2>
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <button class="btn btn-default letsdoit" data-toggle="modal" data-target="#myModal"><span class="letsdoit_text">Yes, let’s do this</span></button>
-        </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Customer success</h3>
+        <br>
+        <p>Customer success is key to the business growth.</p>
+        <p>We help your Sales-team obsess about the success with your customers and help them to maintain & nurture good relationships.</p>
+        <ul>
+          <li>Establishing key metrics for customer Success like: Net Promoter Score (NPS), Customer Effort Score (CES), Customer Satisfaction Score (CSAT)</li>
+          <li>Establishing & handling ticketing process</li>
+          <li>Handling customer complaints</li>
+          <li>Handling angry customers</li>
+          <li>Nurturing relationships</li>
+          <li>Increasing referral business</li>
+        </ul>
+      </div>
+      <div data-aos="fade-up" class="col-md-6" style="text-align:right;">
+        <img width="100%" style="margin-right:-20%;" src="/images/program_5.png" alt="">
       </div>
     </div>
+  </div>
 
-    <footer class="footer">
-      <div class="container foot">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <img id="logo_white" src="/images/logo_white.svg" alt="white logo">
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <h4>Solutions</h4>
-            <hr>
-            <a href=""><p class="subhead">Sales Capability Development</p></a>
-            <a href=""><p class="subhead">Content Development</p></a>
-            <br>
-            <h4>Platforms</h4>
-            <hr>
-            <a href=""><p class="subhead">ATOM - Mobile First LMS</p></a>
-            <a href=""><p class="subhead">AIRA</p></a>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <h4>Company</h4>
-            <hr>
-            <a href=""><p class="subhead">About</p></a>
-            <a href=""><p class="subhead">Our Work</p></a>
-            <a href=""><p class="subhead">Contact Us</p></a>
-            <a href=""><p class="subhead">Privacy</p></a>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <h4>Connect</h4>
-            <hr>
-            <a href=""><i class="fab fa-twitter-square icon"></i>
-              &nbsp;&nbsp;
-              <a href=""><i class="fab fa-linkedin icon"></i></a>
-              &nbsp;&nbsp;
-              <a href=""><i class="fab fa-facebook-square icon"></i></a>
-            </div>
-          </div>
-          <div class="text-center copyright">
-            Copyright Upskilly LLC Pvt. Ltd. All rights reserved
+  <div class="program mobile container">
+    <h3>What’s in the program?</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Prospecting</h3>
+        <br>
+        <p>Using combination of tools & techniques to ensure that prospecting is done in an efficient way.</p>
+        <p>Cold calling is not dead!</p>
+        <p>It is still a good way to generate leads, but with the modern tools at our disposal it can all be made more efficient. And, that is what we do in this segment.</p>
+        <ul>
+          <li>Targeting techniques</li>
+          <li>Social selling</li>
+          <li>Running email Campaigns</li>
+          <li>Cold-calling</li>
+          <li>Using CRM Tools</li>
+          <li>Using Referrals</li>
+        </ul>
+      </div>
+      <div data-aos="fade-up" class="col-md-6" style="text-align:center;">
+        <img width="85%" src="/images/program_1.png" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Educating</h3>
+        <br>
+        <p>Your prospective customers would look forward to spending time with your sales reps.</p>
+        <p>Based on the SPIN techniques suggested by Neil Rackham, we enable your reps to ask the right questions, offer new perspective and educate the customers about new ideas. This segment covers:</p>
+        <ul>
+          <li>SPIN techniques</li>
+          <li>How to product demos?</li>
+          <li>Offering perspectives</li>
+          <li>Gaining trust</li>
+        </ul>
+      </div>
+      <div data-aos="fade-up" class="col-md-6" style="text-align:center;">
+        <img width="105%" src="/images/program_2.png" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Demand your worth</h3>
+        <br>
+        <p>By turning from a presentation approach to value-based approach, we ensure that your sales person don’t compromise on the price anymore. This segment covers:</p>
+        <ul>
+          <li>50+ Negotiation techniques for every situation</li>
+          <li>How to make counter-offers?</li>
+          <li>Making the offering the hero</li>
+          <li>Negotiating with multiple stakeholders</li>
+          <li>Negotiating with a group of people at the same time</li>
+          <li>Dealing with limitations</li>
+          <li>Dealing with competitors</li>
+        </ul>
+      </div>
+      <div data-aos="fade-up" class="col-md-6" style="text-align:center;">
+        <img width="110%" src="/images/program_3.png" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Value-Based Closure</h3>
+        <br>
+        <p>Don’t let the deal stuck in the administrative rut, Speed up the closure.</p>
+        <ul>
+          <li>Dealing with administrators or multiple stakeholders</li>
+          <li>Speeding techniques</li>
+          <li>100+ Closing techniques</li>
+        </ul>
+      </div>
+      <div data-aos="fade-up" class="col-md-6">
+        <img width="110%" src="/images/program_4.png" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Customer success</h3>
+        <br>
+        <p>Customer success is key to the business growth.</p>
+        <p>We help your Sales-team obsess about the success with your customers and help them to maintain & nurture good relationships.</p>
+        <ul>
+          <li>Establishing key metrics for customer Success like: Net Promoter Score (NPS), Customer Effort Score (CES), Customer Satisfaction Score (CSAT)</li>
+          <li>Establishing & handling ticketing process</li>
+          <li>Handling customer complaints</li>
+          <li>Handling angry customers</li>
+          <li>Nurturing relationships</li>
+          <li>Increasing referral business</li>
+        </ul>
+      </div>
+      <div data-aos="fade-up" class="col-md-6">
+        <img width="110%" src="/images/program_5.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div style="padding:6%;">
+    <div class="row">
+      <div class="col-md-8 col-sm-12 pad-left-17 getintext">
+        <h2 class="t1" style="color:rgba(108, 191, 124, 1.0);font-weight:600;">Wanna give your revenue a boost?</h2>
+        <h2 class="t2" style="font-weight:600;">Just get in touch</h2>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <button class="btn btn-default letsdoit" data-toggle="modal" data-target="#myModal"><span class="letsdoit_text">Yes, let’s do this</span></button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container foot">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <img id="logo_white" src="/images/logo_white.svg" alt="white logo">
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <h4>Solutions</h4>
+          <hr>
+          <a href="/SalesCapabilitySolutions.html"><p class="subhead">Sales Capability Development</p></a>
+          <a href="/contentdevelopment.html"><p class="subhead">Content Development</p></a>
+          <br>
+          <h4>Platforms</h4>
+          <hr>
+          <a href=""><p class="subhead">ATOM - Mobile First LMS</p></a>
+          <a href=""><p class="subhead">AIRA</p></a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <h4>Company</h4>
+          <hr>
+          <a href=""><p class="subhead">About</p></a>
+          <a href=""><p class="subhead">Our Work</p></a>
+          <a href="/contactus.html"><p class="subhead">Contact Us</p></a>
+          <a href=""><p class="subhead">Privacy</p></a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <h4>Connect</h4>
+          <hr>
+          <a href=""><i class="fab fa-twitter-square icon"></i>
+            &nbsp;&nbsp;
+            <a href=""><i class="fab fa-linkedin icon"></i></a>
+            &nbsp;&nbsp;
+            <a href=""><i class="fab fa-facebook-square icon"></i></a>
           </div>
         </div>
-      </footer>
-      <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Let's Talk</h4>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="name">YOUR NAME</label>
-                  <input type="text" placeholder="e.g. John Doe" class="form-control" id="name">
-                </div>
-                <div class="form-group">
-                  <label for="company">COMPANY</label>
-                  <input type="password" placeholder="e.g. ACME Corp." class="form-control" id="company">
-                </div>
-                <div class="form-group">
-                  <label for="email">EMAIL ADDRESS</label>
-                  <input type="email" class="form-control" placeholder="e.g. john@example.com" id="email">
-                </div>
-                <div class="form-group">
-                  <label for="phone">PHONE (OPTIONAL)</label>
-                  <input class="form-control" type="number" placeholder="e.g. 999 999 9999" id="phone">
-                </div>
-                <div class="form-group">
-                  <label for="message">MESSAGE (OPTIONAL)</label>
-                  <textarea class="form-control" rows="5" placeholder="Your message goes here ..." id="message"></textarea>
-                </div>
-                <div class="form_button">
-                  <button type="submit" class="btn btn-success">Submit</button>
-                </div>
-              </form>
-            </div>
-          </div>
-
+        <div class="text-center copyright">
+          Copyright Upskilly LLC Pvt. Ltd. All rights reserved
         </div>
       </div>
-      <script>
-      var bool = 1;
-      function openNav(c) {
-        var white_togg = document.getElementById("white_toggle");
-        var black_toggle = document.getElementById("black_toggle");
-        if(c == "b") {
-          white_togg = black_toggle;
+    </footer>
+
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Let's Talk</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="name">YOUR NAME</label>
+                <input type="text" placeholder="e.g. John Doe" class="form-control" id="name">
+              </div>
+              <div class="form-group">
+                <label for="company">COMPANY</label>
+                <input type="password" placeholder="e.g. ACME Corp." class="form-control" id="company">
+              </div>
+              <div class="form-group">
+                <label for="email">EMAIL ADDRESS</label>
+                <input type="email" class="form-control" placeholder="e.g. john@example.com" id="email">
+              </div>
+              <div class="form-group">
+                <label for="phone">PHONE (OPTIONAL)</label>
+                <input class="form-control" type="number" placeholder="e.g. 999 999 9999" id="phone">
+              </div>
+              <div class="form-group">
+                <label for="message">MESSAGE (OPTIONAL)</label>
+                <textarea class="form-control" rows="5" placeholder="Your message goes here ..." id="message"></textarea>
+              </div>
+              <div class="form_button">
+                <button type="submit" class="btn btn-success">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <script>
+    var bool = 1;
+    function openNav(c) {
+      var white_togg = document.getElementById("white_toggle");
+      var black_toggle = document.getElementById("black_toggle");
+      if(c == "b") {
+        white_togg = black_toggle;
+      }
+      console.log(bool);
+      if(bool == 1) {
+        white_togg.classList.add("active");
+        for(var i = 0; i < white_togg.childNodes.length; i++) {
+          if(white_togg.childNodes[i].className == "icon-bar") {
+            white_togg.childNodes[i].style = "background-color: #888;";
+          }
         }
-        console.log(bool);
-        if(bool == 1) {
-          white_togg.classList.add("active");
-          for(var i = 0; i < white_togg.childNodes.length; i++) {
-            if(white_togg.childNodes[i].className == "icon-bar") {
+        document.getElementById("mySidenav").classList.add("active");
+        $('#mySidenav').removeClass('animated fadeOutRight');
+        $('#mySidenav').addClass('animated fadeInRight');
+        $('#navbar-brand').addClass('hideit');
+        bool = 0;
+      }
+      else {
+        white_togg.classList.remove("active");
+        document.getElementById("mySidenav").classList.remove("active");
+        for(var i = 0; i < white_togg.childNodes.length; i++) {
+          if(white_togg.childNodes[i].className == "icon-bar") {
+            if(c == "w") {
+              white_togg.childNodes[i].style = "background-color: white;";
+            }
+            else {
               white_togg.childNodes[i].style = "background-color: #888;";
             }
           }
-          document.getElementById("mySidenav").classList.add("active");
-          $('#mySidenav').removeClass('animated fadeOutRight');
-          $('#mySidenav').addClass('animated fadeInRight');
-          $('#navbar-brand').addClass('hideit');
-          bool = 0;
+        }
+        $('#mySidenav').removeClass('animated fadeInRight');
+        $('#mySidenav').addClass('animated fadeOutRight');
+        $('#navbar-brand').removeClass('hideit');
+        bool = 1;
+      }
+    }
+
+    $(function() {
+      var header = $(".content");
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if(scroll >= 100) {
+          $(".navbar_trans").hide();
+          $(".navbar_white").show();
         }
         else {
-          white_togg.classList.remove("active");
-          document.getElementById("mySidenav").classList.remove("active");
-          for(var i = 0; i < white_togg.childNodes.length; i++) {
-            if(white_togg.childNodes[i].className == "icon-bar") {
-              if(c == "w") {
-                white_togg.childNodes[i].style = "background-color: white;";
-              }
-              else {
-                white_togg.childNodes[i].style = "background-color: #888;";
-              }
-            }
-          }
-          $('#mySidenav').removeClass('animated fadeInRight');
-          $('#mySidenav').addClass('animated fadeOutRight');
-          $('#navbar-brand').removeClass('hideit');
-          bool = 1;
+          $(".navbar_trans").show();
+          $(".navbar_white").hide();
         }
-      }
-
-      $(function() {
-        var header = $(".content");
-        $(window).scroll(function() {
-          var scroll = $(window).scrollTop();
-
-          if(scroll >= 100) {
-            $(".navbar_trans").hide();
-            $(".navbar_white").show();
-          }
-          else {
-            $(".navbar_trans").show();
-            $(".navbar_white").hide();
-          }
-        });
       });
-      </script>
+    });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
   </body>
-</html>
+  </html>
