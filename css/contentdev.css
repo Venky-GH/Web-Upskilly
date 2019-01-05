@@ -665,6 +665,10 @@ hr {
   }
 }
 
+.getintext {
+  font-family: "Cabin", Helvetica, Arial, serif;
+}
+
 @media (max-width: 500px) {
   .getintext {
     text-align: center;
@@ -740,6 +744,7 @@ hr {
 
 .upskilly_adv {
   padding-top: 5%;
+  padding-bottom: 5%;
   font-family:"Cabin", Helvetica, Arial, serif;
 }
 
@@ -757,6 +762,7 @@ hr {
 @media (max-width: 500px) {
   .upskilly_adv {
     text-align: center;
+    padding-bottom: 5%;
   }
   .upskilly_adv_info {
     width: 100%;

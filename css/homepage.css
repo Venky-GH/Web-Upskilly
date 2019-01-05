@@ -326,6 +326,10 @@ transition: 0.2s;
   }
 }
 
+.getintext {
+  font-family: "Cabin", Helvetica, Arial, serif;
+}
+
 @media (min-width: 501px) {
   .graph {
     background-image: url("background.svg");
