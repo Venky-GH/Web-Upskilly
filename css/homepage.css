@@ -9,6 +9,18 @@
   }
 }
 
+/* Temporary Styling */
+/* Start */
+
+a.inactive:hover {
+  color: black;
+  cursor: default;
+}
+
+/* End */
+
+
+
 @media (min-width: 501px) {
   body
   {
@@ -533,7 +545,7 @@ hr {
 }
 
 .letsdoit_text {
-  font-size: 135%;
+  font-size: 125%;
   margin:auto;
 }
 
@@ -613,9 +625,9 @@ a:hover {
 }
 
 .getintouch:hover {
-  background-color: rgba(108, 191, 124, 1.0);
-  color: white;
-  border-color: transparent;
+  background-color: white;
+  color: rgba(108, 191, 124, 1.0);
+  border-color: rgba(108, 191, 124, 1.0);
 }
 
 .sidenav {

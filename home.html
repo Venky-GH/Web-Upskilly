@@ -62,8 +62,8 @@
       <div class="container">
         <ul>
           <li class="heading">Platforms</li>
-          <a href="#"><li>Upskilly ATOM  <i class="fas fa-arrow-right"></i></li></a>
-          <a href="#"><li>Upskilly AIRA  <i class="fas fa-arrow-right"></i></li></a>
+          <a href="#" class="inactive"><li>Upskilly ATOM  <i class="fas fa-arrow-right"></i></li></a>
+          <a href="#" class="inactive"><li>Upskilly AIRA  <i class="fas fa-arrow-right"></i></li></a>
         </ul>
       </div>
     </div>
@@ -83,7 +83,7 @@
   <div class="graph" onmouseover="vanish()">
     <div class="row">
       <div class="col-md-6 col-sm-12 graphpe">
-        <p class="graph_header" style="font-weight:600;line-height:150%;">Boost your organizational growth by developing your employee’s capabilities</p>
+        <p class="graph_header" style="line-height:150%;">Boost your organizational growth by developing your employee’s capabilities</p>
         <br>
         <p class="graph_para">Through a right combination of technology, content and training expertise we enable continuous learning programs at organizations that enable capabilities of employees.</p>
       </div>
@@ -149,7 +149,7 @@
     <div data-aos="fade-right" class="leaves_info">
       <h3>Continuous learning is the key to capability development</h3>
       <br>
-      <p class="pad-left" style="font-size: 125%;color:rgba(33, 33, 33, 0.60)">See how we enable continuous learning at our organizations</p>
+      <p class="pad-left" style="font-size: 125%;color: rgba(108, 191, 124, 1.0);">See how we enable continuous learning at our organizations</p>
     </div>
     <div data-aos="fade-up" style="padding-top:5%;">
       <img class="leaves_1" style="padding-left:0%;" src="/images/leaves_text.png" width="95%" alt="Leaves">
@@ -229,8 +229,8 @@
     <div style="padding:6%;">
       <div class="row">
         <div class="col-md-8 col-sm-12 pad-left-17 getintext">
-          <h2 class="t1" style="color:rgba(108, 191, 124, 1.0);font-weight:600;">Want to build a continuous learning culture?</h2>
-          <h2 class="t2" style="font-weight:600;">Just get in touch</h2>
+          <h2 class="t1" style="color:rgba(108, 191, 124, 1.0);">Want to build a continuous learning culture?</h2>
+          <h2 class="t2">Just get in touch</h2>
         </div>
         <div class="col-md-4 col-sm-12">
           <button class="btn btn-default letsdoit" data-toggle="modal" data-target="#myModal"><span class="letsdoit_text">Yes, let’s do this</span></button>
@@ -291,23 +291,28 @@
             <form>
               <div class="form-group">
                 <label for="name">YOUR NAME</label>
-                <input type="text" placeholder="e.g. John Doe" class="form-control" id="name">
+                <!-- <input type="text" placeholder="e.g. John Doe" class="form-control" id="name"> -->
+                <input type="text" class="form-control" id="name">
               </div>
               <div class="form-group">
                 <label for="company">COMPANY</label>
-                <input type="password" placeholder="e.g. ACME Corp." class="form-control" id="company">
+                <!-- <input type="password" placeholder="e.g. ACME Corp." class="form-control" id="company"> -->
+                <input type="password" class="form-control" id="company">
               </div>
               <div class="form-group">
                 <label for="email">EMAIL ADDRESS</label>
-                <input type="email" class="form-control" placeholder="e.g. john@example.com" id="email">
+                <!-- <input type="email" class="form-control" placeholder="e.g. john@example.com" id="email"> -->
+                <input type="email" class="form-control" id="email">
               </div>
               <div class="form-group">
                 <label for="phone">PHONE (OPTIONAL)</label>
-                <input class="form-control" type="number" placeholder="e.g. 999 999 9999" id="phone">
+                <!-- <input class="form-control" type="number" placeholder="e.g. 999 999 9999" id="phone"> -->
+                <input class="form-control" type="number" id="phone">
               </div>
               <div class="form-group">
                 <label for="message">MESSAGE (OPTIONAL)</label>
-                <textarea class="form-control" rows="5" placeholder="Your message goes here ..." id="message"></textarea>
+                <!-- <textarea class="form-control" rows="5" placeholder="Your message goes here ..." id="message"></textarea> -->
+                <textarea class="form-control" rows="5" id="message"></textarea>
               </div>
               <div class="form_button">
                 <button type="submit" class="btn btn-success">Submit</button>
