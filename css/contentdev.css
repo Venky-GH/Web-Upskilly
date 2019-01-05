@@ -1,6 +1,6 @@
 @media (min-width: 1350px) {
   .container {
-      width: 1300px;
+      width: 85%;
   }
 }
 
@@ -96,7 +96,7 @@ body {
 }
 
 .navbar-toggle:hover {
-    background-color: transparent !important;
+    background-color: rgba(0,0,0,0.1) !important;
 }
 
 .navbar-inverse .navbar-toggle {
@@ -132,6 +132,9 @@ body {
   #navbar-brand.hideit {
     display: block;
   }
+  .video_desc {
+    margin-top: 8%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -153,6 +156,7 @@ body {
     background-color: white;
     overflow-x: hidden;
     padding-top: 0%;
+    overflow-y: hidden;
 }
 
 @media (min-width: 501px) {
@@ -169,7 +173,7 @@ body {
 }
 
 .sidenav a {
-    padding: 4% 7%;
+    padding: 5% 7%;
     text-decoration: none;
     font-family: "Cabin", Helvetica, Arial, serif;
     font-size: 115%;
@@ -183,10 +187,15 @@ body {
   border-radius: 0px;
   background-color: rgba(108, 191, 124, 1.0);
   color: white;
-  font-size: 115%;
-  margin-top: 5%;
+  font-size: 110%;
+  margin-bottom: -53%;
   padding-top: 4%;
   padding-bottom: 4%;
+}
+
+.nav_git:hover {
+  background-color: rgba(108, 191, 124, 1.0);
+  color: white;
 }
 
 #mySidenav {
@@ -214,7 +223,9 @@ body {
 
 .sidenav a:hover {
   color: white;
-  background-color: rgba(108, 191, 124, 1.0);
+  background-color: rgba(108, 191, 124, 0.7);
+  transition: 0.2s;
+  transition-timing-function: linear;
 }
 
 .content {
@@ -230,6 +241,7 @@ body {
 @media (min-width: 501px) {
   .logos {
     display: block;
+    text-align: center;
   }
   .logos_mobile {
     display: none;
@@ -239,14 +251,14 @@ body {
     color: white;
     font-family: "Cabin", Helvetica, Arial, serif;
     padding-left: 0%;
-    padding-right: 12%;
+    padding-right: 0%;
     padding-top: 40%;
   }
   .banner_text {
     font-family: "Cabin", Helvetica, Arial, serif;
     color: white;
     font-size: 125%;
-    padding-right: 12%;
+    padding-right: 3%;
     padding-bottom: 40%;
   }
 }
@@ -531,6 +543,8 @@ hr {
   border-bottom: 4px solid rgba(108, 191, 124, 1.0);
   padding-bottom: 1.3%;
   color: black;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 .horizontal_tab_info {
@@ -614,6 +628,8 @@ hr {
 .vertical_tab .active {
   background-color: rgba(108, 191, 124, 1.0);
   color: white;
+  transition: 0.35s;
+  transition-timing-function: ease-in-out;
 }
 
 .vertical_tab_content {
@@ -696,6 +712,8 @@ hr {
 .video_tab .active {
   background-color: rgba(108, 191, 124, 1.0);
   color: white;
+  transition: 0.35s;
+  transition-timing-function: ease-in-out;
 }
 
 .video_tab_info {
@@ -777,6 +795,6 @@ hr {
 }
 
 .letsdoit_text {
-  font-size: 135%;
+  font-size: 125%;
   margin:auto;
 }
