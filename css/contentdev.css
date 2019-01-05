@@ -804,3 +804,31 @@ hr {
   font-size: 125%;
   margin:auto;
 }
+
+.modal-header {
+  margin-top: 2%;
+  border-bottom: 0px;
+  font-family: "Cabin", Helvetica, Arial, serif;
+  font-size: 103%;
+}
+
+/*modal form */
+/* Start */
+
+.form_button {
+  text-align: right;
+}
+
+.form_button .btn {
+  padding: 6px 50px;
+  border-radius: 2px;
+}
+
+label {
+  font-family: "Cabin", Helvetica, Arial, serif;
+  font-weight: 600;
+  font-size: 80%;
+  color: rgba(105, 105, 105, 1.0);
+}
+
+/* End */
