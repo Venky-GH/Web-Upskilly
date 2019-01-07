@@ -25,7 +25,7 @@
     <p class="headings">COMPANY</p>
     <a href="#">About</a>
     <a href="/contactus.html">Contact Us</a>
-    <!-- <button type="button" name="button" class="btn btn-default nav_git" data-toggle="modal" data-target="#myModal">Get in touch</button> -->
+    <button type="button" name="button" class="btn btn-default nav_git" data-toggle="modal" data-target="#myModal">Get in touch</button>
   </div>
 
   <div class="content">
@@ -93,19 +93,24 @@
     <p>Traditionally sales teams have been doing the following. But what should they be doing instead?</p>
     <div class="flip_cards text-center">
       <div style="display:inline;">
-        <img src="/images/flip_1.png" alt="">
+        <img id="flipper_01" onclick="flip('#flipper_01','#flipper_10')" src="/images/flip_1.png" alt="">
+        <img data-aos="flip-right" id="flipper_10" onclick="flip('#flipper_10','#flipper_01')" src="/images/pros.png" alt="">
       </div>
       <div style="display:inline;">
-        <img src="/images/flip_2.png" alt="">
+        <img id="flipper_02" onclick="flip('#flipper_02','#flipper_20')" src="/images/flip_2.png" alt="">
+        <img id="flipper_20" onclick="flip('#flipper_20','#flipper_02')" src="/images/educate.png" alt="">
       </div>
       <div style="display:inline;">
-        <img src="/images/flip_3.png" alt="">
+        <img id="flipper_03" onclick="flip('#flipper_03','#flipper_30')" src="/images/flip_3.png" alt="">
+        <img id="flipper_30" onclick="flip('#flipper_30','#flipper_03')" src="/images/demand.png" alt="">
       </div>
       <div style="display:inline;">
-        <img src="/images/flip_4.png" alt="">
+        <img id="flipper_04" onclick="flip('#flipper_04','#flipper_40')" src="/images/flip_4.png" alt="">
+        <img id="flipper_40" onclick="flip('#flipper_40','#flipper_04')" src="/images/pro_val.png" alt="">
       </div>
       <div style="display:inline;">
-        <img src="/images/flip_5.png" alt="">
+        <img id="flipper_05" onclick="flip('#flipper_05','#flipper_50')" src="/images/flip_5.png" alt="">
+        <img id="flipper_50" onclick="flip('#flipper_50','#flipper_05')" src="/images/cus_suc.png" alt="">
       </div>
     </div>
     <div class="flip_cards_mobile">
@@ -153,7 +158,7 @@
     </div>
     <div class="row">
       <div data-aos="fade-up" class="col-md-6">
-        <img width="95%" style="margin-left:-10%;" src="/images/program_2.png" alt="">
+        <img width="95%" style="margin-left:-10%;margin-top:-15%;" src="/images/program_2.png" alt="">
       </div>
       <div class="col-md-6">
         <h3>Educating</h3>
@@ -184,12 +189,12 @@
         </ul>
       </div>
       <div data-aos="fade-up" class="col-md-6" style="text-align:right;">
-        <img width="90%" style="margin-right:-20%;" src="/images/program_3.png" alt="">
+        <img width="90%" style="margin-right:-20%;margin-top:-10%;" src="/images/program_3.png" alt="">
       </div>
     </div>
     <div class="row">
       <div data-aos="fade-up" class="col-md-6">
-        <img width="100%" style="margin-left:-20%;" src="/images/program_4.png" alt="">
+        <img width="100%" style="margin-left:-20%;margin-top:-10%;" src="/images/program_4.png" alt="">
       </div>
       <div class="col-md-6">
         <h3>Value-Based Closure</h3>
@@ -202,7 +207,7 @@
         </ul>
       </div>
     </div>
-    <div class="row">
+    <div class="row" style="padding-bottom:5%;">
       <div class="col-md-6">
         <h3>Customer success</h3>
         <br>
@@ -218,7 +223,7 @@
         </ul>
       </div>
       <div data-aos="fade-up" class="col-md-6" style="text-align:right;">
-        <img width="100%" style="margin-right:-20%;" src="/images/program_5.png" alt="">
+        <img width="100%" style="margin-right:-20%;margin-top:-18%;" src="/images/program_5.png" alt="">
       </div>
     </div>
   </div>
@@ -317,11 +322,11 @@
     </div>
   </div>
 
-  <div style="padding:6%;">
+  <div style="padding:6%;background-color:rgba(0,0,0,0.04);">
     <div class="row">
       <div class="col-md-8 col-sm-12 pad-left-17 getintext">
-        <h2 class="t1" style="color:rgba(108, 191, 124, 1.0);font-weight:600;">Wanna give your revenue a boost?</h2>
-        <h2 class="t2" style="font-weight:600;">Just get in touch</h2>
+        <h2 class="t1" style="color:rgba(108, 191, 124, 1.0);">Wanna give your revenue a boost?</h2>
+        <h2 class="t2">Just get in touch</h2>
       </div>
       <div class="col-md-4 col-sm-12">
         <button class="btn btn-default letsdoit" data-toggle="modal" data-target="#myModal"><span class="letsdoit_text">Yes, let’s do this</span></button>
@@ -371,86 +376,97 @@
     </footer>
 
     <div id="myModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
+          <div class="modal-dialog">
 
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Let's Talk</h4>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label for="name">YOUR NAME</label>
-                <input type="text" placeholder="e.g. John Doe" class="form-control" id="name">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Let's Talk</h4>
               </div>
-              <div class="form-group">
-                <label for="company">COMPANY</label>
-                <input type="password" placeholder="e.g. ACME Corp." class="form-control" id="company">
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="name">YOUR NAME</label>
+                    <!-- <input type="text" placeholder="e.g. John Doe" class="form-control" id="name"> -->
+                    <input type="text" class="form-control" id="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="company">COMPANY</label>
+                    <!-- <input type="password" placeholder="e.g. ACME Corp." class="form-control" id="company"> -->
+                    <input type="password" class="form-control" id="company">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">EMAIL ADDRESS</label>
+                    <!-- <input type="email" class="form-control" placeholder="e.g. john@example.com" id="email"> -->
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">PHONE (OPTIONAL)</label>
+                    <!-- <input class="form-control" type="number" placeholder="e.g. 999 999 9999" id="phone"> -->
+                    <input class="form-control" type="number" id="phone">
+                  </div>
+                  <div class="form-group">
+                    <label for="message">MESSAGE (OPTIONAL)</label>
+                    <!-- <textarea class="form-control" rows="5" placeholder="Your message goes here ..." id="message"></textarea> -->
+                    <textarea class="form-control" rows="5" id="message"></textarea>
+                  </div>
+                  <div class="form_button">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                  </div>
+                </form>
               </div>
-              <div class="form-group">
-                <label for="email">EMAIL ADDRESS</label>
-                <input type="email" class="form-control" placeholder="e.g. john@example.com" id="email">
-              </div>
-              <div class="form-group">
-                <label for="phone">PHONE (OPTIONAL)</label>
-                <input class="form-control" type="number" placeholder="e.g. 999 999 9999" id="phone">
-              </div>
-              <div class="form-group">
-                <label for="message">MESSAGE (OPTIONAL)</label>
-                <textarea class="form-control" rows="5" placeholder="Your message goes here ..." id="message"></textarea>
-              </div>
-              <div class="form_button">
-                <button type="submit" class="btn btn-success">Submit</button>
-              </div>
-            </form>
+            </div>
+
           </div>
         </div>
 
-      </div>
-    </div>
     <script>
-    var bool = 1;
-    function openNav(c) {
-      var white_togg = document.getElementById("white_toggle");
-      var black_toggle = document.getElementById("black_toggle");
-      if(c == "b") {
-        white_togg = black_toggle;
-      }
-      console.log(bool);
-      if(bool == 1) {
-        white_togg.classList.add("active");
-        for(var i = 0; i < white_togg.childNodes.length; i++) {
-          if(white_togg.childNodes[i].className == "icon-bar") {
-            white_togg.childNodes[i].style = "background-color: #888;";
-          }
-        }
-        document.getElementById("mySidenav").classList.add("active");
-        $('#mySidenav').removeClass('animated fadeOutRight');
-        $('#mySidenav').addClass('animated fadeInRight');
-        $('#navbar-brand').addClass('hideit');
-        bool = 0;
-      }
-      else {
-        white_togg.classList.remove("active");
-        document.getElementById("mySidenav").classList.remove("active");
-        for(var i = 0; i < white_togg.childNodes.length; i++) {
-          if(white_togg.childNodes[i].className == "icon-bar") {
-            if(c == "w") {
-              white_togg.childNodes[i].style = "background-color: white;";
-            }
-            else {
-              white_togg.childNodes[i].style = "background-color: #888;";
-            }
-          }
-        }
-        $('#mySidenav').removeClass('animated fadeInRight');
-        $('#mySidenav').addClass('animated fadeOutRight');
-        $('#navbar-brand').removeClass('hideit');
-        bool = 1;
-      }
+    function flip(id1, id2) {
+      $(id1).hide();
+      $(id2).show();
+      $(id2).addClass('animated flipInY')
     }
+
+    var bool = 1;
+        function openNav(c) {
+          var white_togg = document.getElementById("white_toggle");
+          var black_togg = document.getElementById("black_toggle");
+          console.log(bool);
+          if(bool == 1) {
+            white_togg.classList.add("active");
+            black_togg.classList.add("active");
+            for(var i = 0; i < white_togg.childNodes.length; i++) {
+              if(white_togg.childNodes[i].className == "icon-bar") {
+                white_togg.childNodes[i].style = "background-color: #888;";
+              }
+            }
+            document.getElementById("mySidenav").classList.add("active");
+            $('#mySidenav').removeClass('animated fadeOutRight');
+            $('#mySidenav').addClass('animated fadeInRight');
+            $('#navbar-brand').addClass('hideit');
+            bool = 0;
+          }
+          else {
+            white_togg.classList.remove("active");
+            black_togg.classList.remove("active");
+            document.getElementById("mySidenav").classList.remove("active");
+            for(var i = 0; i < white_togg.childNodes.length; i++) {
+              if(white_togg.childNodes[i].className == "icon-bar") {
+                  white_togg.childNodes[i].style = "background-color: white;";
+              }
+            }
+            for(var i = 0; i < black_togg.childNodes.length; i++) {
+              if(black_togg.childNodes[i].className == "icon-bar") {
+                  black_togg.childNodes[i].style = "background-color: #888;";
+              }
+            }
+            $('#mySidenav').removeClass('animated fadeInRight');
+            $('#mySidenav').addClass('animated fadeOutRight');
+            $('#navbar-brand').removeClass('hideit');
+            bool = 1;
+          }
+        }
 
     $(function() {
       var header = $(".content");

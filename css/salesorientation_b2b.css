@@ -174,24 +174,30 @@ transition: 0.2s;
 }
 
 .sidenav a {
-    padding: 4% 7%;
+    padding: 5% 7%;
     text-decoration: none;
     font-family: "Cabin", Helvetica, Arial, serif;
     font-size: 115%;
     color: #000;
     display: block;
-
 }
 
 .nav_git {
-  width: 100%;
-  border-radius: 0px;
+    width: 100%;
+    border-radius: 0px;
+    background-color: rgba(108, 191, 124, 1.0);
+    color: white;
+    font-size: 110%;
+    /* margin-bottom: -53%; */
+    padding-top: 5%;
+    padding-bottom: 5%;
+    bottom: 0;
+    position: absolute;
+}
+
+.nav_git:hover {
   background-color: rgba(108, 191, 124, 1.0);
   color: white;
-  font-size: 115%;
-  margin-top: 5%;
-  padding-top: 4%;
-  padding-bottom: 4%;
 }
 
 #mySidenav {
@@ -219,7 +225,9 @@ transition: 0.2s;
 
 .sidenav a:hover {
   color: white;
-  background-color: rgba(108, 191, 124, 1.0);
+  background-color: rgba(108, 191, 124, 0.7);
+  transition: 0.2s;
+  transition-timing-function: linear;
 }
 
 .content {
@@ -231,6 +239,10 @@ transition: 0.2s;
   background-size: cover;
   min-height: 100%;
   font-family: "Cabin", Helvetica, Arial, serif;
+}
+
+.getintext {
+    font-family: "Cabin", Helvetica, Arial, serif;
 }
 
 @media (max-width: 500px) {
@@ -378,6 +390,27 @@ transition: 0.2s;
   }
 }
 
+#flipper_10 {
+  display: none;
+}
+
+#flipper_20 {
+  display: none;
+}
+
+#flipper_30 {
+  display: none;
+}
+
+#flipper_40 {
+  display: none;
+}
+
+#flipper_50 {
+  display: none;
+}
+
+
 @media (max-width: 500px) {
   .flip_cards {
     display: none;
@@ -414,8 +447,8 @@ transition: 0.2s;
 
 .flips .flip_cards img {
   width: 19%;
-  padding-left: 0.5%;
-  padding-right: 0.5%;
+  padding-left: 0.3%;
+  padding-right: 0.3%;
 }
 
 .flips .flip_cards img:hover {
@@ -543,7 +576,7 @@ transition: 0.2s;
 }
 
 .letsdoit_text {
-  font-size: 135%;
+  font-size: 125%;
   margin:auto;
 }
 
@@ -640,4 +673,27 @@ a:hover {
   border-top: 2px solid rgba(255, 255, 255, 0.1);
   width: 70%;
   margin-left: 0;
+}
+
+label {
+    font-family: "Cabin", Helvetica, Arial, serif;
+    font-weight: 600;
+    font-size: 80%;
+    color: rgba(105, 105, 105, 1.0);
+}
+
+.modal-header {
+    margin-top: 2%;
+    border-bottom: 0px;
+    font-family: "Cabin", Helvetica, Arial, serif;
+    font-size: 103%;
+}
+
+.form_button {
+    text-align: right;
+}
+
+.form_button .btn {
+    padding: 6px 50px;
+    border-radius: 2px;
 }
