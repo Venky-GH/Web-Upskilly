@@ -25,7 +25,7 @@
     <p class="headings">COMPANY</p>
     <a href="#">About</a>
     <a href="/contactus.html">Contact Us</a>
-    <!-- <button type="button" name="button" class="btn btn-default nav_git" data-toggle="modal" data-target="#myModal">Get in touch</button> -->
+    <button type="button" name="button" class="btn btn-default nav_git" data-toggle="modal" data-target="#myModal">Get in touch</button>
   </div>
 
   <div class="content">
@@ -225,11 +225,11 @@
     </div>
   </div>
 
-  <div style="padding:6%;">
+  <div style="padding:6%;background-color:rgba(0,0,0,0.04);">
     <div class="row">
       <div class="col-md-8 col-sm-12 pad-left-17 getintext">
-        <h2 class="t1" style="color:rgba(108, 191, 124, 1.0);font-weight:600;">Wanna give your revenue a boost?</h2>
-        <h2 class="t2" style="font-weight:600;">Just get in touch</h2>
+        <h2 class="t1" style="color:rgba(108, 191, 124, 1.0);">A bit of engagement goes a long way</h2>
+        <h2 class="t2">in retaining your employees</h2>
       </div>
       <div class="col-md-4 col-sm-12">
         <button class="btn btn-default letsdoit" data-toggle="modal" data-target="#myModal"><span class="letsdoit_text">Yes, let’s do this</span></button>
@@ -279,45 +279,51 @@
     </footer>
 
     <div id="myModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
+          <div class="modal-dialog">
 
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Let's Talk</h4>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label for="name">YOUR NAME</label>
-                <input type="text" placeholder="e.g. John Doe" class="form-control" id="name">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Let's Talk</h4>
               </div>
-              <div class="form-group">
-                <label for="company">COMPANY</label>
-                <input type="password" placeholder="e.g. ACME Corp." class="form-control" id="company">
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="name">YOUR NAME</label>
+                    <!-- <input type="text" placeholder="e.g. John Doe" class="form-control" id="name"> -->
+                    <input type="text" class="form-control" id="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="company">COMPANY</label>
+                    <!-- <input type="password" placeholder="e.g. ACME Corp." class="form-control" id="company"> -->
+                    <input type="password" class="form-control" id="company">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">EMAIL ADDRESS</label>
+                    <!-- <input type="email" class="form-control" placeholder="e.g. john@example.com" id="email"> -->
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">PHONE (OPTIONAL)</label>
+                    <!-- <input class="form-control" type="number" placeholder="e.g. 999 999 9999" id="phone"> -->
+                    <input class="form-control" type="number" id="phone">
+                  </div>
+                  <div class="form-group">
+                    <label for="message">MESSAGE (OPTIONAL)</label>
+                    <!-- <textarea class="form-control" rows="5" placeholder="Your message goes here ..." id="message"></textarea> -->
+                    <textarea class="form-control" rows="5" id="message"></textarea>
+                  </div>
+                  <div class="form_button">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                  </div>
+                </form>
               </div>
-              <div class="form-group">
-                <label for="email">EMAIL ADDRESS</label>
-                <input type="email" class="form-control" placeholder="e.g. john@example.com" id="email">
-              </div>
-              <div class="form-group">
-                <label for="phone">PHONE (OPTIONAL)</label>
-                <input class="form-control" type="number" placeholder="e.g. 999 999 9999" id="phone">
-              </div>
-              <div class="form-group">
-                <label for="message">MESSAGE (OPTIONAL)</label>
-                <textarea class="form-control" rows="5" placeholder="Your message goes here ..." id="message"></textarea>
-              </div>
-              <div class="form_button">
-                <button type="submit" class="btn btn-success">Submit</button>
-              </div>
-            </form>
+            </div>
+
           </div>
         </div>
 
-      </div>
-    </div>
     <script>
 
     function flip_content(evt, name) {
@@ -442,45 +448,44 @@
     </script>
     <script>
     var bool = 1;
-    function openNav(c) {
-      var white_togg = document.getElementById("white_toggle");
-      var black_toggle = document.getElementById("black_toggle");
-      if(c == "b") {
-        white_togg = black_toggle;
-      }
-      console.log(bool);
-      if(bool == 1) {
-        white_togg.classList.add("active");
-        for(var i = 0; i < white_togg.childNodes.length; i++) {
-          if(white_togg.childNodes[i].className == "icon-bar") {
-            white_togg.childNodes[i].style = "background-color: #888;";
+        function openNav(c) {
+          var white_togg = document.getElementById("white_toggle");
+          var black_togg = document.getElementById("black_toggle");
+          console.log(bool);
+          if(bool == 1) {
+            white_togg.classList.add("active");
+            black_togg.classList.add("active");
+            for(var i = 0; i < white_togg.childNodes.length; i++) {
+              if(white_togg.childNodes[i].className == "icon-bar") {
+                white_togg.childNodes[i].style = "background-color: #888;";
+              }
+            }
+            document.getElementById("mySidenav").classList.add("active");
+            $('#mySidenav').removeClass('animated fadeOutRight');
+            $('#mySidenav').addClass('animated fadeInRight');
+            $('#navbar-brand').addClass('hideit');
+            bool = 0;
+          }
+          else {
+            white_togg.classList.remove("active");
+            black_togg.classList.remove("active");
+            document.getElementById("mySidenav").classList.remove("active");
+            for(var i = 0; i < white_togg.childNodes.length; i++) {
+              if(white_togg.childNodes[i].className == "icon-bar") {
+                  white_togg.childNodes[i].style = "background-color: white;";
+              }
+            }
+            for(var i = 0; i < black_togg.childNodes.length; i++) {
+              if(black_togg.childNodes[i].className == "icon-bar") {
+                  black_togg.childNodes[i].style = "background-color: #888;";
+              }
+            }
+            $('#mySidenav').removeClass('animated fadeInRight');
+            $('#mySidenav').addClass('animated fadeOutRight');
+            $('#navbar-brand').removeClass('hideit');
+            bool = 1;
           }
         }
-        document.getElementById("mySidenav").classList.add("active");
-        $('#mySidenav').removeClass('animated fadeOutRight');
-        $('#mySidenav').addClass('animated fadeInRight');
-        $('#navbar-brand').addClass('hideit');
-        bool = 0;
-      }
-      else {
-        white_togg.classList.remove("active");
-        document.getElementById("mySidenav").classList.remove("active");
-        for(var i = 0; i < white_togg.childNodes.length; i++) {
-          if(white_togg.childNodes[i].className == "icon-bar") {
-            if(c == "w") {
-              white_togg.childNodes[i].style = "background-color: white;";
-            }
-            else {
-              white_togg.childNodes[i].style = "background-color: #888;";
-            }
-          }
-        }
-        $('#mySidenav').removeClass('animated fadeInRight');
-        $('#mySidenav').addClass('animated fadeOutRight');
-        $('#navbar-brand').removeClass('hideit');
-        bool = 1;
-      }
-    }
 
     $(function() {
       var header = $(".content");

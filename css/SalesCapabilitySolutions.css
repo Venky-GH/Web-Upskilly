@@ -195,6 +195,11 @@ transition: 0.2s;
     position: absolute;
 }
 
+.nav_git:hover {
+  background-color: rgba(108, 191, 124, 1.0);
+  color: white;
+}
+
 #mySidenav {
   animation-duration: 0.2s;
 }
