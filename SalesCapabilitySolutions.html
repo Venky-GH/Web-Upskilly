@@ -25,7 +25,7 @@
     <p class="headings">COMPANY</p>
     <a href="#">About</a>
     <a href="/contactus.html">Contact Us</a>
-    <!-- <button type="button" name="button" class="btn btn-default nav_git" data-toggle="modal" data-target="#myModal">Get in touch</button> -->
+    <button type="button" name="button" class="btn btn-default nav_git" data-toggle="modal" data-target="#myModal">Get in touch</button>
   </div>
 
   <div class="content">
@@ -65,7 +65,7 @@
       <h2 class="banner_head">A sales capability development program for your mobile-workforce that links learning to revenue growth</h2>
       <p class="banner_text">Upskilly enables Just-in-time learning for a distributed & mobile workforce. It links learning to revenue growth to ensure that L&D programs are not just a mere formality.</p>
       <br>
-      <button class="btn letstalk">Let's talk</button>
+      <button class="btn letstalk" data-toggle="modal" data-target="#myModal">Let's talk</button>
     </div>
   </div>
   <div class="sales_graph text-center">
@@ -114,7 +114,7 @@
     </ul>
     <div class="tab_view_tab_content" id="tab_view_content">
       <p style="font-size:125%;padding-left:25%;padding-right:25%;">A foundation program that gets your new recurits upto speed about the organization, its products and basic selling activities.</p>
-      <div style="padding-top:4%;" class="row">
+      <!-- <div style="padding-top:4%;" class="row">
         <div class="col-md-5" style="margin-left:14%;">
           <div class="thumbnail">
             <img src="/images/1.1.png" alt="...">
@@ -131,6 +131,24 @@
               <h5 style="font-weight:bold;font-size:120%;">Sales Orientation</h5>
               <p style="font-size:120%;">Learn more</p>
             </div>
+          </div>
+        </div>
+      </div> -->
+      <div style="padding-top:4%;">
+        <div class="thumbnail" style="display:inline-block;">
+          <img class="img_11" src="/images/1.1.png" alt="...">
+          <img class="img_11_hl" src="/images/1.1_high.png" alt="...">
+          <div class="caption">
+            <h5 style="font-weight:bold;font-size:110%;">Pre-joining Program</h5>
+            <p style="font-size:110%;">Learn more</p>
+          </div>
+        </div>
+        <div class="thumbnail" style="display:inline-block;margin-left:5%;">
+          <img class="img_12" src="/images/1.2.png" alt="...">
+          <img class="img_12_hl" src="/images/1.2_highlight.png" alt="...">
+          <div class="caption">
+            <h5 style="font-weight:bold;font-size:110%;">Sales Orientation</h5>
+            <p style="font-size:110%;">Learn more</p>
           </div>
         </div>
       </div>
@@ -224,15 +242,17 @@
   <div class="mckinsey container">
     <div class="row">
       <div data-aos="zoom-in" class="col-md-5 col-sm-12">
-        <img width="90%" src="/images/mckinsey.png" alt="">
-        <p class="text_1">“When asked about their companies’ biggest challenges in building capabilities, executives cite a lack of credible metrics.
-          <br><br>
-          Only 13% say their organizations calculate the quantifiable returns on their learning investments.”
-        </p>
-        <p style="padding:1.5% 4%;font-size:120%;color:blue;">
-          - &nbsp;&nbsp;
-          <img width="55%" src="/images/mc.png" alt="">
-        </p>
+        <div class="thumbnail" style="width:90%;">
+          <img src="/images/mckinsey.png" alt="...">
+          <p class="text_1">“When asked about their companies’ biggest challenges in building capabilities, executives cite a lack of credible metrics.
+            <br><br>
+            Only 13% say their organizations calculate the quantifiable returns on their learning investments.”
+          </p>
+          <p style="padding:1.5% 4%;font-size:120%;color:blue;">
+            - &nbsp;&nbsp;
+            <img width="55%" src="/images/mc.png" alt="">
+          </p>
+        </div>
       </div>
       <div class="col-md-7 col-sm-12">
         <p class="text_2">
@@ -262,12 +282,12 @@
     </div>
     <div style="padding-top:5%;" class="row">
       <div data-aos="zoom-in" class="col-md-6 col-sm-12">
-        <img class="adv_images" src="/images/trophy.png" alt="">
+        <img class="adv_images" src="/images/network.png" alt="">
         <p class="upskilly_adv_header">No internet, No problem</p>
         <p class="upskilly_adv_info">Worried that your sales-team is present in remote locations and doesn’t have internet to access courses. Don’t worry, we got you covered. Your team can access our capability programs offline as well.</p>
       </div>
       <div data-aos="zoom-in" class="col-md-6 col-sm-12">
-        <img class="adv_images" src="/images/trophy.png" alt="">
+        <img class="adv_images" src="/images/puz.png" alt="">
         <p class="upskilly_adv_header">Modular program</p>
         <p class="upskilly_adv_info">Found a good video on Youtube, that you want your sales-team to take up? Drag-drop-create a course. That is all it takes to create a course.</p>
       </div>
@@ -281,7 +301,7 @@
         </p>
       </div>
       <div data-aos="zoom-in" class="col-md-6 col-sm-12">
-        <img class="adv_images" src="/images/trophy.png" alt="">
+        <img class="adv_images" src="/images/circle.png" alt="">
         <p class="upskilly_adv_header">Robust analytics</p>
         <p class="upskilly_adv_info">
           Our analytics enable you to know how each of the learning programs are impacting your top-line.
@@ -388,23 +408,28 @@
             <form>
               <div class="form-group">
                 <label for="name">YOUR NAME</label>
-                <input type="text" placeholder="e.g. John Doe" class="form-control" id="name">
+                <!-- <input type="text" placeholder="e.g. John Doe" class="form-control" id="name"> -->
+                <input type="text" class="form-control" id="name">
               </div>
               <div class="form-group">
                 <label for="company">COMPANY</label>
-                <input type="password" placeholder="e.g. ACME Corp." class="form-control" id="company">
+                <!-- <input type="password" placeholder="e.g. ACME Corp." class="form-control" id="company"> -->
+                <input type="password" class="form-control" id="company">
               </div>
               <div class="form-group">
                 <label for="email">EMAIL ADDRESS</label>
-                <input type="email" class="form-control" placeholder="e.g. john@example.com" id="email">
+                <!-- <input type="email" class="form-control" placeholder="e.g. john@example.com" id="email"> -->
+                <input type="email" class="form-control" id="email">
               </div>
               <div class="form-group">
                 <label for="phone">PHONE (OPTIONAL)</label>
-                <input class="form-control" type="number" placeholder="e.g. 999 999 9999" id="phone">
+                <!-- <input class="form-control" type="number" placeholder="e.g. 999 999 9999" id="phone"> -->
+                <input class="form-control" type="number" id="phone">
               </div>
               <div class="form-group">
                 <label for="message">MESSAGE (OPTIONAL)</label>
-                <textarea class="form-control" rows="5" placeholder="Your message goes here ..." id="message"></textarea>
+                <!-- <textarea class="form-control" rows="5" placeholder="Your message goes here ..." id="message"></textarea> -->
+                <textarea class="form-control" rows="5" id="message"></textarea>
               </div>
               <div class="form_button">
                 <button type="submit" class="btn btn-success">Submit</button>
@@ -426,25 +451,23 @@
       if(name == 'lift') {
         v.innerHTML = `
         <p style="font-size:125%;padding-left:25%;padding-right:25%;">A foundation program that gets your new recurits upto speed about the organization, its products and basic selling activities.</p>
-        <div style="padding-top:4%;" class="row">
-        <div class="col-md-5" style="margin-left:14%;">
-        <div class="thumbnail">
-        <img src="/images/1.1.png" alt="...">
-        <div class="caption">
-        <h5 style="font-weight:bold;font-size:120%;">Pre-joining Program</h5>
-        <p style="font-size:120%;">Learn more</p>
-        </div>
-        </div>
-        </div>
-        <div class="col-md-5">
-        <div class="thumbnail">
-        <img src="/images/1.2.png" alt="...">
-        <div class="caption">
-        <h5 style="font-weight:bold;font-size:120%;">Sales Orientation</h5>
-        <p style="font-size:120%;">Learn more</p>
-        </div>
-        </div>
-        </div>
+        <div style="padding-top:4%;">
+          <div class="thumbnail" style="display:inline-block;">
+            <img class="img_11" src="/images/1.1.png" alt="...">
+            <img class="img_11_hl" src="/images/1.1_high.png" alt="...">
+            <div class="caption">
+              <h5 style="font-weight:bold;font-size:110%;">Pre-joining Program</h5>
+              <p style="font-size:110%;">Learn more</p>
+            </div>
+          </div>
+          <div class="thumbnail" style="display:inline-block;margin-left:5%;">
+            <img class="img_12" src="/images/1.2.png" alt="...">
+            <img class="img_12_hl" src="/images/1.2_highlight.png" alt="...">
+            <div class="caption">
+              <h5 style="font-weight:bold;font-size:110%;">Sales Orientation</h5>
+              <p style="font-size:110%;">Learn more</p>
+            </div>
+          </div>
         </div>
         `;
       }
@@ -452,11 +475,12 @@
         v.innerHTML = `
         <p style="font-size:125%;padding-left:25%;padding-right:25%;">An accelerator program that ensures your new recruits are generating revenue for you in no-time.</p>
         <div style="margin-left:37%;width:41.67%;padding-top:2%;">
-        <div class="thumbnail">
-        <img src="/images/1.2.png" alt="...">
+        <div class="thumbnail" style="width:65%;">
+        <img class="img_12" src="/images/1.2.png" alt="...">
+        <img class="img_12_hl" src="/images/1.2_highlight.png" alt="...">
         <div class="caption">
-        <h5 style="font-weight:bold;font-size:120%;">Sales Development</h5>
-        <p style="font-size:120%;">Learn more</p>
+        <h5 style="font-weight:bold;font-size:110%;">Sales Development</h5>
+        <p style="font-size:110%;">Learn more</p>
         </div>
         </div>
         </div>
@@ -466,11 +490,12 @@
         v.innerHTML = `
         <p style="font-size:125%;padding-left:25%;padding-right:25%;">A continuous learning program that ensires that your organization is on the growth path by trainig your employees for the upcoming challenges.</p>
         <div style="margin-left:37%;width:41.67%;padding-top:2%;">
-        <div class="thumbnail">
-        <img src="/images/1.2.png" alt="...">
+        <div class="thumbnail" style="width:65%;">
+        <img class="img_12" src="/images/1.2.png" alt="...">
+        <img class="img_12_hl" src="/images/1.2_highlight.png" alt="...">
         <div class="caption">
-        <h5 style="font-weight:bold;font-size:120%;">Funtional Training</h5>
-        <p style="font-size:120%;">Learn more</p>
+        <h5 style="font-weight:bold;font-size:110%;">Functional Training</h5>
+        <p style="font-size:110%;">Learn more</p>
         </div>
         </div>
         </div>
@@ -536,13 +561,11 @@
     var bool = 1;
     function openNav(c) {
       var white_togg = document.getElementById("white_toggle");
-      var black_toggle = document.getElementById("black_toggle");
-      if(c == "b") {
-        white_togg = black_toggle;
-      }
+      var black_togg = document.getElementById("black_toggle");
       console.log(bool);
       if(bool == 1) {
         white_togg.classList.add("active");
+        black_togg.classList.add("active");
         for(var i = 0; i < white_togg.childNodes.length; i++) {
           if(white_togg.childNodes[i].className == "icon-bar") {
             white_togg.childNodes[i].style = "background-color: #888;";
@@ -556,15 +579,16 @@
       }
       else {
         white_togg.classList.remove("active");
+        black_togg.classList.remove("active");
         document.getElementById("mySidenav").classList.remove("active");
         for(var i = 0; i < white_togg.childNodes.length; i++) {
           if(white_togg.childNodes[i].className == "icon-bar") {
-            if(c == "w") {
               white_togg.childNodes[i].style = "background-color: white;";
-            }
-            else {
-              white_togg.childNodes[i].style = "background-color: #888;";
-            }
+          }
+        }
+        for(var i = 0; i < black_togg.childNodes.length; i++) {
+          if(black_togg.childNodes[i].className == "icon-bar") {
+              black_togg.childNodes[i].style = "background-color: #888;";
           }
         }
         $('#mySidenav').removeClass('animated fadeInRight');
