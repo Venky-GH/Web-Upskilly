@@ -869,6 +869,7 @@ label {
   width: 30vw;
   margin: 0 auto;
   border-radius: 5px;
+  font-family: "Cabin", Helvetica, Arial, serif;
 }
 
 .accordion-header,
@@ -879,29 +880,22 @@ label {
 .accordion-header {
   padding: 1.5em 1.5em;
   background: rgba(108, 191, 124, 1.0);
-  text-transform: uppercase;
   color: white;
   cursor: pointer;
-  font-size: 120%;
+  font-size: 130%;
   letter-spacing: .1em;
   transition: all .3s;
 }
 
-.accordion-header:hover {
-  background: #2D3D99;
-  position: relative;
-  z-index: 5;
-}
-
 .accordion-body {
   background: #fcfcfc;
-  color: #3f3c3c;
+  color: black;
   display: none;
 }
 
 .accordion-body__contents {
   padding: 1.5em 1.5em;
-  font-size: 115%;
+  font-size: 130%;
 }
 
 .accordion__item.active:last-child .accordion-header {
@@ -932,7 +926,7 @@ label {
 }
 
 .accordion__item .accordion__item .accordion-header {
-  background: #f1f1f1;
+  background: rgba(108, 191, 124, 1.0);
   color: black;
 }
 
