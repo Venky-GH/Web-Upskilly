@@ -529,6 +529,14 @@ hr {
     padding-right: 12%;
     font-family: "Cabin", Helvetica, Arial, serif;
   }
+
+  .horizontal_tab_git {
+    border-radius: 2px;
+    font-size: 115%;
+    border: 0px;
+    padding: 4% 12%;
+    background-color: rgba(108, 191, 124, 1.0);
+  }
 }
 
 @media (min-width: 501px) {
@@ -540,6 +548,14 @@ hr {
     padding-top: 7%;
     padding-bottom: 7%;
     font-family: "Cabin", Helvetica, Arial, serif;
+  }
+
+  .horizontal_tab_git {
+    border-radius: 2px;
+    font-size: 110%;
+    border: 0px;
+    padding: 3% 10%;
+    background-color: rgba(108, 191, 124, 1.0);
   }
 }
 
@@ -572,14 +588,6 @@ hr {
   font-size: 127%;
   padding-top: 4%;
   color: black;
-}
-
-.horizontal_tab_git {
-  border-radius: 2px;
-  font-size: 110%;
-  border: 0px;
-  padding: 3% 10%;
-  background-color: rgba(108, 191, 124, 1.0);
 }
 
 @media (min-width: 501px) {
@@ -716,7 +724,7 @@ hr {
 
   .video_tab li {
     display: inline;
-    padding: 3% 15%;
+    padding: 4% 15%;
     font-size: 135%;
     text-align: center;
   }
@@ -882,7 +890,7 @@ label {
   background: rgba(108, 191, 124, 1.0);
   color: white;
   cursor: pointer;
-  font-size: 180%;
+  font-size: 175%;
   letter-spacing: .1em;
   transition: all .3s;
 }
