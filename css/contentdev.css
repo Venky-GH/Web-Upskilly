@@ -878,11 +878,11 @@ label {
 }
 
 .accordion-header {
-  padding: 1.5em 1.5em;
+  padding: 1em 1.2em;
   background: rgba(108, 191, 124, 1.0);
   color: white;
   cursor: pointer;
-  font-size: 130%;
+  font-size: 180%;
   letter-spacing: .1em;
   transition: all .3s;
 }
@@ -895,7 +895,7 @@ label {
 
 .accordion-body__contents {
   padding: 1.5em 1.5em;
-  font-size: 130%;
+  font-size: 155%;
 }
 
 .accordion__item.active:last-child .accordion-header {
