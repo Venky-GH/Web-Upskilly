@@ -94,7 +94,7 @@
     <div class="flip_cards text-center">
       <div style="display:inline;">
         <img id="flipper_01" onclick="flip('#flipper_01','#flipper_10')" src="/images/flip_1.png" alt="">
-        <img data-aos="flip-right" id="flipper_10" onclick="flip('#flipper_10','#flipper_01')" src="/images/pros.png" alt="">
+        <img id="flipper_10" onclick="flip('#flipper_10','#flipper_01')" src="/images/pros.png" alt="">
       </div>
       <div style="display:inline;">
         <img id="flipper_02" onclick="flip('#flipper_02','#flipper_20')" src="/images/flip_2.png" alt="">
@@ -116,19 +116,24 @@
     <div class="flip_cards_mobile">
       <ul>
         <li>
-          <img src="/images/flip_1.png" alt="">
+          <img id="flipper_01m" onclick="flip('#flipper_01m','#flipper_10m')" src="/images/flip_1.png" alt="">
+          <img id="flipper_10m" onclick="flip('#flipper_10m','#flipper_01m')" src="/images/pros.png" alt="">
         </li>
         <li>
-          <img src="/images/flip_2.png" alt="">
+          <img id="flipper_02m" onclick="flip('#flipper_02m','#flipper_20m')" src="/images/flip_2.png" alt="">
+          <img id="flipper_20m" onclick="flip('#flipper_20m','#flipper_02m')" src="/images/educate.png" alt="">
         </li>
         <li>
-          <img src="/images/flip_3.png" alt="">
+          <img id="flipper_03m" onclick="flip('#flipper_03m','#flipper_30m')" src="/images/flip_3.png" alt="">
+          <img id="flipper_30m" onclick="flip('#flipper_30m','#flipper_03m')" src="/images/demand.png" alt="">
         </li>
         <li>
-          <img src="/images/flip_4.png" alt="">
+          <img id="flipper_04m" onclick="flip('#flipper_04m','#flipper_40m')" src="/images/flip_4.png" alt="">
+          <img id="flipper_40m" onclick="flip('#flipper_40m','#flipper_04m')" src="/images/pro_val.png" alt="">
         </li>
         <li>
-          <img src="/images/flip_5.png" alt="">
+          <img id="flipper_05m" onclick="flip('#flipper_05m','#flipper_50m')" src="/images/flip_5.png" alt="">
+          <img id="flipper_50m" onclick="flip('#flipper_50m','#flipper_05m')" src="/images/cus_suc.png" alt="">
         </li>
       </ul>
     </div>
@@ -341,18 +346,18 @@
           <img id="logo_white" src="/images/logo_white.svg" alt="white logo">
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
-          <h4>Solutions</h4>
+          <h4>SOLUTIONS</h4>
           <hr>
           <a href="/SalesCapabilitySolutions.html"><p class="subhead">Sales Capability Development</p></a>
           <a href="/contentdevelopment.html"><p class="subhead">Content Development</p></a>
           <br>
-          <h4>Platforms</h4>
+          <h4>PLATFROMS</h4>
           <hr>
           <a href=""><p class="subhead">ATOM - Mobile First LMS</p></a>
           <a href=""><p class="subhead">AIRA</p></a>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
-          <h4>Company</h4>
+          <h4>COMPANY</h4>
           <hr>
           <a href=""><p class="subhead">About</p></a>
           <a href=""><p class="subhead">Our Work</p></a>
@@ -360,7 +365,7 @@
           <a href=""><p class="subhead">Privacy</p></a>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
-          <h4>Connect</h4>
+          <h4>CONNECT</h4>
           <hr>
           <a href=""><i class="fab fa-twitter-square icon"></i>
             &nbsp;&nbsp;
@@ -393,8 +398,8 @@
                   </div>
                   <div class="form-group">
                     <label for="company">COMPANY</label>
-                    <!-- <input type="password" placeholder="e.g. ACME Corp." class="form-control" id="company"> -->
-                    <input type="password" class="form-control" id="company">
+                    <!-- <input type="text" placeholder="e.g. ACME Corp." class="form-control" id="company"> -->
+                    <input type="text" class="form-control" id="company">
                   </div>
                   <div class="form-group">
                     <label for="email">EMAIL ADDRESS</label>

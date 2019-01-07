@@ -450,6 +450,8 @@ transition: 0.2s;
 
   .program.mobile {
     display: block;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 
   .program h3 {
@@ -548,7 +550,10 @@ transition: 0.2s;
 
 @media (max-width: 500px) {
   .letsdoit {
-    margin-left: 23.5%;
+    margin-left: 24%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    width: 50%;
   }
   .bottom {
     font-size: 140%;

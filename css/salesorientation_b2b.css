@@ -394,8 +394,16 @@ transition: 0.2s;
   display: none;
   animation-duration: 0.7s;
 }
+#flipper_10m {
+  display: none;
+  animation-duration: 0.7s;
+}
 
 #flipper_20 {
+  display: none;
+  animation-duration: 0.7s;
+}
+#flipper_20m {
   display: none;
   animation-duration: 0.7s;
 }
@@ -404,13 +412,25 @@ transition: 0.2s;
   display: none;
   animation-duration: 0.7s;
 }
+#flipper_30m {
+  display: none;
+  animation-duration: 0.7s;
+}
 
 #flipper_40 {
   display: none;
   animation-duration: 0.7s;
 }
+#flipper_40m {
+  display: none;
+  animation-duration: 0.7s;
+}
 
 #flipper_50 {
+  display: none;
+  animation-duration: 0.7s;
+}
+#flipper_50m {
   display: none;
   animation-duration: 0.7s;
 }
@@ -479,7 +499,7 @@ transition: 0.2s;
 }
 
 .flips .flip_cards_mobile img {
-  width: 70%;
+  width: 60%;
 }
 
 @media (min-width: 501px) {
@@ -596,7 +616,10 @@ transition: 0.2s;
 
 @media (max-width: 500px) {
   .letsdoit {
-    margin-left: 27%;
+    margin-left: 24%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    width: 50%;
   }
   .bottom {
     font-size: 140%;

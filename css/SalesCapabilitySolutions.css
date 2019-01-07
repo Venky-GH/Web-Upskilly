@@ -695,7 +695,10 @@ hr {
 
 @media (max-width: 500px) {
   .letsdoit {
-    margin-left: 27%;
+    margin-left: 24%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    width: 50%;
   }
 }
 
