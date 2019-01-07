@@ -587,6 +587,10 @@ hr {
   }
 }
 
+.getintext {
+  font-family: "Cabin", Helvetica, Arial, serif;
+}
+
 @media (max-width: 500px) {
   .logos_mobile {
     display: block;
@@ -611,7 +615,7 @@ hr {
 
 .logos {
   padding-top: 2%;
-  padding-bottom: 4%;
+  padding-bottom: 5%;
   font-family: "Cabin", Helvetica, Arial, serif;
 }
 
@@ -638,7 +642,7 @@ hr {
 }
 
 .letsdoit_text {
-  font-size: 135%;
+  font-size: 125%;
   margin:auto;
 }
 
