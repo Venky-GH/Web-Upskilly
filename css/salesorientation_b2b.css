@@ -392,22 +392,27 @@ transition: 0.2s;
 
 #flipper_10 {
   display: none;
+  animation-duration: 0.7s;
 }
 
 #flipper_20 {
   display: none;
+  animation-duration: 0.7s;
 }
 
 #flipper_30 {
   display: none;
+  animation-duration: 0.7s;
 }
 
 #flipper_40 {
   display: none;
+  animation-duration: 0.7s;
 }
 
 #flipper_50 {
   display: none;
+  animation-duration: 0.7s;
 }
 
 
