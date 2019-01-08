@@ -4,23 +4,20 @@
   }
 }
 
-
-@media (min-width: 2200px) and (max-width: 2560px) {
+@media (max-height: 1080px) and (max-width: 1920px) {
   #bw_2 {
-    margin-top: 35%;
-  }
-}
-
-@media (min-width: 1500px) and (max-width: 1920px) {
-  #bw_2 {
-    margin-top: 39.5%;
+    margin-top: 39.5% !important;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1366px) {
   #bw_2 {
-    margin-top: 20%;
+    margin-top: 20% !important;
   }
+}
+
+#bw_2 {
+  margin-top: 26%;
 }
 
 .navbar-toggle.active .icon-bar:nth-of-type(1) {
