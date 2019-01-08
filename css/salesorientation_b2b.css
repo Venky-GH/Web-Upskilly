@@ -725,3 +725,11 @@ label {
     padding: 6px 50px;
     border-radius: 2px;
 }
+
+a:visited {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}

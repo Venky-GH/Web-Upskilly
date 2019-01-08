@@ -442,3 +442,7 @@ label {
     padding: 6px 50px;
     border-radius: 2px;
 }
+
+.footer i {
+  padding-left: 0%;
+}
