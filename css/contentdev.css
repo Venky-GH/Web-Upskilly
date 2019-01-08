@@ -5,13 +5,13 @@
 }
 
 
-@media (min-width: 1440px) and (max-width: 2560px) {
+@media (min-width: 2200px) and (max-width: 2560px) {
   #bw_2 {
     margin-top: 35%;
   }
 }
 
-@media (max-width: 1920px) {
+@media (min-width: 1500px) and (max-width: 1920px) {
   #bw_2 {
     margin-top: 39.5%;
   }
