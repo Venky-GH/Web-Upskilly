@@ -4,9 +4,10 @@
   }
 }
 
-@media (max-width: 1366px) {
+
+@media (min-width: 2200px) {
   #bw_2 {
-    margin-top: 20%;
+    margin-top: 35%;
   }
 }
 
@@ -16,9 +17,9 @@
   }
 }
 
-@media (min-width: 2200px) {
+@media (min-width: 1200px) and (max-width: 1366px) {
   #bw_2 {
-    margin-top: 35%;
+    margin-top: 20%;
   }
 }
 
