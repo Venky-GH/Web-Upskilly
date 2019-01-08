@@ -4,6 +4,24 @@
   }
 }
 
+@media (max-width: 1366px) {
+  #bw_2 {
+    margin-top: 20%;
+  }
+}
+
+@media (max-width: 1920px) {
+  #bw_2 {
+    margin-top: 39.5%;
+  }
+}
+
+@media (min-width: 2200px) {
+  #bw_2 {
+    margin-top: 35%;
+  }
+}
+
 .navbar-toggle.active .icon-bar:nth-of-type(1) {
 -webkit-transform: rotate(45deg);
 -ms-transform: rotate(45deg);
