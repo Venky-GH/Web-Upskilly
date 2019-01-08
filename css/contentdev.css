@@ -5,7 +5,7 @@
 }
 
 
-@media (min-width: 2200px) {
+@media (min-width: 1440px) and (max-width: 2560px) {
   #bw_2 {
     margin-top: 35%;
   }
